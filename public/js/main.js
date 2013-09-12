@@ -36,5 +36,7 @@ require([
 ], function(App){
     console.log(App);
     // The "app" dependency is passed in as "App"
+
     App.initialize();
+
 });

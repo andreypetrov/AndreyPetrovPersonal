@@ -7,12 +7,10 @@
  */
 define([
     'jquery',
-    'backbone'
-], function ($, Backbone) {
-    return Backbone.View.extend({
-        render: function () {
-            this.$el.html("Test Home View");
-            return this;
-        }
+    'backbone',
+    'views/archview'
+], function ($, Backbone, ArchView) {
+    return ArchView.extend({
+
     });
 });
