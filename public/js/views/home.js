@@ -7,9 +7,8 @@
  */
 define([
     'jquery',
-    'backbone',
     'views/archview'
-], function ($, Backbone, ArchView) {
+], function ($, ArchView) {
     return ArchView.extend({
 
     });
