@@ -1,40 +1,13 @@
-var AppRouter = Backbone.Router.extend({
-    routes: {
-        "": "home"
-    },
-
-    initialize: function () {
-        this.homeView = new HomeView();
-        //this.infoView = new InfoView();
-        //this.headerView = new HeaderView();
-        //this.footerView = new FooterView();
-    },
-
-    renderHeader: function() {
-        //$("#header").html(this.headerView.render().el);
-    },
-
-    renderFooter: function() {},
-
-    preNavigate: function() {},
-
-    postNavigate: function () {},
-
-    home: function () {
-        console.log("here");
-        this.preNavigate();
-        $('#app').html(this.homeView.render().el);
-        this.postNavigate();
+define([
+    'jquery',
+    'underscore',
+    'backbone',
+    'router' // Request router.js
+], function($, _, Backbone, Router){
+    var initialize = function(){
+        // Pass in our Router module and call it's initialize function
+        Router.initialize();
     }
 
-});
-
-var app = new AppRouter();
-
-
-//The facebook app starts here!
-
-$(function () {
-
-    Backbone.history.start();
+    return { initialize: initialize };
 });
