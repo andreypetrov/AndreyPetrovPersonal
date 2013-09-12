@@ -9,10 +9,9 @@
 define([
     'jquery',
     'underscore',
-    'backbone'/*,
-    'views/projects/list',
-    'views/users/list'*/
-], function ($, _, Backbone, Session/*, ProjectListView, UserListView*/) {
+    'backbone',
+    'views/home'
+], function ($, _, Backbone , HomeView) {
 
     var AppRouter = Backbone.Router.extend({
         routes: {
@@ -40,7 +39,6 @@ define([
         },
 
         home: function () {
-            console.log("here");
             this.preNavigate();
             $('#app').html(this.homeView.render().el);
             this.postNavigate();

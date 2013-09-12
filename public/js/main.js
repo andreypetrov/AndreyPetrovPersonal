@@ -12,11 +12,20 @@
 // There usage will become more apparent further along in the tutorial.
 require.config({
     paths: {
-        jquery: '../liv/jquery',
+        jquery: '../lib/jquery-2.0.3',
         underscore: '../lib/underscore',
         backbone: '../lib/backbone'
-    }
+    },
 
+    shim: {
+        underscore: {
+            exports: '_'
+        },
+        backbone: {
+            deps: ["underscore", "jquery"],
+            exports: "Backbone"
+        }
+    }
 });
 
 
