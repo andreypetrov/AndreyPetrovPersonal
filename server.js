@@ -8,6 +8,16 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 
+var fs = require('fs');
+var requirejs = require('requirejs');
+
+requirejs.config({
+    //Pass the top-level main.js/index.js require
+    //function to requirejs so that node modules
+    //are loaded relative to the top-level JS file.
+    nodeRequire: require
+});
+
 var app = express();
 
 // all environments

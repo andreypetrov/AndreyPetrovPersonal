@@ -11,7 +11,6 @@
 // Require.js allows us to configure shortcut alias
 // There usage will become more apparent further along in the tutorial.
 require.config({
-
     hbs : {
         disableI18n : true
     },
