@@ -5,10 +5,11 @@
  * Time: 10:14 PM
  * To change this template use File | Settings | File Templates.
  */
-var HomeView = Backbone.View.extend({
+define([
+    'jquery',
+    'views/archview'
+], function ($, ArchView) {
+    return ArchView.extend({
 
-    render: function() {
-        this.$el.html("Test Home View");
-        return this;
-    }
+    });
 });

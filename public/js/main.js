@@ -1,0 +1,42 @@
+/**
+ * Created with IntelliJ IDEA.
+ * User: Andrey
+ * Date: 2013-09-12
+ * Time: 4:26 PM
+ * To change this template use File | Settings | File Templates.
+ */
+
+// Filename: main.js
+
+// Require.js allows us to configure shortcut alias
+// There usage will become more apparent further along in the tutorial.
+require.config({
+    paths: {
+        jquery: '../lib/jquery-2.0.3',
+        underscore: '../lib/underscore',
+        backbone: '../lib/backbone'
+    },
+
+    shim: {
+        underscore: {
+            exports: '_'
+        },
+        backbone: {
+            deps: ["underscore", "jquery"],
+            exports: "Backbone"
+        }
+    }
+});
+
+
+require([
+
+    // Load our app module and pass it to our definition function
+    'app'
+], function(App){
+    console.log(App);
+    // The "app" dependency is passed in as "App"
+
+    App.initialize();
+
+});
