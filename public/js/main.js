@@ -22,7 +22,6 @@ require.config({
 
 
         handlebars : "../lib/hbs/handlebars",
-        Handlebars : "../lib/hbs/handlebars",
 
         hbs: '../lib/hbs/hbs',
         i18nprecompile : "../lib/hbs/i18nprecompile",
@@ -40,21 +39,10 @@ require.config({
     }
 });
 
-console.log("require config");
-
 require([
-
     // Load our app module and pass it to our definition function
     'app',
-    'hbs',
-    'hbs!views/One'
-], function(App, Hbs, One){
-    console.log(Hbs);
-
-    console.log(One);
-
+], function(App){
     // The "app" dependency is passed in as "App"
-
     App.initialize();
-
 });

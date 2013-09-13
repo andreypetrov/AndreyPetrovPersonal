@@ -396,7 +396,7 @@ define([
                       prec = precompile( text, mapping, options);
 
                   text = "/* START_TEMPLATE */\n" +
-                         "define(['hbs','Handlebars'"+depStr+helpDepStr+"], function( hbs, Handlebars ){ \n" +
+                         "define(['hbs','handlebars'"+depStr+helpDepStr+"], function( hbs, Handlebars ){ \n" +
                            "var t = Handlebars.template(" + prec + ");\n" +
                            "Handlebars.registerPartial('" + name.replace( /\//g , '_') + "', t);\n" +
                            debugProperties +

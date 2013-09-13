@@ -8,14 +8,14 @@
 
 define([
     'jquery',
-    'backbone'
+    'backbone',
+    'hbs!views/template'
 ], function ($, Backbone, template) {
     return Backbone.View.extend({
 
         render: function () {
-            console.log(template);
-
-            this.$el.html(template);
+            var mytemplate = require('hbs!views/template');
+            this.$el.html(mytemplate({adjective: "test"}));
             this.delegateEvents();//TODO test if it is ok without argument and it really attaches this.events by default
             return this;
         }
