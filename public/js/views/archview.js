@@ -9,12 +9,13 @@
 define([
     'jquery',
     'backbone'
-], function ($, Backbone) {
+], function ($, Backbone, template) {
     return Backbone.View.extend({
-        template: "This is an archetemplate!",   //TODO make this dynamically defined in the views, to search in the directory of the view for the resources
 
         render: function () {
-            this.$el.html(this.template);
+            console.log(template);
+
+            this.$el.html(template);
             this.delegateEvents();//TODO test if it is ok without argument and it really attaches this.events by default
             return this;
         }
