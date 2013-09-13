@@ -6,16 +6,22 @@
  * Parent to all views
  */
 
+
 define([
     'jquery',
-    'backbone',
-    'hbs!views/template'
-], function ($, Backbone, template) {
+    'backbone'
+], function ($, Backbone) {
     return Backbone.View.extend({
+        template: {},
+        collection: {},
+        model: {},
 
+        //Render template with collection or model, or empty
         render: function () {
-            var mytemplate = require('hbs!views/template');
-            this.$el.html(mytemplate({adjective: "test"}));
+            if (this.collection && this.collection.length > 0) this.$el.html(this.template(this.collection));
+            else if(this.model) this.$el.html(this.template(this.model));
+            else this.$el.html(this.template());
+
             this.delegateEvents();//TODO test if it is ok without argument and it really attaches this.events by default
             return this;
         }
