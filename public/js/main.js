@@ -13,8 +13,7 @@
 require.config({
     hbs: {
         disableI18n: true,
-        disableHelpers: true,
-        templateExtension: "hbs"
+        disableHelpers: true
     },
 
     paths: {

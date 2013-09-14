@@ -30,7 +30,7 @@ define([
         templateExtension = "hbs",
         customNameExtension = "@hbs",
         devStyleDirectory = "/css/",
-        buildStyleDirectory = "/demo-build/styles/",
+        buildStyleDirectory = "/public/css/",
         helperDirectory = "template/helpers/",
         i18nDirectory = "template/i18n/",
         buildCSSFileName = "screen.build.css";
@@ -353,8 +353,8 @@ define([
                                         if (!styleMap[style]) {
                                             console.log(tempUrl);
                                             linkElem = document.createElement('link');
-                                            //linkElem.href = config.baseUrl + devStyleDirectory + style + '.css';
-                                            linkElem.href = style + "/style.css";
+                                            linkElem.href = config.baseUrl + devStyleDirectory + style + '.css';
+                                            //linkElem.href = style + "/style.css";
                                             linkElem.media = 'all';
                                             linkElem.rel = 'stylesheet';
                                             linkElem.type = 'text/css';
@@ -374,8 +374,15 @@ define([
                                                 return "";
                                             }).join("\n");
 
+
+                                        console.log(str);
+                                        console.log(buildStyleDirectory);
+                                        console.log(buildCSSFileName);
+                                        console.log(filecode);
+                                        console.log(filecode);
                                         // I write out my import statements to a file in order to help me build stuff.
                                         // Then I use a tool to inline my import statements afterwards. (you can run r.js on it too)
+                                        console.log(__dirname + "../../../" + buildStyleDirectory + buildCSSFileName);
                                         fs.open(__dirname + buildStyleDirectory + buildCSSFileName, filecode, '0666', function (e, id) {
                                             fs.writeSync(id, str, null, encoding = 'utf8');
                                             fs.close(id);
