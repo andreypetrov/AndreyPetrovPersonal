@@ -353,7 +353,7 @@ define([
                                         if (!styleMap[style]) {
                                             console.log(tempUrl);
                                             linkElem = document.createElement('link');
-                                            /*linkElem.href = config.baseUrl + devStyleDirectory + style + '.css';*/
+                                            //linkElem.href = config.baseUrl + devStyleDirectory + style + '.css';
                                             linkElem.href = style + "/style.css";
                                             linkElem.media = 'all';
                                             linkElem.rel = 'stylesheet';

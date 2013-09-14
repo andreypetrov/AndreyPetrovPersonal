@@ -1,22 +1,19 @@
 /**
  * Created with IntelliJ IDEA.
- * User: Andrey
- * Date: 2013-09-12
- * Time: 4:26 PM
+ * User: andrey
+ * Date: 2013-09-14
+ * Time: 12:35 PM
  * To change this template use File | Settings | File Templates.
  */
 
-// Filename: main.js
-
-// Require.js allows us to configure shortcut alias
-// There usage will become more apparent further along in the tutorial.
-require.config({
-    hbs: {
+({
+    /*hbs: {
         disableI18n: true,
         disableHelpers: true,
         templateExtension: "hbs"
     },
 
+    baseUrl: ".",
     paths: {
         jquery: '../lib/jquery-2.0.3',
         underscore: '../lib/underscore',
@@ -30,6 +27,7 @@ require.config({
         json2 : "../lib/hbs/json2"
     },
 
+
     shim: {
         underscore: {
             exports: '_'
@@ -38,13 +36,9 @@ require.config({
             deps: ["underscore", "jquery"],
             exports: "Backbone"
         }
-    }
-});
-
-require([
-    // Load our app module and pass it to our definition function
-    'app'
-], function(App){
-    // The "app" dependency is passed in as "App"
-    App.initialize();
-});
+    },  */
+    baseUrl: ".",
+    mainConfigFile: "main.js",
+    name: "main",
+    out: "main-built.js"
+})
