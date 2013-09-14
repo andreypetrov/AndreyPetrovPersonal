@@ -10,8 +10,13 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'views/home/home'
-], function ($, _, Backbone , HomeView) {
+    'views/home/home',
+    'views/header/header',
+    'views/footer/footer'
+], function ($, _, Backbone ,
+             HomeView,
+             HeaderView,
+    FooterView) {
 
     var AppRouter = Backbone.Router.extend({
         routes: {
@@ -19,17 +24,21 @@ define([
         },
 
         initialize: function () {
+            this.headerView = new HeaderView();
             this.homeView = new HomeView();
+            this.footerView = new FooterView();
+            this.renderHeader();
+            this.renderFooter();
             //this.infoView = new InfoView();
             //this.headerView = new HeaderView();
             //this.footerView = new FooterView();
         },
 
         renderHeader: function () {
-            //$("#header").html(this.headerView.render().el);
+            $("#header").html(this.headerView.render().el);
         },
-
         renderFooter: function () {
+            $("#footer").html(this.footerView.render().el);
         },
 
         preNavigate: function () {

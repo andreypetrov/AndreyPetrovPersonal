@@ -29,11 +29,11 @@ define([
         filecode = "w+",
         templateExtension = "hbs",
         customNameExtension = "@hbs",
-        devStyleDirectory = "/css/",
-        buildStyleDirectory = "/public/css/",
+        devStyleDirectory = "../",
+        buildStyleDirectory = "/public/css/",//relative to r.js file
         helperDirectory = "template/helpers/",
         i18nDirectory = "template/i18n/",
-        buildCSSFileName = "screen.build.css";
+        buildCSSFileName = "main-built.css";
 
     Handlebars.registerHelper('$', function () {
         //placeholder for translation helper
@@ -369,7 +369,7 @@ define([
                                             str = _(metaObj.styles).map(function (style) {
                                                 if (!styleMap[style]) {
                                                     styleMap[style] = true;
-                                                    return "@import url(" + style + ".css);\n";
+                                                    return "@import url(../" + style + ".css);\n";
                                                 }
                                                 return "";
                                             }).join("\n");
@@ -382,7 +382,6 @@ define([
                                         console.log(filecode);
                                         // I write out my import statements to a file in order to help me build stuff.
                                         // Then I use a tool to inline my import statements afterwards. (you can run r.js on it too)
-                                        console.log(__dirname + "../../../" + buildStyleDirectory + buildCSSFileName);
                                         fs.open(__dirname + buildStyleDirectory + buildCSSFileName, filecode, '0666', function (e, id) {
                                             fs.writeSync(id, str, null, encoding = 'utf8');
                                             fs.close(id);
