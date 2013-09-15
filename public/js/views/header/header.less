@@ -1,17 +1,23 @@
 @darkLink:#563d7c;
-
-@redColor: red;
+@lightBar:#d4dfee;
+@borderColor: #e7e7e7;
 
 .app-navbar {
-  background-color: #d4dfee;
-  border-color: #e7e7e7;
-  color: red;
+  background-color: @lightBar;
+  border-color: @borderColor;
 }
 
+
+
+.app-navbar-buttons
+{
+  margin-left: 390px;
+}
 
 .app-navbar-button-wrapper {
   float: left;
   height: 50px;
+  width: 65px;
   padding-right: 15px;
 
   .app-navbar-button {
@@ -23,6 +29,7 @@
     background-repeat:no-repeat;
     background-position: center;
   }
+
   .app-navbar-button:hover,
   .app-navbar-button:focus {
     background-size: 100%;
@@ -32,9 +39,8 @@
 
 
 
-
-
 .app-nav {
+  float:left;
   position: relative;
   padding-left: 0;
   margin-bottom: 0;
@@ -82,14 +88,4 @@
   text-decoration: none;
   background-color: @darkLink;
   color:white;
-}
-
-.app-nav .caret {
-  border-top-color: #428bca;
-  border-bottom-color: #428bca;
-}
-
-.app-nav a:hover .caret {
-  border-top-color: #2a6496;
-  border-bottom-color: #2a6496;
 }

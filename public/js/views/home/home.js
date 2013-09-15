@@ -11,6 +11,8 @@ define([
     'hbs!views/home/homeTemplate'
 ], function ($, ArchView, template) {
     return ArchView.extend({
+        model: {adjective: "awesome"},
+
         template: template
     });
 });

@@ -1,11 +1,14 @@
 .app-navbar {
   background-color: #d4dfee;
   border-color: #e7e7e7;
-  color: red;
+}
+.app-navbar-buttons {
+  margin-left: 390px;
 }
 .app-navbar-button-wrapper {
   float: left;
   height: 50px;
+  width: 65px;
   padding-right: 15px;
 }
 .app-navbar-button-wrapper .app-navbar-button {
@@ -23,6 +26,7 @@
   cursor: pointer;
 }
 .app-nav {
+  float: left;
   position: relative;
   padding-left: 0;
   margin-bottom: 0;
@@ -63,12 +67,4 @@
   text-decoration: none;
   background-color: #563d7c;
   color: white;
-}
-.app-nav .caret {
-  border-top-color: #428bca;
-  border-bottom-color: #428bca;
-}
-.app-nav a:hover .caret {
-  border-top-color: #2a6496;
-  border-bottom-color: #2a6496;
 }
