@@ -34,10 +34,10 @@ define([
         },
 
         renderHeader: function () {
-            $("#header").html(this.headerView.render().el);
+            $("#app-header").html(this.headerView.render().el);
         },
         renderFooter: function () {
-            $("#footer").html(this.footerView.render().el);
+            $("#app-footer").html(this.footerView.render().el);
         },
 
         preNavigate: function () {
