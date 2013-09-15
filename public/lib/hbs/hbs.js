@@ -375,11 +375,11 @@ define([
                                             }).join("\n");
 
 
-                                        console.log(str);
-                                        console.log(buildStyleDirectory);
-                                        console.log(buildCSSFileName);
-                                        console.log(filecode);
-                                        console.log(filecode);
+                                        //  console.log(str);
+                                       // console.log(buildStyleDirectory);
+                                        //console.log(buildCSSFileName);
+                                        //console.log(filecode);
+                                        //console.log(filecode);
                                         // I write out my import statements to a file in order to help me build stuff.
                                         // Then I use a tool to inline my import statements afterwards. (you can run r.js on it too)
                                         fs.open(__dirname + buildStyleDirectory + buildCSSFileName, filecode, '0666', function (e, id) {

@@ -8,7 +8,7 @@
 define([
     'jquery',
     'views/archview',
-    'hbs!views/header/view'
+    'hbs!views/header/headerTemplate'
 ], function ($, ArchView, template) {
     return ArchView.extend({
         template: template
