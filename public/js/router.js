@@ -25,13 +25,12 @@ define([
 
         initialize: function () {
             this.headerView = new HeaderView();
-            this.homeView = new HomeView();
             this.footerView = new FooterView();
+
+            this.homeView = new HomeView();
+
             this.renderHeader();
             this.renderFooter();
-            //this.infoView = new InfoView();
-            //this.headerView = new HeaderView();
-            //this.footerView = new FooterView();
         },
 
         renderHeader: function () {
