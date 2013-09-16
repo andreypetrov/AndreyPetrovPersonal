@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b63213e4-0149-4208-8701-14f8180e4ab1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/games/games.js" afterPath="$PROJECT_DIR$/public/js/views/games/games.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/games/gamesTemplate.hbs" afterPath="$PROJECT_DIR$/public/js/views/games/gamesTemplate.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/main.js" afterPath="$PROJECT_DIR$/public/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/router.js" afterPath="$PROJECT_DIR$/public/js/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/bulls/bullsTemplate.hbs" afterPath="$PROJECT_DIR$/public/js/views/bulls/bullsTemplate.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AndreyPetrovPersonal.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1378952313549" ignored="false" />
-    <file path="/Dummy.txt" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379364062642" ignored="false" />
+    <file path="/Dummy.txt" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379365798798" ignored="false" />
     <file path="/server.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379106397877" ignored="false" />
     <file path="/Procfile" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1378939302457" ignored="false" />
     <file path="/package.json" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379106473600" ignored="false" />
@@ -31,7 +27,7 @@
     <file path="/sticky-footer.css" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379361320319" ignored="false" />
     <file path="/style.less" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379363622534" ignored="false" />
     <file path="/gamesTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379364205100" ignored="false" />
-    <file path="/bullsTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379363842055" ignored="false" />
+    <file path="/bullsTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379365941159" ignored="false" />
     <file path="/router.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379365455432" ignored="false" />
     <file path="/games.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379365730879" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -94,19 +90,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="games.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="games.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/views/games/games.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="46" selection-start="482" selection-end="482" vertical-scroll-proportion="0.3773585">
+            <state line="20" column="46" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bullsTemplate.hbs" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="bullsTemplate.hbs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/views/bulls/bullsTemplate.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="-1.25">
+            <state line="5" column="105" selection-start="297" selection-end="297" vertical-scroll-proportion="0.09727626">
               <folding />
             </state>
           </provider>
@@ -145,7 +141,6 @@
         <option value="$PROJECT_DIR$/public/js/views/footer/sticky-footer.css" />
         <option value="$PROJECT_DIR$/public/css/style.less" />
         <option value="$PROJECT_DIR$/public/js/views/bulls/bulls.js" />
-        <option value="$PROJECT_DIR$/public/js/views/bulls/bullsTemplate.hbs" />
         <option value="$PROJECT_DIR$/public/js/views/bulls/bulls.less" />
         <option value="$PROJECT_DIR$/public/js/views/work/work.less" />
         <option value="$PROJECT_DIR$/public/js/views/me/me.less" />
@@ -155,6 +150,7 @@
         <option value="$PROJECT_DIR$/public/js/main.js" />
         <option value="$PROJECT_DIR$/public/js/views/games/gamesTemplate.hbs" />
         <option value="$PROJECT_DIR$/public/js/views/games/games.js" />
+        <option value="$PROJECT_DIR$/public/js/views/bulls/bullsTemplate.hbs" />
       </list>
     </option>
   </component>
@@ -574,7 +570,11 @@
       <created>1379364066185</created>
       <updated>1379364066185</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added window.app object with window.app.router on it">
+      <created>1379365802561</created>
+      <updated>1379365802561</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -648,7 +648,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added bulls and cows view bulls.js and added all css files produced from less files" />
+    <option name="LAST_COMMIT_MESSAGE" value="added window.app object with window.app.router on it" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -668,6 +668,7 @@
     <MESSAGE value="backbone hello world" />
     <MESSAGE value="added hanglebars plugin for requirejs but not working yet" />
     <MESSAGE value="added bulls and cows view bulls.js and added all css files produced from less files" />
+    <MESSAGE value="added window.app object with window.app.router on it" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -675,13 +676,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/views/footer/footer.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="1" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/views/games/games.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="1" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
@@ -766,9 +760,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/bulls/bullsTemplate.hbs">
+    <entry file="file://$PROJECT_DIR$/public/js/views/games/games.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="-1.25">
+        <state line="20" column="46" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -780,9 +774,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/games/games.js">
+    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="46" selection-start="482" selection-end="482" vertical-scroll-proportion="0.3773585">
+        <state line="380" column="0" selection-start="5085" selection-end="5085" vertical-scroll-proportion="0.33248082">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/views/bulls/bullsTemplate.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="105" selection-start="297" selection-end="297" vertical-scroll-proportion="0.09727626">
           <folding />
         </state>
       </provider>
