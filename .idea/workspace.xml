@@ -8,7 +8,7 @@
     <ignored path="AndreyPetrovPersonal.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1378952313549" ignored="false" />
-    <file path="/Dummy.txt" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379365798798" ignored="false" />
+    <file path="/Dummy.txt" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379365995946" ignored="false" />
     <file path="/server.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379106397877" ignored="false" />
     <file path="/Procfile" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1378939302457" ignored="false" />
     <file path="/package.json" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379106473600" ignored="false" />
@@ -27,7 +27,7 @@
     <file path="/sticky-footer.css" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379361320319" ignored="false" />
     <file path="/style.less" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379363622534" ignored="false" />
     <file path="/gamesTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379364205100" ignored="false" />
-    <file path="/bullsTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379365941159" ignored="false" />
+    <file path="/bullsTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379366088321" ignored="false" />
     <file path="/router.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379365455432" ignored="false" />
     <file path="/games.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379365730879" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -102,7 +102,7 @@
       <file leaf-file-name="bullsTemplate.hbs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/views/bulls/bullsTemplate.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="105" selection-start="297" selection-end="297" vertical-scroll-proportion="0.09727626">
+            <state line="4" column="73" selection-start="187" selection-end="187" vertical-scroll-proportion="0.07782101">
               <folding />
             </state>
           </provider>
@@ -574,7 +574,11 @@
       <created>1379365802561</created>
       <updated>1379365802561</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added window.app object with window.app.router on it">
+      <created>1379365997738</created>
+      <updated>1379365997738</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -783,7 +787,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/views/bulls/bullsTemplate.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="105" selection-start="297" selection-end="297" vertical-scroll-proportion="0.09727626">
+        <state line="4" column="73" selection-start="187" selection-end="187" vertical-scroll-proportion="0.07782101">
           <folding />
         </state>
       </provider>
