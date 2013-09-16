@@ -2,27 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b63213e4-0149-4208-8701-14f8180e4ab1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/home/img/protoss_poster.jpg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/views/header/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/views/home/style.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/home/coolPartial.hbs" afterPath="$PROJECT_DIR$/public/js/views/home/coolPartial.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/footer/footer.css" afterPath="$PROJECT_DIR$/public/js/views/footer/footer.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/footer/footer.less" afterPath="$PROJECT_DIR$/public/js/views/footer/footer.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/footer/footerTemplate.hbs" afterPath="$PROJECT_DIR$/public/js/views/footer/footerTemplate.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/header/header.css" afterPath="$PROJECT_DIR$/public/js/views/header/header.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/header/header.less" afterPath="$PROJECT_DIR$/public/js/views/header/header.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/header/headerTemplate.hbs" afterPath="$PROJECT_DIR$/public/js/views/header/headerTemplate.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/home/home.css" afterPath="$PROJECT_DIR$/public/js/views/home/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/home/home.js" afterPath="$PROJECT_DIR$/public/js/views/home/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/home/home.less" afterPath="$PROJECT_DIR$/public/js/views/home/home.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/home/homeTemplate.hbs" afterPath="$PROJECT_DIR$/public/js/views/home/homeTemplate.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/games/games.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/games/games.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/games/gamesTemplate.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/me/me.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/me/me.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/me/meTemplate.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/work/work.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/work/work.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/work/workTemplate.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/you/you.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/you/you.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/you/youTemplate.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/router.js" afterPath="$PROJECT_DIR$/public/js/router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AndreyPetrovPersonal.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379215432421" ignored="false" />
-    <file path="/Dummy.txt" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379214122628" ignored="false" />
+    <file path="/Dummy.txt" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379218643771" ignored="false" />
     <file path="/server.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1378938874526" ignored="false" />
     <file path="/Procfile" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1378939302457" ignored="false" />
     <file path="/package.json" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1378941539956" ignored="false" />
@@ -35,7 +34,7 @@
     <file path="/coolPartial.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379218026885" ignored="false" />
     <file path="/app.build.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379179938658" ignored="false" />
     <file path="/hbs.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379182196267" ignored="false" />
-    <file path="/router.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379198309494" ignored="false" />
+    <file path="/router.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379275514484" ignored="false" />
     <file path="/view.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379212391958" ignored="false" />
     <file path="/style.less" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379212779100" ignored="false" />
     <file path="/a.less" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379199170872" ignored="false" />
@@ -48,6 +47,11 @@
     <file path="/footer.css" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379213896915" ignored="false" />
     <file path="/footer.less" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379217605712" ignored="false" />
     <file path="/header.css" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379217022914" ignored="false" />
+    <file path="/gamesTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379275589280" ignored="false" />
+    <file path="/youTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379275616003" ignored="false" />
+    <file path="/workTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379275609762" ignored="false" />
+    <file path="/me.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379275234802" ignored="false" />
+    <file path="/meTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379275601554" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,89 +112,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/js/views/home/home.js">
+      <file leaf-file-name="youTemplate.hbs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/views/you/youTemplate.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="35" selection-start="339" selection-end="339" vertical-scroll-proportion="0.24405506">
+            <state line="2" column="7" selection-start="54" selection-end="54" vertical-scroll-proportion="-1.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="headerTemplate.hbs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/views/header/headerTemplate.hbs">
+      <file leaf-file-name="you.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/views/you/you.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="29" selection-start="361" selection-end="361" vertical-scroll-proportion="-5.625">
+            <state line="8" column="0" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="protoss_poster.jpg" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/views/home/img/protoss_poster.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/views/header/header.less">
+      <file leaf-file-name="work.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/views/work/work.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="21" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
+            <state line="10" column="24" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/views/home/home.less">
+      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="11" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
+            <state line="86" column="35" selection-start="1980" selection-end="1980" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homeTemplate.hbs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/views/home/homeTemplate.hbs">
+      <file leaf-file-name="work.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/views/work/work.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="23" selection-start="94" selection-end="94" vertical-scroll-proportion="-1.25">
+            <state line="9" column="0" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="archview.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/views/archview.js">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="8" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
+            <state line="14" column="32" selection-start="404" selection-end="404" vertical-scroll-proportion="0.41095892">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="coolPartial.hbs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/views/home/coolPartial.hbs">
+      <file leaf-file-name="gamesTemplate.hbs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/views/games/gamesTemplate.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="3" selection-start="22" selection-end="22" vertical-scroll-proportion="-0.625">
+            <state line="2" column="0" selection-start="46" selection-end="77" vertical-scroll-proportion="-1.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/views/header/header.css">
+      <file leaf-file-name="meTemplate.hbs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/views/me/meTemplate.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="1" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0">
+            <state line="3" column="5" selection-start="51" selection-end="51" vertical-scroll-proportion="-1.875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footerTemplate.hbs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/views/footer/footerTemplate.hbs">
+      <file leaf-file-name="workTemplate.hbs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/views/work/workTemplate.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="14" selection-start="467" selection-end="467" vertical-scroll-proportion="-6.875">
+            <state line="3" column="13" selection-start="63" selection-end="63" vertical-scroll-proportion="-1.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="you.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/views/you/you.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="18" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -214,22 +220,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/js/views/footer/footer.js" />
-        <option value="$PROJECT_DIR$/public/js/views/header/style.css" />
-        <option value="$PROJECT_DIR$/public/css/style.less" />
-        <option value="$PROJECT_DIR$/public/js/router.js" />
-        <option value="$PROJECT_DIR$/public/js/main.js" />
-        <option value="$PROJECT_DIR$/public/js/views/footer/footer.css" />
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/public/js/views/header/header.css" />
-        <option value="$PROJECT_DIR$/public/js/views/header/headerTemplate.hbs" />
-        <option value="$PROJECT_DIR$/public/js/views/header/header.less" />
-        <option value="$PROJECT_DIR$/public/js/views/footer/footerTemplate.hbs" />
-        <option value="$PROJECT_DIR$/public/js/views/footer/footer.less" />
-        <option value="$PROJECT_DIR$/public/js/views/home/home.less" />
-        <option value="$PROJECT_DIR$/public/js/views/home/homeTemplate.hbs" />
-        <option value="$PROJECT_DIR$/public/js/views/home/coolPartial.hbs" />
         <option value="$PROJECT_DIR$/public/js/views/home/home.js" />
+        <option value="$PROJECT_DIR$/public/js/views/games/games.js" />
+        <option value="$PROJECT_DIR$/public/js/views/you/you.js" />
+        <option value="$PROJECT_DIR$/public/js/views/work/work.js" />
+        <option value="$PROJECT_DIR$/public/js/views/me/me.hbs" />
+        <option value="$PROJECT_DIR$/public/js/views/me/me.js" />
+        <option value="$PROJECT_DIR$/public/js/views/games/games.less" />
+        <option value="$PROJECT_DIR$/public/js/views/me/me.less" />
+        <option value="$PROJECT_DIR$/public/js/views/you/you.less" />
+        <option value="$PROJECT_DIR$/public/js/router.js" />
+        <option value="$PROJECT_DIR$/public/js/views/work/work.less" />
+        <option value="$PROJECT_DIR$/public/js/views/games/gamesTemplate.hbs" />
+        <option value="$PROJECT_DIR$/public/js/views/me/meTemplate.hbs" />
+        <option value="$PROJECT_DIR$/public/js/views/work/workTemplate.hbs" />
+        <option value="$PROJECT_DIR$/public/js/views/you/youTemplate.hbs" />
+        <option value="$PROJECT_DIR$/public/index.html" />
       </list>
     </option>
   </component>
@@ -283,6 +289,190 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="you" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="work" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="games" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="footer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -306,11 +496,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/js/views/you" />
+      <recent name="$PROJECT_DIR$/public/js/views/work" />
+      <recent name="$PROJECT_DIR$/public/js/views/me" />
+      <recent name="$PROJECT_DIR$/public/js/views/games" />
       <recent name="$PROJECT_DIR$/public/js/css" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/public/js" />
-      <recent name="$PROJECT_DIR$/public/css" />
-      <recent name="$PROJECT_DIR$/public/lib/angular" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/js" />
@@ -485,12 +675,16 @@
       <created>1379211779089</created>
       <updated>1379211779089</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="simple demo skeleton completed">
+      <created>1379218648311</created>
+      <updated>1379218648312</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="945" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -503,16 +697,16 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.68198305" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31801692" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.68242425" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31757575" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33212122" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -559,7 +753,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added skeleton app" />
+    <option name="LAST_COMMIT_MESSAGE" value="simple demo skeleton completed" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -585,6 +779,7 @@
     <MESSAGE value="issue with the hbs again duh" />
     <MESSAGE value="working on the header" />
     <MESSAGE value="added skeleton app" />
+    <MESSAGE value="simple demo skeleton completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -596,112 +791,114 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/views/footer/footer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/header/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="24" selection-start="402" selection-end="402" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6203" column="0" selection-start="109536" selection-end="109536" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/footer/footer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/footer/footer.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="18" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/header/header.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="1" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/views/header/header.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="21" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/footer/footerTemplate.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="467" selection-end="467" vertical-scroll-proportion="-6.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/home/home.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/home/homeTemplate.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="23" selection-start="94" selection-end="94" vertical-scroll-proportion="-1.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/archview.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="8" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
+        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/views/header/headerTemplate.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="29" selection-start="361" selection-end="361" vertical-scroll-proportion="-5.625">
+        <state line="9" column="30" selection-start="359" selection-end="362" vertical-scroll-proportion="-5.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/home/img/protoss_poster.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/home/coolPartial.hbs">
+    <entry file="file://$PROJECT_DIR$/public/js/views/games/games.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="3" selection-start="22" selection-end="22" vertical-scroll-proportion="-0.625">
+        <state line="8" column="13" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/home/home.js">
+    <entry file="file://$PROJECT_DIR$/public/js/views/games/games.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="35" selection-start="339" selection-end="339" vertical-scroll-proportion="0.24405506">
+        <state line="8" column="0" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/views/me/me.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="20" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/views/me/me.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/views/you/you.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="18" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/views/you/you.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/views/work/work.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="24" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="35" selection-start="1980" selection-end="1980" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/views/work/work.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/views/games/gamesTemplate.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="46" selection-end="77" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/views/me/meTemplate.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="5" selection-start="51" selection-end="51" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/views/work/workTemplate.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="13" selection-start="63" selection-end="63" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/views/you/youTemplate.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="7" selection-start="54" selection-end="54" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="32" selection-start="404" selection-end="404" vertical-scroll-proportion="0.41095892">
           <folding />
         </state>
       </provider>
