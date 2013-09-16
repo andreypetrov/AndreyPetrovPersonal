@@ -12,15 +12,27 @@ define([
     'backbone',
     'views/home/home',
     'views/header/header',
-    'views/footer/footer'
+    'views/footer/footer',
+    'views/work/work',
+    'views/games/games',
+    'views/me/me',
+    'views/you/you'
 ], function ($, _, Backbone ,
              HomeView,
              HeaderView,
-    FooterView) {
+    FooterView,
+    WorkView,
+    GamesView,
+    MeView,
+    YouView) {
 
     var AppRouter = Backbone.Router.extend({
         routes: {
-            "": "home"
+            "": "home",
+            "work": "work",
+            "games": "games",
+            "me": "me",
+            "you": "you"
         },
 
         initialize: function () {
@@ -28,6 +40,11 @@ define([
             this.footerView = new FooterView();
 
             this.homeView = new HomeView();
+            this.workView = new WorkView();
+            this.gamesView = new GamesView();
+            this.meView = new MeView();
+            this.youView = new YouView();
+
 
             this.renderHeader();
             this.renderFooter();
@@ -46,11 +63,30 @@ define([
         postNavigate: function () {
         },
 
+
+
         home: function () {
             this.preNavigate();
             $('#app').html(this.homeView.render().el);
             this.postNavigate();
+        },
+
+        games:function() {
+            $('#app').html(this.gamesView.render().el);
+        },
+
+        work:function() {
+            $('#app').html(this.workView.render().el);
+        },
+
+        me:function() {
+            $('#app').html(this.meView.render().el);
+        },
+
+        you:function() {
+            $('#app').html(this.youView.render().el);
         }
+
 
     });
 
