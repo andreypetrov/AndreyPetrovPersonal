@@ -11,6 +11,14 @@ define([
     'hbs!views/games/gamesTemplate'
 ], function ($, ArchView, template) {
     return ArchView.extend({
-        template: template
+        template: template,
+
+        events: {
+          "click .startButton": "onStart"
+        },
+
+        onStart: function() {
+            window.app.router.navigate("/bulls", true);
+        }
     });
 });

@@ -97,12 +97,14 @@ define([
 
     });
 
+    //initialize the router and give a reference to it
     var initialize = function() {
-        var app = new AppRouter();
+        var appRouter = new AppRouter();
         Backbone.history.start();
+        return appRouter;
     };
 
-    return { initialize : initialize };
+    return { initialize : initialize};
 });
 
 
