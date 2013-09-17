@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b63213e4-0149-4208-8701-14f8180e4ab1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/games/games.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/games/games.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/games/gamesTemplate.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/me/me.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/me/me.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/me/meTemplate.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/work/work.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/work/work.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/work/workTemplate.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/you/you.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/you/you.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/you/youTemplate.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/router.js" afterPath="$PROJECT_DIR$/public/js/router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AndreyPetrovPersonal.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379215432421" ignored="false" />
-    <file path="/Dummy.txt" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379218643771" ignored="false" />
+    <file path="/Dummy.txt" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379312137308" ignored="false" />
     <file path="/server.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1378938874526" ignored="false" />
     <file path="/Procfile" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1378939302457" ignored="false" />
     <file path="/package.json" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1378941539956" ignored="false" />
@@ -160,7 +146,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="32" selection-start="404" selection-end="404" vertical-scroll-proportion="0.41095892">
+            <state line="8" column="51" selection-start="200" selection-end="200" vertical-scroll-proportion="0.23483366">
               <folding />
             </state>
           </provider>
@@ -679,7 +665,11 @@
       <created>1379218648311</created>
       <updated>1379218648312</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added classes for all nav views">
+      <created>1379312152195</created>
+      <updated>1379312152195</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -753,7 +743,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="simple demo skeleton completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="added classes for all nav views" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -780,6 +770,7 @@
     <MESSAGE value="working on the header" />
     <MESSAGE value="added skeleton app" />
     <MESSAGE value="simple demo skeleton completed" />
+    <MESSAGE value="added classes for all nav views" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -898,7 +889,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="32" selection-start="404" selection-end="404" vertical-scroll-proportion="0.41095892">
+        <state line="8" column="51" selection-start="200" selection-end="200" vertical-scroll-proportion="0.23483366">
           <folding />
         </state>
       </provider>
