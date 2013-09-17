@@ -8,17 +8,9 @@
 define([
     'jquery',
     'views/archview',
-    'hbs!views/games/gamesTemplate'
+    'hbs!views/bulls/bullsTemplate'
 ], function ($, ArchView, template) {
     return ArchView.extend({
-        template: template,
-
-        events: {
-          "click .startButton": "onStart"
-        },
-
-        onStart: function() {
-            window.app.router.navigate("/bulls", true);
-        }
+        template: template
     });
 });

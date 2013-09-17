@@ -16,7 +16,8 @@ define([
     'views/work/work',
     'views/games/games',
     'views/me/me',
-    'views/you/you'
+    'views/you/you',
+    'views/bulls/bulls'
 ], function ($, _, Backbone ,
              HomeView,
              HeaderView,
@@ -24,7 +25,8 @@ define([
     WorkView,
     GamesView,
     MeView,
-    YouView) {
+    YouView,
+    BullsView) {
 
     var AppRouter = Backbone.Router.extend({
         routes: {
@@ -32,7 +34,8 @@ define([
             "work": "work",
             "games": "games",
             "me": "me",
-            "you": "you"
+            "you": "you",
+            "bulls": "bulls"
         },
 
         initialize: function () {
@@ -44,7 +47,7 @@ define([
             this.gamesView = new GamesView();
             this.meView = new MeView();
             this.youView = new YouView();
-
+            this.bullsView = new BullsView();
 
             this.renderHeader();
             this.renderFooter();
@@ -85,17 +88,23 @@ define([
 
         you:function() {
             $('#app').html(this.youView.render().el);
+        },
+
+        bulls:function(){
+            $('#app').html(this.bullsView.render().el);
         }
 
 
     });
 
+    //initialize the router and give a reference to it
     var initialize = function() {
-        var app = new AppRouter();
+        var appRouter = new AppRouter();
         Backbone.history.start();
+        return appRouter;
     };
 
-    return { initialize : initialize };
+    return { initialize : initialize};
 });
 
 

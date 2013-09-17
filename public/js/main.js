@@ -45,5 +45,9 @@ require([
     'app'
 ], function(App){
     // The "app" dependency is passed in as "App"
+    //export global object with the router in it
+
+
+    window.app = App;
     App.initialize();
 });
