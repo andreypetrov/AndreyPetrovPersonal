@@ -24,12 +24,12 @@ define([], function () {
          */
         compareGuessWithOriginalNumber: function(guessNumber) {
             if(!this.correctNumber) throw 'correctNumber cannot be 0 or uninitialized';
-            var guessDigitsCount = guessNumber.toString().length;
+            var digitsCount = guessNumber.toString().length;
 
 
             if(isNaN(guessNumber)) return {error:{code:0, message: "Not a valid number, use digits only please"}};
-            if(guessDigitsCount < this.correctDigitsCount) return {error: {code: 1, message: "Not enough digits in your number"}};
-            if(guessDigitsCount > this.correctDigitsCount) return {error: {code: 2, message: "Too many digits in your number"}};
+            if(digitsCount < this.correctDigitsCount) return {error: {code: 1, message: "Not enough digits in your number"}};
+            if(digitsCount > this.correctDigitsCount) return {error: {code: 2, message: "Too many digits in your number"}};
 
             var bulls = 0;
             var cows = 0;
