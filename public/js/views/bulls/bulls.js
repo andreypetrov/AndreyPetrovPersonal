@@ -24,7 +24,7 @@ define([
         logEl: 0,
         inputErrorEl: 0,
 
-        digitsCount: 3,
+        digitsCount: 4,
 
         initialize: function() {
 

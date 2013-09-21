@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b63213e4-0149-4208-8701-14f8180e4ab1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/archview.js" afterPath="$PROJECT_DIR$/public/js/views/archview.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/bulls/bulls.js" afterPath="$PROJECT_DIR$/public/js/views/bulls/bulls.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/bulls/gameLogic/gameLogic.js" afterPath="$PROJECT_DIR$/public/js/views/bulls/gameLogic/gameLogic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/header/header.css" afterPath="$PROJECT_DIR$/public/js/views/header/header.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/header/header.js" afterPath="$PROJECT_DIR$/public/js/views/header/header.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/header/header.less" afterPath="$PROJECT_DIR$/public/js/views/header/header.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/header/headerTemplate.hbs" afterPath="$PROJECT_DIR$/public/js/views/header/headerTemplate.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/router.js" afterPath="$PROJECT_DIR$/public/js/router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AndreyPetrovPersonal.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1378952313549" ignored="false" />
-    <file path="/Dummy.txt" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379781121430" ignored="false" />
+    <file path="/Dummy.txt" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379788799858" ignored="false" />
     <file path="/server.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379106397877" ignored="false" />
     <file path="/Procfile" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1378939302457" ignored="false" />
     <file path="/package.json" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379106473600" ignored="false" />
@@ -107,10 +100,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="header.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/views/header/header.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="107" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.621079">
+            <state line="33" column="107" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bulls.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/views/bulls/bulls.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="26" selection-start="179" selection-end="179" vertical-scroll-proportion="0.09894459">
               <folding />
             </state>
           </provider>
@@ -128,7 +130,7 @@
       <file leaf-file-name="gameLogic.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/views/bulls/gameLogic/gameLogic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="8" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0">
+            <state line="12" column="28" selection-start="446" selection-end="447" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -191,10 +193,10 @@
         <option value="$PROJECT_DIR$/public/js/views/header/headerTemplate.hbs" />
         <option value="$PROJECT_DIR$/public/js/views/bulls/gameLogic/gameLogic.js" />
         <option value="$PROJECT_DIR$/public/js/views/archview.js" />
-        <option value="$PROJECT_DIR$/public/js/views/bulls/bulls.js" />
         <option value="$PROJECT_DIR$/public/js/router.js" />
         <option value="$PROJECT_DIR$/public/js/views/header/header.less" />
         <option value="$PROJECT_DIR$/public/js/views/header/header.js" />
+        <option value="$PROJECT_DIR$/public/js/views/bulls/bulls.js" />
       </list>
     </option>
   </component>
@@ -694,7 +696,11 @@
       <created>1379781131924</created>
       <updated>1379781131925</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="implemented nav-bar onNavigate to change styling of menu&#10;">
+      <created>1379788806974</created>
+      <updated>1379788806974</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -768,7 +774,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="bulls and cows simple single player completed.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented nav-bar onNavigate to change styling of menu&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -792,6 +798,7 @@
     <MESSAGE value="bulls simple template" />
     <MESSAGE value="working on the logic of bulls and cows" />
     <MESSAGE value="bulls and cows simple single player completed.&#10;" />
+    <MESSAGE value="implemented nav-bar onNavigate to change styling of menu&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -862,13 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/bulls/bulls.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="68" selection-start="1097" selection-end="1097" vertical-scroll-proportion="-13.423077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/views/header/header.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="38" selection-start="1111" selection-end="1111" vertical-scroll-proportion="-13.5">
@@ -890,9 +890,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/bulls/gameLogic/gameLogic.js">
+    <entry file="file://$PROJECT_DIR$/public/js/views/header/header.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="8" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0">
+        <state line="33" column="107" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -904,9 +904,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/header/header.js">
+    <entry file="file://$PROJECT_DIR$/public/js/views/bulls/gameLogic/gameLogic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="107" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.621079">
+        <state line="12" column="28" selection-start="446" selection-end="447" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/views/bulls/bulls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="26" selection-start="179" selection-end="179" vertical-scroll-proportion="0.09894459">
           <folding />
         </state>
       </provider>
