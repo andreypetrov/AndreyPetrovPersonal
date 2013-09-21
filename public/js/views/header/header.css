@@ -25,6 +25,10 @@
   background-size: 100%;
   cursor: pointer;
 }
+.app-navbar-button-big {
+  background-size: 100%;
+  cursor: pointer;
+}
 .app-nav {
   float: left;
   position: relative;
@@ -63,8 +67,14 @@
   height: 100%;
 }
 .app-nav > li > a:hover,
-.app-nav > li > a:focus {
+.app-nav > li > a:focus,
+.app-nav > li.active > a {
+  color: white;
   text-decoration: none;
   background-color: #563d7c;
+}
+.app-nav-active {
   color: white;
+  text-decoration: none;
+  background-color: #563d7c;
 }

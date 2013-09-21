@@ -32,11 +32,14 @@
 
   .app-navbar-button:hover,
   .app-navbar-button:focus {
-    background-size: 100%;
-    cursor:pointer;
+    .app-navbar-button-big;
   }
 }
 
+.app-navbar-button-big {
+  background-size: 100%;
+  cursor:pointer;
+}
 
 
 .app-nav {
@@ -84,8 +87,15 @@
 }
 
 .app-nav > li > a:hover,
-.app-nav > li > a:focus {
+.app-nav > li > a:focus,
+.app-nav > li.active > a {
+  .app-nav-active
+}
+
+.app-nav-active
+{
+  color:white;
   text-decoration: none;
   background-color: @darkLink;
-  color:white;
+
 }

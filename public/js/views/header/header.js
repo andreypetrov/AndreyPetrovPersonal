@@ -7,11 +7,34 @@
  */
 define([
     'jquery',
+    'backbone',
     'views/archview',
     'hbs!views/header/headerTemplate'
-], function ($, ArchView, template) {
+], function ($, Backbone, ArchView, template) {
     return ArchView.extend({
-        template: template
+        navLinkElements: [],
+
+        template: template,
+
+        initDomHandles: function() {
+            this.navLinkElements = this.$el.find('.app-nav').children();
+        },
+
+        /**
+         * Change style of navbar.
+         * This is called in the router on navigation, so that it is triggered even on page refresh, not only on clicks
+         * @param navIndex
+         */
+        onNavigate: function(navIndex) {
+            //remove class from all a elements. Depends on the fact that a element is first child of li
+            $(this.navLinkElements).each(function(){
+               $($(this).children()[0]).removeClass('app-nav-active');
+            });
+
+            //add class to the current a element. Depends on the fact that a element is first child of li
+            $($(this.navLinkElements[navIndex]).children()[0]).addClass('app-nav-active');
+
+        }
     });
 });
 

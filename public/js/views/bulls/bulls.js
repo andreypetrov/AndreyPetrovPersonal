@@ -33,10 +33,17 @@ define([
         render: function() {
             ArchView.prototype.render.apply(this); //super call
 
-            this.initDom();
             gameLogic.newGame(this.digitsCount);
             return this;
         },
+
+        //override
+        initDomHandles: function() {
+            this.guessInputEl = this.$el.find('.bulls-number');
+            this.logEl = this.$el.find('.bulls-log');
+            this.inputErrorEl = this.$el.find('.bulls-input-error');
+        },
+
 
         guess: function(e) {
             e.preventDefault();
@@ -56,11 +63,7 @@ define([
             }
         },
 
-        initDom: function() {
-            this.guessInputEl = this.$el.find('.bulls-number');
-            this.logEl = this.$el.find('.bulls-log');
-            this.inputErrorEl = this.$el.find('.bulls-input-error');
-        },
+
 
         renderErrorMessage: function (message) {
            this.inputErrorEl.html(message);

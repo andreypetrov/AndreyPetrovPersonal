@@ -52,7 +52,7 @@ define([], function () {
          * @param guessNumber a string representing the entered number, e.g. "0156"
          */
         compareGuessWithOriginalNumber: function (guessNumber) {
-            if (!this.correctNumber) throw 'correctNumber cannot be 0 or uninitialized. Please first call lazyInit or setCorrectNumber';
+            if (!this.correctNumber) throw 'correctNumber cannot be 0 or uninitialized. Please first call newGame or setCorrectNumber';
 
 
             var error = this.validateGuessNumber(guessNumber);

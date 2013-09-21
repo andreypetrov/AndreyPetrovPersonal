@@ -60,39 +60,55 @@ define([
             $("#app-footer").html(this.footerView.render().el);
         },
 
-        preNavigate: function () {
+
+
+        preNavigate: function (navIndex) {
+            this.headerView.onNavigate(navIndex);
         },
 
         postNavigate: function () {
+
         },
 
 
 
         home: function () {
-            this.preNavigate();
+            this.preNavigate(-1);
             $('#app').html(this.homeView.render().el);
             this.postNavigate();
         },
 
-        games:function() {
-            $('#app').html(this.gamesView.render().el);
+        work:function() {
+            this.preNavigate(0);
+            $('#app').html(this.workView.render().el);
+            this.postNavigate();
         },
 
-        work:function() {
-            $('#app').html(this.workView.render().el);
+        games:function() {
+            this.preNavigate(1);
+            $('#app').html(this.gamesView.render().el);
+            this.postNavigate();
         },
+
 
         me:function() {
+            this.preNavigate(2);
             $('#app').html(this.meView.render().el);
+            this.postNavigate();
         },
 
         you:function() {
+            this.preNavigate(3);
             $('#app').html(this.youView.render().el);
+            this.postNavigate();
         },
 
+
         bulls:function(){
+            this.preNavigate(1);
             this.bullsView = new BullsView();
             $('#app').html(this.bullsView.render().el);
+            this.postNavigate();
         }
 
 
