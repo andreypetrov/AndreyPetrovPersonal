@@ -47,7 +47,7 @@ define([
             this.gamesView = new GamesView();
             this.meView = new MeView();
             this.youView = new YouView();
-            this.bullsView = new BullsView();
+
 
             this.renderHeader();
             this.renderFooter();
@@ -91,6 +91,7 @@ define([
         },
 
         bulls:function(){
+            this.bullsView = new BullsView();
             $('#app').html(this.bullsView.render().el);
         }
 
