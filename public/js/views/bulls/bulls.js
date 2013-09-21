@@ -10,7 +10,7 @@ define([
     'views/archview',
     'hbs!views/bulls/bullsTemplate',
     'hbs!views/bulls/messageTemplate',
-    'views/bulls/gamelogic/gameLogic'
+    'views/bulls/gameLogic/gameLogic'
 ], function ($, ArchView, template, messageTemplate, gameLogic) {
     return ArchView.extend({
         template: template,
