@@ -1,33 +1,100 @@
 .app-navbar {
-  background-color: #d4dfee;
+  margin-top: 15px;
+  background-color: #f4f4f4;
   border-color: #e7e7e7;
 }
 .app-navbar-buttons {
-  margin-left: 390px;
+  margin-left: 250px;
 }
-.app-navbar-button-wrapper {
-  float: left;
-  height: 50px;
-  width: 65px;
-  padding-right: 15px;
-}
-.app-navbar-button-wrapper .app-navbar-button {
-  float: left;
+.app-nav-home {
   background-image: url("img/cool.png");
-  width: 50px;
+  display: block;
+  width: 100px;
   height: 50px;
-  background-size: 80%;
+  background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
-.app-navbar-button-wrapper .app-navbar-button:hover,
-.app-navbar-button-wrapper .app-navbar-button:focus {
-  background-size: 100%;
-  cursor: pointer;
+.app-nav-work {
+  background-image: url("img/money.png");
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
-.app-navbar-button-big {
-  background-size: 100%;
-  cursor: pointer;
+.app-nav-games {
+  background-image: url("img/anger.png");
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.app-nav-me {
+  background-image: url("img/victory.png");
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.app-nav-you {
+  background-image: url("img/red_heart.png");
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.app-nav-icon {
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.app-nav-icon-selected {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 .app-nav {
   float: left;
@@ -35,7 +102,7 @@
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  height: 50px;
+  height: 100px;
   text-align: center;
 }
 .app-nav:before,
@@ -56,14 +123,16 @@
 }
 .app-nav > li {
   float: left;
-  height: 50px;
+  height: 100px;
   position: relative;
   display: block;
+  margin: 0px 15px;
 }
 .app-nav > li > a {
+  border-radius: 180px;
   position: relative;
   display: block;
-  padding: 15px 15px;
+  padding: 15px 0px;
   height: 100%;
 }
 .app-nav > li > a:hover,
@@ -73,8 +142,88 @@
   text-decoration: none;
   background-color: #563d7c;
 }
+.app-nav > li > a:hover .app-nav-home,
+.app-nav > li > a:focus .app-nav-home,
+.app-nav > li.active > a .app-nav-home {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.app-nav > li > a:hover .app-nav-work,
+.app-nav > li > a:focus .app-nav-work,
+.app-nav > li.active > a .app-nav-work {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.app-nav > li > a:hover .app-nav-games,
+.app-nav > li > a:focus .app-nav-games,
+.app-nav > li.active > a .app-nav-games {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.app-nav > li > a:hover .app-nav-you,
+.app-nav > li > a:focus .app-nav-you,
+.app-nav > li.active > a .app-nav-you {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.app-nav > li > a:hover .app-nav-me,
+.app-nav > li > a:focus .app-nav-me,
+.app-nav > li.active > a .app-nav-me {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
 .app-nav-active {
   color: white;
   text-decoration: none;
   background-color: #563d7c;
+}
+.app-nav-active .app-nav-home {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.app-nav-active .app-nav-work {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.app-nav-active .app-nav-games {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.app-nav-active .app-nav-you {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.app-nav-active .app-nav-me {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  filter: grayscale(0%);
 }

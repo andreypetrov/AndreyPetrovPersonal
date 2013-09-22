@@ -1,6 +1,8 @@
-define([], function () {
-    return {
-        //TODO make this a model class maybe because the state needs to be shared by different views - game, setting, etc.
+define([
+    'underscore'
+], function (_) {
+
+    var gameModel = {
         //TODO should i disallow repeating numbers? probably it should be a setting
         //Settings: no repetitions, leading zero, number of digits
 
@@ -11,6 +13,8 @@ define([], function () {
         attemptsCount: 0,
 
         defaultDigitsCount:4,
+
+        lassGuessNumber: 0,
 
         /**
          * Initialize the correct number
@@ -58,15 +62,14 @@ define([], function () {
             var error = this.validateGuessNumber(guessNumber);
             if (error.code !== 0) return {error: error};
 
-
-            console.log(guessNumber);
-
-
+            //update state+
+            this.lassGuessNumber = guessNumber;
             this.attemptsCount++;
+
             var bulls = this.getBullsCount(guessNumber, this.correctNumber); //could be optimized not to count cows if we have bulls === digitsCount
             var cowsAndBulls = this.getCowsAndBullsCount(guessNumber, this.correctNumber);
             var cows = cowsAndBulls - bulls;
-            return {bulls: bulls, cows: cows};
+            return {bulls: bulls, cows: cows, guessNumber: guessNumber};
         },
 
 
@@ -135,4 +138,12 @@ define([], function () {
             return {code: 0, message: "no error"};
         }
     };
+
+    var createModel = function(){
+        var model = {};
+        _.extend(model, gameModel);
+        return model;
+    }
+
+    return createModel;
 });

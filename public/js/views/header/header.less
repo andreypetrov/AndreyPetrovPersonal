@@ -1,54 +1,76 @@
-@darkLink:#563d7c;
-@lightBar:#d4dfee;
+@darkLink: #563d7c;
+//@lightBar: #d4dfee;
+@lightBar: #f4f4f4;
 @borderColor: #e7e7e7;
 
 .app-navbar {
+  margin-top: 15px;
   background-color: @lightBar;
   border-color: @borderColor;
 }
 
-
-
-.app-navbar-buttons
-{
-  margin-left: 390px;
+.app-navbar-buttons {
+  margin-left: 250px; //hardcoded to center the nav menu. TODO find a way to make it responsive instead
 }
 
-.app-navbar-button-wrapper {
-  float: left;
+.app-nav-home {
+  background-image: url("img/cool.png");
+  .app-nav-icon;
+}
+
+.app-nav-work {
+  background-image: url("img/money.png");
+  .app-nav-icon;
+}
+
+.app-nav-games {
+  background-image: url("img/anger.png");
+  .app-nav-icon;
+}
+
+.app-nav-me {
+  background-image: url("img/victory.png");
+  .app-nav-icon;
+}
+
+.app-nav-you {
+  background-image: url("img/red_heart.png");
+  .app-nav-icon;
+}
+
+.app-nav-icon {
+  display: block;
+  width: 100px;
   height: 50px;
-  width: 65px;
-  padding-right: 15px;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
 
-  .app-navbar-button {
-    float: left;
-    background-image: url("img/cool.png");
-    width: 50px;
-    height: 50px;
-    background-size: 80%;
-    background-repeat:no-repeat;
-    background-position: center;
-  }
-
-  .app-navbar-button:hover,
-  .app-navbar-button:focus {
-    .app-navbar-button-big;
-  }
+  //greyscaling does not work in firefox and ie
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
-.app-navbar-button-big {
-  background-size: 100%;
-  cursor:pointer;
-}
+//greyscaling does not work in firefox and ie
+.app-nav-icon-selected {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  filter: grayscale(0%);
 
+}
 
 .app-nav {
-  float:left;
+  float: left;
   position: relative;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  height: 50px;
+  height: 100px;
   text-align: center;
 }
 
@@ -73,29 +95,48 @@
 }
 
 .app-nav > li {
-  float:left;
-  height: 50px;
+  float: left;
+  height: 100px;
   position: relative;
   display: block;
+  margin: 0px 15px;
 }
 
 .app-nav > li > a {
+  border-radius:180px;
   position: relative;
   display: block;
-  padding: 15px 15px;
-  height:100%;
+  padding: 15px 0px;
+  height: 100%;
 }
 
 .app-nav > li > a:hover,
 .app-nav > li > a:focus,
 .app-nav > li.active > a {
-  .app-nav-active
+  .app-nav-active;
+
 }
 
-.app-nav-active
-{
-  color:white;
+.app-nav-active {
+  color: white;
   text-decoration: none;
   background-color: @darkLink;
+
+  //TODO isn't there an easier way for that????
+  .app-nav-home {
+    .app-nav-icon-selected;
+  }
+  .app-nav-work {
+    .app-nav-icon-selected;
+  }
+  .app-nav-games {
+    .app-nav-icon-selected;
+  }
+  .app-nav-you {
+    .app-nav-icon-selected;
+  }
+  .app-nav-me {
+    .app-nav-icon-selected;
+  }
 
 }

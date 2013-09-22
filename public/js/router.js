@@ -17,7 +17,12 @@ define([
     'views/games/games',
     'views/me/me',
     'views/you/you',
-    'views/bulls/bulls'
+
+
+    //bulls and cows
+    'views/bulls/bulls',
+    'views/bulls/model/gameCreator'
+
 ], function ($, _, Backbone ,
              HomeView,
              HeaderView,
@@ -26,7 +31,8 @@ define([
     GamesView,
     MeView,
     YouView,
-    BullsView) {
+    BullsView,
+    bullsGameCreator) {
 
     var AppRouter = Backbone.Router.extend({
         routes: {
@@ -39,6 +45,8 @@ define([
         },
 
         initialize: function () {
+            this.fetch();
+
             this.headerView = new HeaderView();
             this.footerView = new FooterView();
 
@@ -49,9 +57,19 @@ define([
             this.youView = new YouView();
 
 
+
             this.renderHeader();
             this.renderFooter();
         },
+
+        fetch: function() {
+            this.bullsModel = bullsGameCreator();
+        },
+
+
+
+
+
 
         renderHeader: function () {
             $("#app-header").html(this.headerView.render().el);
@@ -73,40 +91,40 @@ define([
 
 
         home: function () {
-            this.preNavigate(-1);
+            this.preNavigate(0);
             $('#app').html(this.homeView.render().el);
             this.postNavigate();
         },
 
         work:function() {
-            this.preNavigate(0);
+            this.preNavigate(1);
             $('#app').html(this.workView.render().el);
             this.postNavigate();
         },
 
         games:function() {
-            this.preNavigate(1);
+            this.preNavigate(2);
             $('#app').html(this.gamesView.render().el);
             this.postNavigate();
         },
 
 
         me:function() {
-            this.preNavigate(2);
+            this.preNavigate(3);
             $('#app').html(this.meView.render().el);
             this.postNavigate();
         },
 
         you:function() {
-            this.preNavigate(3);
+            this.preNavigate(4);
             $('#app').html(this.youView.render().el);
             this.postNavigate();
         },
 
 
         bulls:function(){
-            this.preNavigate(1);
-            this.bullsView = new BullsView();
+            this.preNavigate(2);
+            this.bullsView = new BullsView({model: this.bullsModel});
             $('#app').html(this.bullsView.render().el);
             this.postNavigate();
         }

@@ -15,6 +15,7 @@ define([
         template: {},
         collection: {},
         model: {},
+        eventAggregator: _.extend({}, Backbone.Events),  //to pass events between views, sharing this aggregator
 
         //Render template with collection or model, or empty
         render: function () {

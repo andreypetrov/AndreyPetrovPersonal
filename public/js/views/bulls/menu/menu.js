@@ -9,54 +9,43 @@ define([
     'jquery',
     'views/archview',
     'hbs!views/bulls/menu/menuTemplate',
-    'gamelogic/bullsGameLogic'
-], function ($, ArchView, template, gameLogic) {
+    'views/bulls/game/game'
+], function ($, ArchView, template, GameView) {
     return ArchView.extend({
+        gameView: {},
+        containerEl: {},
         template: template,
 
         events: {
-            "click .bulls-guess": "guess"
+            "click .bulls-menu-start": "onStart",
+            "click .bulls-menu-rules": "onRules",
+            "click .bulls-menu-options": "onOptions",
+            "click .bulls-menu-about": "onAbout"
         },
 
-        guessInputEl: 0,
-
-        initialize: function() {    //calls also the parent init
+        initialize: function() {
+            this.gameView = new GameView({model: this.model});
         },
 
-        newGame: function() {
-            console.log('old correct number was: ' + gameLogic.correctNumber);
-            //gameLogic.setRandomCorrectNumberWithDigitsCount(4);
+        initDomHandles: function() {
+            this.containerEl = this.$el.find(".bulls-container");
         },
 
-        guess: function(e) {
-            e.preventDefault();
-            if (!this.guessInputEl) this.guessInputEl = this.$el.find('#bulls-number');
-
-            if(!gameLogic.correctNumber) gameLogic.setRandomCorrectNumberWithDigitsCount(4);
-
-
-            var guessNumber = this.guessInputEl.val();
-            this.guessInputEl.val('');   //reset input field
-
-
-            var result = gameLogic.compareGuessWithOriginalNumber(guessNumber);
-
-            if(result.error) this.renderErrorMessage(result.error);
-            else if (result.bulls === 4) this.win();
-            else this.renderGuessResult();
-
+        onStart: function() {
+            this.eventAggregator.trigger("bulls:menu:start");
         },
 
-        renderErrorMessage: function (error) {
-           console.log(error.message);
+        onRules: function() {
+            this.eventAggregator.trigger("bulls:menu:rules");
         },
 
-        win: function() {
-            console.log('you win!!');
+        onOptions: function() {
+            this.eventAggregator.trigger("bulls:menu:options");
         },
 
-        renderGuessResult: function() {
-            console.log('ok guess')
+        onAbout: function() {
+            this.eventAggregator.trigger("bulls:menu:about");
         }
+
     });
 });
