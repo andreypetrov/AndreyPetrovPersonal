@@ -1,36 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b63213e4-0149-4208-8701-14f8180e4ab1" name="Default" comment="fix typo in dir name gameLogic">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/header/img/anger.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/header/img/money.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/header/img/red_heart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/header/img/victory.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/bulls/game/game.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/bulls/game/game.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/views/bulls/bulls.js" afterPath="$PROJECT_DIR$/public/js/views/bulls/game/game.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/views/bulls/bullsTemplate.hbs" afterPath="$PROJECT_DIR$/public/js/views/bulls/game/gameTemplate.hbs" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/views/bulls/gameLogic/gameLogic.js" afterPath="$PROJECT_DIR$/public/js/views/bulls/model/gameCreator.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/views/bulls/messageTemplate.hbs" afterPath="$PROJECT_DIR$/public/js/views/bulls/game/messageTemplate.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/archview.js" afterPath="$PROJECT_DIR$/public/js/views/archview.js" />
+    <list default="true" id="b63213e4-0149-4208-8701-14f8180e4ab1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/views/bulls/img/bg.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/bulls/bulls.css" afterPath="$PROJECT_DIR$/public/js/views/bulls/bulls.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/bulls/bulls.js" afterPath="$PROJECT_DIR$/public/js/views/bulls/bulls.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/bulls/bulls.less" afterPath="$PROJECT_DIR$/public/js/views/bulls/bulls.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/bulls/bullsTemplate.hbs" afterPath="$PROJECT_DIR$/public/js/views/bulls/bullsTemplate.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/header/header.css" afterPath="$PROJECT_DIR$/public/js/views/header/header.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/header/header.less" afterPath="$PROJECT_DIR$/public/js/views/header/header.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/header/headerTemplate.hbs" afterPath="$PROJECT_DIR$/public/js/views/header/headerTemplate.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/main-built.js" afterPath="$PROJECT_DIR$/public/js/main-built.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/bulls/menu/menu.js" afterPath="$PROJECT_DIR$/public/js/views/bulls/menu/menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/views/bulls/menu/menuTemplate.hbs" afterPath="$PROJECT_DIR$/public/js/views/bulls/menu/menuTemplate.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/router.js" afterPath="$PROJECT_DIR$/public/js/router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AndreyPetrovPersonal.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379791870185" ignored="false" />
-    <file path="/Dummy.txt" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379816280702" ignored="false" />
+    <file path="/Dummy.txt" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379816330656" ignored="false" />
     <file path="/server.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379106397877" ignored="false" />
     <file path="/Procfile" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1378939302457" ignored="false" />
     <file path="/package.json" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379106473600" ignored="false" />
@@ -49,7 +30,7 @@
     <file path="/sticky-footer.css" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379361320319" ignored="false" />
     <file path="/style.less" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379363622534" ignored="false" />
     <file path="/gamesTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379364205100" ignored="false" />
-    <file path="/bullsTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379814242020" ignored="false" />
+    <file path="/bullsTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379816553764" ignored="false" />
     <file path="/router.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379814482339" ignored="false" />
     <file path="/games.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379365730879" ignored="false" />
     <file path="/test.html" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379525183511" ignored="false" />
@@ -58,7 +39,7 @@
     <file path="/bullsGameLogic.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379771105693" ignored="false" />
     <file path="/menuTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379816266761" ignored="false" />
     <file path="/gameLogic.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379797507257" ignored="false" />
-    <file path="/bulls.less" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379773495176" ignored="false" />
+    <file path="/bulls.less" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379816599806" ignored="false" />
     <file path="/messageTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379813482539" ignored="false" />
     <file path="/header.less" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379797907020" ignored="false" />
     <file path="/header.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379788367818" ignored="false" />
@@ -132,7 +113,7 @@
       <file leaf-file-name="bullsTemplate.hbs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/views/bulls/bullsTemplate.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="129" selection-end="129" vertical-scroll-proportion="-3.75">
+            <state line="2" column="27" selection-start="101" selection-end="101" vertical-scroll-proportion="-1.25">
               <folding />
             </state>
           </provider>
@@ -147,10 +128,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menuTemplate.hbs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="menuTemplate.hbs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/views/bulls/menu/menuTemplate.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="51" selection-start="160" selection-end="160" vertical-scroll-proportion="0.077619664">
+            <state line="4" column="62" selection-start="166" selection-end="166" vertical-scroll-proportion="-2.5">
               <folding />
             </state>
           </provider>
@@ -174,10 +155,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bulls.less" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="bulls.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/views/bulls/bulls.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
+            <state line="5" column="2" selection-start="86" selection-end="86" vertical-scroll-proportion="0.09410289">
               <folding />
             </state>
           </provider>
@@ -247,12 +228,12 @@
         <option value="$PROJECT_DIR$/public/js/views/bulls/game/messageTemplate.hbs" />
         <option value="$PROJECT_DIR$/public/js/router.js" />
         <option value="$PROJECT_DIR$/public/js/views/bulls/game/game.js" />
-        <option value="$PROJECT_DIR$/public/js/views/bulls/bullsTemplate.hbs" />
-        <option value="$PROJECT_DIR$/public/js/views/bulls/bulls.less" />
         <option value="$PROJECT_DIR$/public/js/views/archview.js" />
         <option value="$PROJECT_DIR$/public/js/views/bulls/bulls.js" />
         <option value="$PROJECT_DIR$/public/js/views/bulls/menu/menu.js" />
         <option value="$PROJECT_DIR$/public/js/views/bulls/menu/menuTemplate.hbs" />
+        <option value="$PROJECT_DIR$/public/js/views/bulls/bullsTemplate.hbs" />
+        <option value="$PROJECT_DIR$/public/js/views/bulls/bulls.less" />
       </list>
     </option>
   </component>
@@ -403,7 +384,115 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bulls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bulls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bulls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -634,7 +723,11 @@
       <created>1379790659087</created>
       <updated>1379790659087</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Redesigned to addd an intermediate view holder of all bulls views, that will be responsible for loading and transmitting events between the views">
+      <created>1379816337231</created>
+      <updated>1379816337231</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -708,7 +801,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix typo in dir name gameLogic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redesigned to addd an intermediate view holder of all bulls views, that will be responsible for loading and transmitting events between the views" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -736,6 +829,7 @@
     <MESSAGE value="changed to 4 digit numbers" />
     <MESSAGE value="fix bugs in dir name gameLogic" />
     <MESSAGE value="fix typo in dir name gameLogic" />
+    <MESSAGE value="Redesigned to addd an intermediate view holder of all bulls views, that will be responsible for loading and transmitting events between the views" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -787,23 +881,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/bulls/game/messageTemplate.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="33" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/views/bulls/game/game.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="65" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/bulls/game/gameTemplate.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="42" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -815,20 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/bulls/bullsTemplate.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="129" selection-end="129" vertical-scroll-proportion="-3.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/bulls/bulls.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/views/archview.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="112" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
@@ -836,9 +902,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/bulls/bulls.js">
+    <entry file="file://$PROJECT_DIR$/public/js/views/bulls/menu/menuTemplate.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="8" selection-start="1462" selection-end="1713" vertical-scroll-proportion="-21.0">
+        <state line="4" column="62" selection-start="166" selection-end="166" vertical-scroll-proportion="-2.5">
           <folding />
         </state>
       </provider>
@@ -850,9 +916,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/bulls/menu/menuTemplate.hbs">
+    <entry file="file://$PROJECT_DIR$/public/js/views/bulls/game/messageTemplate.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="51" selection-start="160" selection-end="160" vertical-scroll-proportion="0.077619664">
+        <state line="0" column="33" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/views/bulls/game/gameTemplate.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="42" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/views/bulls/bulls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="8" selection-start="1462" selection-end="1713" vertical-scroll-proportion="-21.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/views/bulls/bullsTemplate.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="27" selection-start="101" selection-end="101" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/views/bulls/bulls.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="2" selection-start="86" selection-end="86" vertical-scroll-proportion="0.09410289">
           <folding />
         </state>
       </provider>
