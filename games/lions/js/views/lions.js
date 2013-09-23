@@ -5,6 +5,8 @@
  * Time: 5:33 PM
  * To change this template use File | Settings | File Templates.
  */
+
+//TODO refactor this view to be the router but keep the event aggregator!
 define([
     'jquery',
     'views/archview',
