@@ -18,7 +18,8 @@ define([
         },
 
         onStart: function() {
-            window.app.router.navigate("/bulls", true);
+            //window.app.router.navigate("/bulls", true);
+            window.location = "/lions/index.html";
         }
     });
 });

@@ -8,8 +8,8 @@
 define([
     'jquery',
     'views/archview',
-    'hbs!views/bulls/menu/menuTemplate',
-    'views/bulls/game/game'
+    'hbs!views/menu/menuTemplate',
+    'views/game/game'
 ], function ($, ArchView, template, GameView) {
     return ArchView.extend({
         gameView: {},

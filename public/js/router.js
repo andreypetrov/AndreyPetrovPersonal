@@ -19,10 +19,6 @@ define([
     'views/you/you',
 
 
-    //bulls and cows
-    'views/bulls/bulls',
-    'views/bulls/model/gameCreator'
-
 ], function ($, _, Backbone ,
              HomeView,
              HeaderView,
@@ -30,9 +26,7 @@ define([
     WorkView,
     GamesView,
     MeView,
-    YouView,
-    BullsView,
-    bullsGameCreator) {
+    YouView) {
 
     var AppRouter = Backbone.Router.extend({
         routes: {
@@ -40,13 +34,10 @@ define([
             "work": "work",
             "games": "games",
             "me": "me",
-            "you": "you",
-            "bulls": "bulls"
+            "you": "you"
         },
 
         initialize: function () {
-            this.fetch();
-
             this.headerView = new HeaderView();
             this.footerView = new FooterView();
 
@@ -61,15 +52,6 @@ define([
             this.renderHeader();
             this.renderFooter();
         },
-
-        fetch: function() {
-            this.bullsModel = bullsGameCreator();
-        },
-
-
-
-
-
 
         renderHeader: function () {
             $("#app-header").html(this.headerView.render().el);
@@ -87,7 +69,6 @@ define([
         postNavigate: function () {
 
         },
-
 
 
         home: function () {
@@ -119,17 +100,7 @@ define([
             this.preNavigate(4);
             $('#app').html(this.youView.render().el);
             this.postNavigate();
-        },
-
-
-        bulls:function(){
-            this.preNavigate(2);
-            this.bullsView = new BullsView({model: this.bullsModel});
-            $('#app').html(this.bullsView.render().el);
-            this.postNavigate();
         }
-
-
     });
 
     //initialize the router and give a reference to it
