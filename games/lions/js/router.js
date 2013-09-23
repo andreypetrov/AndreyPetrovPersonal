@@ -12,11 +12,11 @@ define([
     'underscore',
     'backbone',
     'views/lions',
-    'views/model/gameCreator'
+    'model/game'
 
 ], function ($, _, Backbone ,
     BullsView,
-    bullsGameCreator) {
+    game) {
 
     var AppRouter = Backbone.Router.extend({
         routes: {
@@ -24,11 +24,11 @@ define([
         },
 
         initialize: function () {
-            this.bullsModel = bullsGameCreator();
+            this.model = game();
         },
 
         home:function(){
-            this.bullsView = new BullsView({model: this.bullsModel});
+            this.bullsView = new BullsView({model: this.model});
             $('#app').html(this.bullsView.render().el);
         }
     });

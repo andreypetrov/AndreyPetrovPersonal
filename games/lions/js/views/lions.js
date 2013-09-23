@@ -9,10 +9,9 @@ define([
     'jquery',
     'views/archview',
     'hbs!views/lionsTemplate',
-    'views/model/gameCreator',
     'views/menu/menu',
     'views/game/game'
-], function ($, ArchView, template, gameCreator, MenuView, GameView) {
+], function ($, ArchView, template, MenuView, GameView) {
     return ArchView.extend({
 
         containerEl: {},
