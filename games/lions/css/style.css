@@ -2,13 +2,11 @@ a {
   color: #563d7c;
   text-decoration: none;
 }
-/*
-.bulls-bg {
-  background-image: url('img/bg.png');
-  width: 800px;
-  height: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+@font-face {
+  font-family: primaryFont;
+  src: url('../fonts/CooperBlackStd.otf');
 }
-  */
+@font-face {
+  font-family: secondaryFont;
+  src: url(../fonts/CharlemagneStd-Bold.otf);
+}
