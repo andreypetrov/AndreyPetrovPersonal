@@ -7,16 +7,18 @@
 .menu-title1
 {
   font-family:@primaryFontFamily;
-  font-size:190px;
+  font-size:170px;
   color:white;
   text-transform: uppercase;
 }
 .menu-ampersand
 {
+  position:absolute;
   margin-top: -95px;
+  left:50px;
   float:left;
   font-family:@secondaryFontFamily;
-  margin-left:50px;
+  margin-left:35px;
   font-size:280px;
   color:white;
   text-transform: uppercase;
@@ -26,11 +28,10 @@
 
 .menu-title2
 {
-  position:absolute;
-  left:200px;
-  top:280px;
+  margin-top:-50px;
+  margin-left:120px;
   font-family:@secondaryFontFamily;
-  font-size:120px;
+  font-size:80px;
   color:white;
   text-transform: uppercase;
   letter-spacing: -5px;
@@ -38,5 +39,45 @@
 
 .menu-buttons
 {
+  margin-top: 40px;
+  margin-left:375px;
+  list-style: none;
   clear:both;
+
+}
+
+.menu-buttons li
+{
+  margin:15px;
+
+}
+
+
+.menu-button
+{
+  background: #88ff7f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#94ffa8), to(#88ff7f));
+  background: -webkit-linear-gradient(top, #94ffa8, #88ff7f);
+  background: -moz-linear-gradient(top, #94ffa8, #88ff7f);
+  background: -ms-linear-gradient(top, #94ffa8, #88ff7f);
+  background: -o-linear-gradient(top, #94ffa8, #88ff7f);
+  padding: 5px 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 0px 20px;
+
+  color: #4d4d4d;
+
+  font-size: 40px;
+  font-family:@primaryFontFamily;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor:pointer;
+
+  width:220px;
+  height:60px;
 }
