@@ -18,33 +18,21 @@ define([
 
         events: {
             "click .bulls-menu-start": "onStart",
-            "click .bulls-menu-rules": "onRules",
-            "click .bulls-menu-options": "onOptions",
+            "click .bulls-menu-settings": "onSettings",
             "click .bulls-menu-about": "onAbout"
         },
 
-        initialize: function() {
-            this.gameView = new GameView({model: this.model});
-        },
-
-        initDomHandles: function() {
-            this.containerEl = this.$el.find(".bulls-container");
-        },
-
         onStart: function() {
-            this.eventAggregator.trigger("bulls:menu:start");
+            app.router.navigate("game", {trigger: true});
+            //this.eventAggregator.trigger("bulls:menu:start");
         },
 
-        onRules: function() {
-            this.eventAggregator.trigger("bulls:menu:rules");
-        },
-
-        onOptions: function() {
-            this.eventAggregator.trigger("bulls:menu:options");
+        onSettings: function() {
+            app.router.navigate("settings", {trigger: true});
         },
 
         onAbout: function() {
-            this.eventAggregator.trigger("bulls:menu:about");
+            app.router.navigate("about", {trigger: true});
         }
 
     });

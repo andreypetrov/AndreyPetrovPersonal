@@ -1,3 +1,8 @@
+.menu-container {
+  position: relative;
+  padding-top: 82px;
+  text-align: center;
+}
 .menu-title1 {
   font-family: primaryFont, "Helvetica Neue", Arial, sans-serif;
   font-size: 170px;

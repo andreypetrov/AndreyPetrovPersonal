@@ -1,0 +1,6 @@
+//TODO later implement server side models for save/load of games
+
+{
+    "id": 1,
+    "correctNumber": "0"
+}

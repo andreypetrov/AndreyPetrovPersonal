@@ -15,7 +15,7 @@ define([
         template: template,
 
         events: {
-            "click .bulls-guess": "guess"
+            "click .guess-button": "onGuess"
         },
 
         //Dom elements
@@ -36,19 +36,17 @@ define([
 
         //override
         initDomHandles: function() {
-            this.guessInputEl = this.$el.find('.bulls-number');
-            this.logEl = this.$el.find('.bulls-log');
-            this.inputErrorEl = this.$el.find('.bulls-input-error');
+            this.guessInputEl = this.$el.find('.guess-input');
+            this.logEl = this.$el.find('.guess-log');
+            this.inputErrorEl = this.$el.find('.guess-input-error');
         },
 
 
-        guess: function(e) {
+        onGuess: function(e) {
             e.preventDefault();
 
             var guessNumber = this.guessInputEl.val();
             this.guessInputEl.val('');   //reset input field
-
-            console.log(this.guessInputEl);
 
             var result = this.model.compareGuessWithOriginalNumber(guessNumber);
             console.log(result);
@@ -58,6 +56,8 @@ define([
                 if (result.bulls === this.digitsCount) this.win(result);
                 else this.renderGuessResult(result);
             }
+
+            this.guessInputEl.focus();
         },
 
 
@@ -78,8 +78,8 @@ define([
         renderWin: function() {
             var prefix = "";
 
-            if(this.model.attemptsCount === 1) var message = "Wow! You guessed it in just one attempt. Did you dream last night about " +this.model.correctNumber + " or what?! A new number will be loaded. Wanna try again?";
-            else var message = "Nicey-nice! The number really is " + this.model.correctNumber +" and you guessed it in " + this.model.attemptsCount + " attempts! A new number will be loaded. Wanna try again?";
+            if(this.model.get("attemptsCount") === 1) var message = "Wow! You guessed it in just one attempt. Did you dream last night about " +this.model.get("correctNumber") + " or what?! A new number will be loaded. Wanna try again?";
+            else var message = "Nicey-nice! The number really is " + this.model.get("correctNumber") +" and you guessed it in " + this.model.get("attemptsCount") + " attempts! A new number will be loaded. Wanna try again?";
 
             this.renderMessage("success", prefix, message);
         },
@@ -91,7 +91,7 @@ define([
          * @param result of the game guess in  {bulls:number, cows:number} format
          */
         renderGuessResult: function(result) {
-            var prefix = this.model.attemptsCount + ": ";
+            var prefix = this.model.get("attemptsCount") + ": ";
             var message = "For " + result.guessNumber + " you got " + result.bulls + " bulls and " + result.cows + " cows";
             this.renderMessage("info", prefix, message);
         },

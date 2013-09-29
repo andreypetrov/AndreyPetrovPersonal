@@ -1,20 +1,15 @@
 define([
-    'underscore'
-], function (_) {
-
-    var gameModel = {
-        //TODO should i disallow repeating numbers? probably it should be a setting
-        //Settings: no repetitions, leading zero, number of digits
-
+    'underscore',
+    'backbone'
+], function (_, Backbone) {
+    var Game = Backbone.Model.extend ({
 
         //game state
-        correctNumber: 0,
-        correctDigitsCount: 0,
-        attemptsCount: 0,
-
-        defaultDigitsCount:4,
-
-        lassGuessNumber: 0,
+        //correctNumber: 0,
+        //correctDigitsCount: 0,
+        //attemptsCount: 0,
+        //defaultDigitsCount:4,
+        //lassGuessNumber: 0,
 
         /**
          * Initialize the correct number
@@ -24,7 +19,7 @@ define([
         newGame: function (digitsCount) {
             {
                 this.setRandomCorrectNumberWithDigitsCount(digitsCount);
-                this.attemptsCount = 0;
+                this.set("attemptsCount", 0);
             }
         },
 
@@ -36,18 +31,18 @@ define([
         setRandomCorrectNumberWithDigitsCount: function (digitsCount) {
             if(!digitsCount || isNaN(digitsCount)) throw "Please pass in valid digits count parameter";
 
-            this.correctDigitsCount = digitsCount;
+            this.set("correctDigitsCount",digitsCount);
 
             var smallMultiplier = Math.pow(10, digitsCount - 1);
             var bigMultiplier = 9 * smallMultiplier;
-            this.correctNumber = Math.floor(Math.random() * bigMultiplier) + smallMultiplier; // http://stackoverflow.com/questions/2175512/javascript-expression-to-generate-a-5-digit-number-in-every-case
-            console.log(this.correctNumber);
+            this.set("correctNumber",Math.floor(Math.random() * bigMultiplier) + smallMultiplier); // http://stackoverflow.com/questions/2175512/javascript-expression-to-generate-a-5-digit-number-in-every-case
+            console.log(this.get("correctNumber"));
         },
 
 
         setCorrectNumber: function (correctNumber) {
-            this.correctNumber = correctNumber;
-            this.correctDigitsCount = this.correctNumber.toString().length;
+            this.set("correctNumber", correctNumber);
+            this.set("correctDigitsCount", this.correctNumber.toString().length);
         },
 
 
@@ -56,18 +51,18 @@ define([
          * @param guessNumber a string representing the entered number, e.g. "0156"
          */
         compareGuessWithOriginalNumber: function (guessNumber) {
-            if (!this.correctNumber) throw 'correctNumber cannot be 0 or uninitialized. Please first call newGame or setCorrectNumber';
-
+            if (!this.get("correctNumber")) throw 'correctNumber cannot be 0 or uninitialized. Please first call newGame or setCorrectNumber';
 
             var error = this.validateGuessNumber(guessNumber);
             if (error.code !== 0) return {error: error};
 
             //update state+
-            this.lassGuessNumber = guessNumber;
-            this.attemptsCount++;
+            this.set("lassGuessNumber", guessNumber);
 
-            var bulls = this.getBullsCount(guessNumber, this.correctNumber); //could be optimized not to count cows if we have bulls === digitsCount
-            var cowsAndBulls = this.getCowsAndBullsCount(guessNumber, this.correctNumber);
+            this.set("attemptsCount", this.get("attemptsCount") +  1);   //increment ++
+
+            var bulls = this.getBullsCount(guessNumber, this.get("correctNumber")); //could be optimized not to count cows if we have bulls === digitsCount
+            var cowsAndBulls = this.getCowsAndBullsCount(guessNumber, this.get("correctNumber"));
             var cows = cowsAndBulls - bulls;
             return {bulls: bulls, cows: cows, guessNumber: guessNumber};
         },
@@ -78,7 +73,7 @@ define([
             //convert to strings if they are not already strings, for easier digit comparison
             var guess = guessNumber.toString();
             var correct = correctNumber.toString();
-            if (guess.length !== correct.length) throw 'Compared numbers should have the same digits count';
+            if (guess.length !== correct.length) throw 'Compared numbers should have the same digits count'; //this should never happen as we validate the input guessNumber before this method being called
 
             for (var i = 0; i < guess.length; i++) if (guess.charAt(i) === correct.charAt(i)) bulls++;
 
@@ -120,30 +115,24 @@ define([
          * @returns {{error: {code: number, message: string}}}
          */
         validateGuessNumber: function (guessNumber) {
-
+            console.log(guessNumber);
             if (isNaN(guessNumber)) return {code: 1, message: "Your number should include digits only"};
 
 
             if (guessNumber.charAt(0) === '0') return {code: 2, message: "Your number cannot start with zero"};
 
             var digitsCount = guessNumber.length;
-
+            console.log(digitsCount);
             //convert to integer and then back to string and compare the number of digits. This assures there is no input such as "1.23"
             var actualGuessNumber = parseInt(guessNumber, 10);
             var actualDigitsCount = actualGuessNumber.toString().length;
             if (digitsCount !== actualDigitsCount) return {code: 3, message: "Your number must be an integer with digits only"};
-            if (digitsCount < this.correctDigitsCount) return {code: 4, message: "Not enough digits in your number. It should have " + this.correctDigitsCount + " digits"};
-            if (digitsCount > this.correctDigitsCount) return {code: 5, message: "Too many digits in your number. It should have " + this.correctDigitsCount + " digits only"};
+            if (digitsCount < this.get("correctDigitsCount")) return {code: 4, message: "Not enough digits in your number. It should have " + this.get("correctDigitsCount") + " digits"};
+            if (digitsCount > this.get("correctDigitsCount")) return {code: 5, message: "Too many digits in your number. It should have " + this.get("correctDigitsCount") + " digits only"};
 
             return {code: 0, message: "no error"};
         }
-    };
+    });
 
-    var createModel = function(){
-        var model = {};
-        _.extend(model, gameModel);
-        return model;
-    }
-
-    return createModel;
+    return Game;
 });
