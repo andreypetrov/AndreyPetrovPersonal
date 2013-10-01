@@ -4,12 +4,13 @@ define([
 ], function (_, Backbone) {
     var Game = Backbone.Model.extend ({
 
-        //game state
+        //game state  in this.attributes
         //correctNumber: 0,
         //correctDigitsCount: 0,
         //attemptsCount: 0,
         //defaultDigitsCount:4,
         //lassGuessNumber: 0,
+
 
         /**
          * Initialize the correct number
@@ -17,6 +18,7 @@ define([
          * @param digitsCount
          */
         newGame: function (digitsCount) {
+            console.log(this);
             {
                 this.setRandomCorrectNumberWithDigitsCount(digitsCount);
                 this.set("attemptsCount", 0);

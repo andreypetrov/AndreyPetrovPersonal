@@ -1,0 +1,227 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>http://stackoverflow.com/q/9488392/315935</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/themes/redmond/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="http://www.ok-soft-gmbh.com/jqGrid/jquery.jqGrid-4.3.1/css/ui.jqgrid.css">
+    <style type="text/css">
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.ok-soft-gmbh.com/jqGrid/jquery.jqGrid-4.3.1/js/i18n/grid.locale-en.js"></script>
+    <script type="text/javascript">
+        $.jgrid.no_legacy_api = true;
+        $.jgrid.useJSON = true;
+    </script>
+    <script type="text/javascript" src="http://www.ok-soft-gmbh.com/jqGrid/jquery.jqGrid-4.3.1/js/jquery.jqGrid.src.js"></script>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        jQuery(function () {
+            jQuery("#list").jqGrid({
+                url: "/Brent.json",
+                datatype: "json",
+                height: "auto", //700,
+                width: 1100,
+                colNames: ['ReqID', 'Family', 'ControlID', 'Name', 'Description', 'Category', 'Priority', 'Notes', 'Parent'],
+                colModel: [
+                    { name: 'reqID', index: 'reqID', width: 40 },
+                    { name: 'family', index: 'family', width: 100 },
+                    { name: 'controlID', index: 'controlID', width: 100 },
+                    { name: 'reqName', index: 'reqName', width: 175 },
+                    { name: 'requirement', index: 'requirement', width: 450, cellattr: function (rowId, tv, rawObject, cm, rdata) {
+                        return 'style="white-space: normal;"'
+                    } },
+                    { name: 'category', index: 'category', width: 100 },
+                    { name: 'priority', index: 'priority', width: 100 },
+                    { name: 'requirementNotes', index: 'requirementNotes', width: 100 },
+                    { name: 'parent', index: 'parent', width: 100 }
+                ],
+                rowNum: 10,
+                rowList: [10, 20, 30],
+                pager: '#pager',
+                viewrecords: true,
+                jsonReader: { repeatitems: false }
+            });
+            jQuery("#list").jqGrid('navGrid', '#pager', { edit: false, add: false, del: false });
+        });
+        //]]>
+    </script>
+</head>
+<body>
+<div class="ui-jqgrid ui-widget ui-widget-content ui-corner-all" id="gbox_list" dir="ltr" style="width: 1100px;">
+    <div class="ui-widget-overlay jqgrid-overlay" id="lui_list"></div>
+    <div class="loading ui-state-default ui-state-active" id="load_list" style="display: none;">Loading...</div>
+    <div class="ui-jqgrid-view" id="gview_list" style="width: 1100px;">
+        <div class="ui-jqgrid-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" style="display: none;"><a role="link" href="javascript:void(0)" class="ui-jqgrid-titlebar-close HeaderButton"
+                                                                                                                    style="right: 0px;"><span class="ui-icon ui-icon-circle-triangle-n"></span></a><span
+                class="ui-jqgrid-title"></span></div>
+        <div class="ui-state-default ui-jqgrid-hdiv" style="width: 1100px;">
+            <div class="ui-jqgrid-hbox">
+                <table class="ui-jqgrid-htable" style="width:1100px" role="grid" aria-labelledby="gbox_list" cellspacing="0" cellpadding="0" border="0">
+                    <thead>
+                    <tr class="ui-jqgrid-labels" role="rowheader">
+                        <th id="list_reqID" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="width: 35px;"><span class="ui-jqgrid-resize ui-jqgrid-resize-ltr"
+                                                                                                                                           style="cursor: col-resize;">&nbsp;</span>
+
+                            <div id="jqgh_list_reqID" class="ui-jqgrid-sortable">ReqID<span class="s-ico" style=""><span sort="asc"
+                                                                                                                         class="ui-grid-ico-sort ui-icon-asc ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span><span
+                                    sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span></span></div>
+                        </th>
+                        <th id="list_family" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="width: 87px;"><span class="ui-jqgrid-resize ui-jqgrid-resize-ltr"
+                                                                                                                                            style="cursor: col-resize;">&nbsp;</span>
+
+                            <div id="jqgh_list_family" class="ui-jqgrid-sortable">Family<span class="s-ico" style="display:none"><span sort="asc"
+                                                                                                                                       class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span><span
+                                    sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span></span></div>
+                        </th>
+                        <th id="list_controlID" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="width: 87px;"><span class="ui-jqgrid-resize ui-jqgrid-resize-ltr"
+                                                                                                                                               style="cursor: col-resize;">&nbsp;</span>
+
+                            <div id="jqgh_list_controlID" class="ui-jqgrid-sortable">ControlID<span class="s-ico" style="display:none"><span sort="asc"
+                                                                                                                                             class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span><span
+                                    sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span></span></div>
+                        </th>
+                        <th id="list_reqName" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="width: 152px;"><span class="ui-jqgrid-resize ui-jqgrid-resize-ltr"
+                                                                                                                                              style="cursor: col-resize;">&nbsp;</span>
+
+                            <div id="jqgh_list_reqName" class="ui-jqgrid-sortable">Name<span class="s-ico" style="display:none"><span sort="asc"
+                                                                                                                                      class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span><span
+                                    sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span></span></div>
+                        </th>
+                        <th id="list_requirement" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="width: 391px;"><span class="ui-jqgrid-resize ui-jqgrid-resize-ltr"
+                                                                                                                                                  style="cursor: col-resize;">&nbsp;</span>
+
+                            <div id="jqgh_list_requirement" class="ui-jqgrid-sortable">Description<span class="s-ico" style="display:none"><span sort="asc"
+                                                                                                                                                 class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span><span
+                                    sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span></span></div>
+                        </th>
+                        <th id="list_category" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="width: 87px;"><span class="ui-jqgrid-resize ui-jqgrid-resize-ltr"
+                                                                                                                                              style="cursor: col-resize;">&nbsp;</span>
+
+                            <div id="jqgh_list_category" class="ui-jqgrid-sortable">Category<span class="s-ico" style="display:none"><span sort="asc"
+                                                                                                                                           class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span><span
+                                    sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span></span></div>
+                        </th>
+                        <th id="list_priority" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="width: 87px;"><span class="ui-jqgrid-resize ui-jqgrid-resize-ltr"
+                                                                                                                                              style="cursor: col-resize;">&nbsp;</span>
+
+                            <div id="jqgh_list_priority" class="ui-jqgrid-sortable">Priority<span class="s-ico" style="display:none"><span sort="asc"
+                                                                                                                                           class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span><span
+                                    sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span></span></div>
+                        </th>
+                        <th id="list_requirementNotes" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="width: 87px;"><span class="ui-jqgrid-resize ui-jqgrid-resize-ltr"
+                                                                                                                                                      style="cursor: col-resize;">&nbsp;</span>
+
+                            <div id="jqgh_list_requirementNotes" class="ui-jqgrid-sortable">Notes<span class="s-ico" style="display:none"><span sort="asc"
+                                                                                                                                                class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span><span
+                                    sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span></span></div>
+                        </th>
+                        <th id="list_parent" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="width: 87px;"><span class="ui-jqgrid-resize ui-jqgrid-resize-ltr"
+                                                                                                                                            style="cursor: col-resize;">&nbsp;</span>
+
+                            <div id="jqgh_list_parent" class="ui-jqgrid-sortable">Parent<span class="s-ico" style="display:none"><span sort="asc"
+                                                                                                                                       class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span><span
+                                    sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span></span></div>
+                        </th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <div class="ui-jqgrid-bdiv" style="height: auto; width: 1100px;">
+            <div style="position:relative;">
+                <div></div>
+                <table id="list" tabindex="1" cellspacing="0" cellpadding="0" border="0" role="grid" aria-multiselectable="false" aria-labelledby="gbox_list" class="ui-jqgrid-btable"
+                       style="width: 1100px;">
+                    <tbody>
+                    <tr class="jqgfirstrow" role="row" style="height:auto">
+                        <td role="gridcell" style="height:0px;width:35px;"></td>
+                        <td role="gridcell" style="height:0px;width:87px;"></td>
+                        <td role="gridcell" style="height:0px;width:87px;"></td>
+                        <td role="gridcell" style="height:0px;width:152px;"></td>
+                        <td role="gridcell" style="height:0px;width:391px;"></td>
+                        <td role="gridcell" style="height:0px;width:87px;"></td>
+                        <td role="gridcell" style="height:0px;width:87px;"></td>
+                        <td role="gridcell" style="height:0px;width:87px;"></td>
+                        <td role="gridcell" style="height:0px;width:87px;"></td>
+                    </tr>
+                    <tr id="1" tabindex="-1" role="row" class="ui-widget-content jqgrow ui-row-ltr">
+                        <td role="gridcell" style="" title="1" aria-describedby="list_reqID">1</td>
+                        <td role="gridcell" style="" title="DummyData" aria-describedby="list_family">DummyData</td>
+                        <td role="gridcell" style="" title="DummyData" aria-describedby="list_controlID">DummyData</td>
+                        <td role="gridcell" style="" title="DummyData" aria-describedby="list_reqName">DummyData</td>
+                        <td role="gridcell" style="white-space: normal;" title="DummyData" aria-describedby="list_requirement">DummyData</td>
+                        <td role="gridcell" style="" title="DummyData" aria-describedby="list_category">DummyData</td>
+                        <td role="gridcell" style="" title="" aria-describedby="list_priority">&nbsp;</td>
+                        <td role="gridcell" style="" title="DummyData" aria-describedby="list_requirementNotes">DummyData</td>
+                        <td role="gridcell" style="" title="" aria-describedby="list_parent">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="ui-jqgrid-resize-mark" id="rs_mlist">&nbsp;</div>
+    <div id="pager" class="ui-state-default ui-jqgrid-pager ui-corner-bottom" dir="ltr" style="width: 1100px;">
+        <div id="pg_pager" class="ui-pager-control" role="group">
+            <table cellspacing="0" cellpadding="0" border="0" class="ui-pg-table" style="width:100%;table-layout:fixed;height:100%;" role="row">
+                <tbody>
+                <tr>
+                    <td id="pager_left" align="left">
+                        <table cellspacing="0" cellpadding="0" border="0" class="ui-pg-table navtable" style="float:left;table-layout:auto;">
+                            <tbody>
+                            <tr>
+                                <td class="ui-pg-button ui-corner-all" title="Find records" id="search_list">
+                                    <div class="ui-pg-div"><span class="ui-icon ui-icon-search"></span></div>
+                                </td>
+                                <td class="ui-pg-button ui-corner-all" title="Reload Grid" id="refresh_list">
+                                    <div class="ui-pg-div"><span class="ui-icon ui-icon-refresh"></span></div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td id="pager_center" align="center" style="white-space: pre; width: 248px;">
+                        <table cellspacing="0" cellpadding="0" border="0" style="table-layout:auto;" class="ui-pg-table">
+                            <tbody>
+                            <tr>
+                                <td id="first_pager" class="ui-pg-button ui-corner-all ui-state-disabled"><span class="ui-icon ui-icon-seek-first"></span></td>
+                                <td id="prev_pager" class="ui-pg-button ui-corner-all ui-state-disabled"><span class="ui-icon ui-icon-seek-prev"></span></td>
+                                <td class="ui-pg-button ui-state-disabled" style="width:4px;"><span class="ui-separator"></span></td>
+                                <td dir="ltr">Page <input class="ui-pg-input" type="text" size="2" maxlength="7" value="0" role="textbox"> of <span id="sp_1_pager">1</span></td>
+                                <td class="ui-pg-button ui-state-disabled" style="width: 4px; cursor: default;"><span class="ui-separator"></span></td>
+                                <td id="next_pager" class="ui-pg-button ui-corner-all ui-state-disabled" style="cursor: default;"><span class="ui-icon ui-icon-seek-next"></span></td>
+                                <td id="last_pager" class="ui-pg-button ui-corner-all ui-state-disabled" style="cursor: default;"><span class="ui-icon ui-icon-seek-end"></span></td>
+                                <td dir="ltr"><select class="ui-pg-selbox" role="listbox">
+                                    <option role="option" value="10" selected="selected">10</option>
+                                    <option role="option" value="20">20</option>
+                                    <option role="option" value="30">30</option>
+                                </select></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td id="pager_right" align="right">
+                        <div dir="ltr" style="text-align:right" class="ui-paging-info">View 1 - 1 of 558</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<div class="ui-widget ui-widget-content ui-corner-all ui-jqdialog" id="alertmod" dir="ltr" tabindex="-1" role="dialog" aria-labelledby="alerthd" aria-hidden="true"
+     style="width: 200px; height: auto; z-index: 950; overflow: hidden; top: 366px; left: 1180px;">
+    <div class="ui-jqdialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix" id="alerthd" style="cursor: move;"><span class="ui-jqdialog-title" style="float: left;">Warning</span><a
+            href="javascript:void(0)" class="ui-jqdialog-titlebar-close ui-corner-all" style="right: 0.3em;"><span class="ui-icon ui-icon-closethick"></span></a></div>
+    <div class="ui-jqdialog-content ui-widget-content" id="alertcnt">
+        <div>Please, select row</div>
+        <span tabindex="0"><span tabindex="-1" id="jqg_alrt"></span></span></div>
+    <div class="jqResize ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se"></div>
+</div>
+</body>
+</html>
