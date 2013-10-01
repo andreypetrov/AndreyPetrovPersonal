@@ -1,15 +1,22 @@
 {{! {"styles" : ["js/views/settings/settings"]} }}
-<div>
+<div class="lion-settings-container">
 
     <div class="lion-settings">
         <ul>
             <li>
-                <input id="repeating-numbers" class="lion-checkbox" type="checkbox" checked="checked"/>
-                <label for="repeating-numbers" name="repeating-numbers-label" class="css-label">Repeating numbers</label>
+                <input id="settings-repeating-digits" class="lion-input-checkbox" type="checkbox"/>
+                <label for="settings-repeating-digits" name="repeating-numbers-label" class="css-label">Repeating digits allowed</label>
             </li>
             <li>
-                second option
+                <input id="settings-leading-zeros" class="lion-input-checkbox" type="checkbox"/>
+                <label for="settings-leading-zeros" name="repeating-numbers-label" class="css-label">Leading zeros allowed</label>
             </li>
+
+            <li>
+                <input id="settings-digits-count" class="lion-input-number" type="number" placeholder="#"/>
+                <label for="settings-digits-count" name="repeating-numbers-label" class="">Digits count</label>
+            </li>
+
         </ul>
     </div>
 

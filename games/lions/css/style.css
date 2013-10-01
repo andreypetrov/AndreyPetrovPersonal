@@ -20,7 +20,7 @@ a {
   font-family: secondaryFont;
   src: url(../fonts/CharlemagneStd-Bold.otf);
 }
-input[type=checkbox].lion-checkbox {
+input[type=checkbox].lion-input-checkbox {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -30,7 +30,7 @@ input[type=checkbox].lion-checkbox {
   padding: 0;
   border: 0;
 }
-input[type=checkbox].lion-checkbox + label.css-label {
+input[type=checkbox].lion-input-checkbox + label.css-label {
   padding-left: 20px;
   height: 15px;
   display: inline-block;
@@ -41,9 +41,18 @@ input[type=checkbox].lion-checkbox + label.css-label {
   vertical-align: middle;
   cursor: pointer;
 }
-input[type=checkbox].lion-checkbox:checked + label.css-label {
+input[type=checkbox].lion-input-checkbox:checked + label.css-label {
   background-position: 0 -15px;
 }
 .css-label {
   background-image: url('../img/lite-red-check.png');
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+
 }

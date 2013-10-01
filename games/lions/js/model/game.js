@@ -1,8 +1,9 @@
 define([
     'underscore',
-    'backbone'
-], function (_, Backbone) {
-    var Game = Backbone.Model.extend ({
+    'backbone',
+    'model/archmodel'
+], function (_, Backbone, Archmodel) {
+    var Game = Archmodel.extend ({
 
         //game state  in this.attributes
         //correctNumber: 0,
@@ -10,6 +11,15 @@ define([
         //attemptsCount: 0,
         //defaultDigitsCount:4,
         //lassGuessNumber: 0,
+         initialize: function()  {
+             //settings
+             this.set("hasRepeatingDigits", false);
+             this.set("hasLeadingZeros", false);
+             this.set("digitsCount", 4);
+         },
+
+
+
 
 
         /**
@@ -17,10 +27,10 @@ define([
          * This method needs to be called before the guess method
          * @param digitsCount
          */
-        newGame: function (digitsCount) {
+        newGame: function () {
             console.log(this);
             {
-                this.setRandomCorrectNumberWithDigitsCount(digitsCount);
+                this.setRandomCorrectNumberWithDigitsCount(this.get("digitsCount"));
                 this.set("attemptsCount", 0);
             }
         },
@@ -32,9 +42,6 @@ define([
          */
         setRandomCorrectNumberWithDigitsCount: function (digitsCount) {
             if(!digitsCount || isNaN(digitsCount)) throw "Please pass in valid digits count parameter";
-
-            this.set("correctDigitsCount",digitsCount);
-
             var smallMultiplier = Math.pow(10, digitsCount - 1);
             var bigMultiplier = 9 * smallMultiplier;
             this.set("correctNumber",Math.floor(Math.random() * bigMultiplier) + smallMultiplier); // http://stackoverflow.com/questions/2175512/javascript-expression-to-generate-a-5-digit-number-in-every-case
@@ -123,14 +130,14 @@ define([
 
             if (guessNumber.charAt(0) === '0') return {code: 2, message: "Your number cannot start with zero"};
 
-            var digitsCount = guessNumber.length;
-            console.log(digitsCount);
+            var guessDigitsCount = guessNumber.length;
+            console.log(guessDigitsCount);
             //convert to integer and then back to string and compare the number of digits. This assures there is no input such as "1.23"
             var actualGuessNumber = parseInt(guessNumber, 10);
             var actualDigitsCount = actualGuessNumber.toString().length;
-            if (digitsCount !== actualDigitsCount) return {code: 3, message: "Your number must be an integer with digits only"};
-            if (digitsCount < this.get("correctDigitsCount")) return {code: 4, message: "Not enough digits in your number. It should have " + this.get("correctDigitsCount") + " digits"};
-            if (digitsCount > this.get("correctDigitsCount")) return {code: 5, message: "Too many digits in your number. It should have " + this.get("correctDigitsCount") + " digits only"};
+            if (guessDigitsCount !== actualDigitsCount) return {code: 3, message: "Your number must be an integer with digits only"};
+            if (guessDigitsCount < this.get("digitsCount")) return {code: 4, message: "Not enough digits in your number. It should have " + this.get("digitsCount") + " digits"};
+            if (guessDigitsCount > this.get("digitsCount")) return {code: 5, message: "Too many digits in your number. It should have " + this.get("digitsCount") + " digits only"};
 
             return {code: 0, message: "no error"};
         }
