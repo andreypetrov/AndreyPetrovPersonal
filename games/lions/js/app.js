@@ -1,3 +1,4 @@
+//Globally accessible as app
 define([
     'jquery',
     'underscore',
