@@ -23,14 +23,12 @@ define([
         logEl: 0,
         inputErrorEl: 0,
 
-        digitsCount: 4,
-
         model: {},
 
         render: function() {
             ArchView.prototype.render.apply(this); //super call
 
-            this.model.newGame(this.digitsCount);
+            this.model.newGame(); //TODO figure out if we should really start a new game or continue an old game on the first render
             return this;
         },
 
@@ -52,25 +50,29 @@ define([
             console.log(result);
             if(result.error) this.renderErrorMessage(result.error.message);
             else {
-                this.renderErrorMessage("");
-                if (result.bulls === this.digitsCount) this.win(result);
-                else this.renderGuessResult(result);
+                this.renderErrorMessage(""); //remove previous error message if there was one
+                this.renderGuessResult(result);
+                if (this.model.get("hasWon")) this.onWin(result);
             }
 
             this.guessInputEl.focus();
         },
 
+        onWin: function(result) {
+            this.renderWin();
+            this.model.newGame(this.digitsCount);
+        },
 
+
+
+
+
+        //RENDER METHODS
 
         renderErrorMessage: function (message) {
            this.inputErrorEl.html(message);
         },
 
-        win: function(result) {
-            this.renderGuessResult(result);
-            this.renderWin();
-            this.model.newGame(this.digitsCount);
-        },
 
         /**
          * Render the fact the player have won.

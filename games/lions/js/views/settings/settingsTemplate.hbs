@@ -4,16 +4,16 @@
     <div class="lion-settings">
         <ul>
             <li>
-                <input id="settings-repeating-digits" class="lion-input-checkbox" type="checkbox"/>
+                <input id="settings-repeating-digits" class="lion-input-checkbox" type="checkbox" {{checked attributes.hasRepeatingDigits}}/>
                 <label for="settings-repeating-digits" name="repeating-numbers-label" class="css-label">Repeating digits allowed</label>
             </li>
             <li>
-                <input id="settings-leading-zeros" class="lion-input-checkbox" type="checkbox"/>
+                <input id="settings-leading-zeros" class="lion-input-checkbox" type="checkbox" {{checked attributes.hasLeadingZeros}}/>
                 <label for="settings-leading-zeros" name="repeating-numbers-label" class="css-label">Leading zeros allowed</label>
             </li>
 
             <li>
-                <input id="settings-digits-count" class="lion-input-number" type="number" placeholder="#"/>
+                <input id="settings-digits-count" class="lion-input-number" type="number" placeholder="#" value="{{attributes.digitsCount}}"/>
                 <label for="settings-digits-count" name="repeating-numbers-label" class="">Digits count</label>
             </li>
 

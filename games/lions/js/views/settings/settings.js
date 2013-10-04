@@ -13,6 +13,8 @@ define([
     return ArchView.extend({
         template: template,
 
+        digitsCountEl: {},
+
         events: {
             "click #settings-repeating-digits": "onRepeatingDigitsToggle",
             "click #settings-leading-zeros": "onLeadingZeroesToggle",
@@ -20,23 +22,19 @@ define([
         },
         //override
         initDomHandles: function() {
-
-
-            //checkBoxes.attr("checked", !checkBoxes.attr("checked"));
+            this.digitsCountEl = this.$el.find('#settings-digits-count');
         },
 
         onRepeatingDigitsToggle: function() {
-            console.log(this.model);
-            this.model.toggle("hasRepeatingDigits", true)
+            this.model.toggle("hasRepeatingDigits");
         },
 
         onLeadingZeroesToggle: function() {
-           console.log("leading");
-
+            this.model.toggle("hasLeadingZeros");
         } ,
 
-        onDigitsCountChanged: function() {
-           console.log("digits changed");
+        onDigitsCountChanged: function(e) {
+            this.model.set("digitsCount", parseInt(this.digitsCountEl.val().trim()));
         }
     });
 });

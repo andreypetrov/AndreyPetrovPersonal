@@ -1,9 +1,10 @@
 define([
     'underscore',
     'backbone',
-    'model/archmodel'
-], function (_, Backbone, Archmodel) {
-    var Game = Archmodel.extend ({
+    'model/archmodel',
+    'utils'
+], function (_, Backbone, Archmodel, Utils) {
+    var Game = Archmodel.extend({
 
         //game state  in this.attributes
         //correctNumber: 0,
@@ -11,15 +12,14 @@ define([
         //attemptsCount: 0,
         //defaultDigitsCount:4,
         //lassGuessNumber: 0,
-         initialize: function()  {
-             //settings
-             this.set("hasRepeatingDigits", false);
-             this.set("hasLeadingZeros", false);
-             this.set("digitsCount", 4);
-         },
-
-
-
+        initialize: function () {
+            //settings
+            this.set("hasWon", false);
+            this.set("hasRepeatingDigits", true);
+            this.set("hasLeadingZeros", true);
+            this.set("digitsCount", 4);
+            this.set("error", {});
+        },
 
 
         /**
@@ -28,10 +28,18 @@ define([
          * @param digitsCount
          */
         newGame: function () {
+
+            var randomDigit = Utils.getRandomDigit();
+            console.log(randomDigit);
+
             console.log(this);
             {
-                this.setRandomCorrectNumberWithDigitsCount(this.get("digitsCount"));
+                this.set("correctNumber", this.getRandomNumber(this.get("digitsCount")));
+                //this.setRandomCorrectNumberWithDigitsCount(this.get("digitsCount"));
                 this.set("attemptsCount", 0);
+                this.set("hasWon", false);
+
+                console.log(this.get("correctNumber"));
             }
         },
 
@@ -40,12 +48,20 @@ define([
          * Create a random number with digitsCount number of digits in it. can not start with 0
          * @param digitsCount
          */
-        setRandomCorrectNumberWithDigitsCount: function (digitsCount) {
-            if(!digitsCount || isNaN(digitsCount)) throw "Please pass in valid digits count parameter";
+
+
+
+
+
+
+
+        //number with no leading zeroes and with repetitions
+        setRandomCorrectNumberWithDigitsCount: function (digitsCount) { //TODO generate number differently if it cannot have repeating numbers or if it can have leading zeroes
+            if (!digitsCount || isNaN(digitsCount)) throw "Please pass in valid digits count parameter";
             var smallMultiplier = Math.pow(10, digitsCount - 1);
             var bigMultiplier = 9 * smallMultiplier;
-            this.set("correctNumber",Math.floor(Math.random() * bigMultiplier) + smallMultiplier); // http://stackoverflow.com/questions/2175512/javascript-expression-to-generate-a-5-digit-number-in-every-case
-            console.log(this.get("correctNumber"));
+            this.set("correctNumber", Math.floor(Math.random() * bigMultiplier) + smallMultiplier); // http://stackoverflow.com/questions/2175512/javascript-expression-to-generate-a-5-digit-number-in-every-case
+
         },
 
 
@@ -62,17 +78,24 @@ define([
         compareGuessWithOriginalNumber: function (guessNumber) {
             if (!this.get("correctNumber")) throw 'correctNumber cannot be 0 or uninitialized. Please first call newGame or setCorrectNumber';
 
-            var error = this.validateGuessNumber(guessNumber);
-            if (error.code !== 0) return {error: error};
+            this.set("error", this.validateGuessNumber(guessNumber));
+            if (this.get("error").code !== 0) return {error: this.get("error")};
 
             //update state+
             this.set("lassGuessNumber", guessNumber);
+            this.set("attemptsCount", this.get("attemptsCount") + 1);   //increment ++
 
-            this.set("attemptsCount", this.get("attemptsCount") +  1);   //increment ++
-
+            var cows = 0;
             var bulls = this.getBullsCount(guessNumber, this.get("correctNumber")); //could be optimized not to count cows if we have bulls === digitsCount
-            var cowsAndBulls = this.getCowsAndBullsCount(guessNumber, this.get("correctNumber"));
-            var cows = cowsAndBulls - bulls;
+
+
+            if (bulls == this.get("digitsCount")) {
+                this.set("hasWon", true);
+            } else {
+                var cowsAndBulls = this.getCowsAndBullsCount(guessNumber, this.get("correctNumber"));
+                cows = cowsAndBulls - bulls;
+            }
+
             return {bulls: bulls, cows: cows, guessNumber: guessNumber};
         },
 
@@ -111,7 +134,7 @@ define([
             for (var i = 0; i < correct.length; i++) correctCounts[correct.charAt(i)]++;
 
             //compare for every digit 0 to 9 and accumulate the total matches
-            for (var i = 0; i < 10; i ++) cowsAndBulls += Math.min(guessCounts[i], correctCounts[i]);
+            for (var i = 0; i < 10; i++) cowsAndBulls += Math.min(guessCounts[i], correctCounts[i]);
 
             return cowsAndBulls;
         },
@@ -127,8 +150,10 @@ define([
             console.log(guessNumber);
             if (isNaN(guessNumber)) return {code: 1, message: "Your number should include digits only"};
 
+            if(!this.get("hasRepeatingDigits")) {
 
-            if (guessNumber.charAt(0) === '0') return {code: 2, message: "Your number cannot start with zero"};
+            }
+            if (!this.get("hasLeadingZeros") && guessNumber.charAt(0) === '0') return {code: 2, message: "Your number cannot start with zero"};
 
             var guessDigitsCount = guessNumber.length;
             console.log(guessDigitsCount);
