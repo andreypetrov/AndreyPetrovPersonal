@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b63213e4-0149-4208-8701-14f8180e4ab1" name="Default" comment="working on the settings&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/games/lions/js/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/games/lions/js/app.js" afterPath="$PROJECT_DIR$/games/lions/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/games/lions/js/model/game.js" afterPath="$PROJECT_DIR$/games/lions/js/model/game.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/games/lions/js/views/game/game.js" afterPath="$PROJECT_DIR$/games/lions/js/views/game/game.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/games/lions/js/views/game/gameTemplate.hbs" afterPath="$PROJECT_DIR$/games/lions/js/views/game/gameTemplate.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/games/lions/js/views/settings/settings.js" afterPath="$PROJECT_DIR$/games/lions/js/views/settings/settings.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/games/lions/js/views/settings/settingsTemplate.hbs" afterPath="$PROJECT_DIR$/games/lions/js/views/settings/settingsTemplate.hbs" />
+    <list default="true" id="b63213e4-0149-4208-8701-14f8180e4ab1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/games/lions/js/utils.js" afterPath="$PROJECT_DIR$/games/lions/js/utils.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AndreyPetrovPersonal.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1380250479615" ignored="false" />
-    <file path="/Dummy.txt" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1380904794488" ignored="false" />
+    <file path="/Dummy.txt" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1380921899130" ignored="false" />
     <file path="/server.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379106397877" ignored="false" />
     <file path="/Procfile" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1378939302457" ignored="false" />
     <file path="/package.json" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379106473600" ignored="false" />
@@ -135,7 +129,7 @@
       <file leaf-file-name="utils.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/games/lions/js/utils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="71" selection-start="487" selection-end="487" vertical-scroll-proportion="0.1910828">
+            <state line="16" column="93" selection-start="523" selection-end="523" vertical-scroll-proportion="0.15923567">
               <folding>
                 <element signature="e#0#156#0" expanded="false" />
               </folding>
@@ -664,7 +658,11 @@
       <created>1380664223450</created>
       <updated>1380664223450</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="creating random number genrators in Utils&#10;">
+      <created>1380921909865</created>
+      <updated>1380921909865</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -682,6 +680,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18019094" sideWeight="0.10826446" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -691,7 +690,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33140495" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -738,7 +736,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on the settings&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating random number genrators in Utils&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -774,6 +772,7 @@
     <MESSAGE value="TODO: maybe refactor lions.js work to be done by the router, but somehow keep the event aggregator" />
     <MESSAGE value="added reset.css and refactored menu.css to compensate for the reset&#10;" />
     <MESSAGE value="working on the settings&#10;" />
+    <MESSAGE value="creating random number genrators in Utils&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -888,7 +887,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/games/lions/js/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="71" selection-start="487" selection-end="487" vertical-scroll-proportion="0.1910828">
+        <state line="16" column="93" selection-start="523" selection-end="523" vertical-scroll-proportion="0.15923567">
           <folding>
             <element signature="e#0#156#0" expanded="false" />
           </folding>

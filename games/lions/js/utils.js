@@ -13,6 +13,10 @@ define([
         return Math.floor(Math.random()*10);
     }
 
+    //TODO make only one method with parameters. Essentially choose first digit from 1 to 9 and all other digits from 0 to 9.
+    //And the same without repetitions but shrinking the selection pool after every selection
+
+
     //string number with repetitions and with leading zeroes.
     var getRandomNumber = function(digitsCount) {
         var result = "";
