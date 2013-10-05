@@ -47,6 +47,12 @@ input[type=checkbox].lion-input-checkbox:checked + label.css-label {
 .css-label {
   background-image: url('../img/lite-red-check.png');
 }
+
+
+
+
+
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
@@ -55,4 +61,14 @@ input::-webkit-inner-spin-button {
   margin: 0;
   /* <-- Apparently some margin are still there even though it's hidden */
 
+}
+.back-button {
+  cursor: pointer;
+  width: 64px;
+  height: 64px;
+  background-image: url("../img/back-button.png");
+}
+.margin-centered {
+  margin-left: auto;
+  margin-right: auto;
 }

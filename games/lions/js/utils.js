@@ -8,84 +8,72 @@
 define([
     'underscore',
     'backbone'
-],function() {
-    var getRandomDigit = function() {
-        return Math.floor(Math.random()*10);
+], function () {
+    var getRandomDigit = function () {
+        return Math.floor(Math.random() * 10);
     }
 
     //TODO make only one method with parameters. Essentially choose first digit from 1 to 9 and all other digits from 0 to 9.
     //And the same without repetitions but shrinking the selection pool after every selection
 
+    /**
+     * Get a random number with a certain digits count. It can be set up to contain leading zeroes and repetitions or not
+     * @param digitsCount
+     * @param hasLeadingZeros
+     * @param hasRepetitions
+     * @returns {string}
+     */
+    var getRandomNumber = function (digitsCount, hasLeadingZeros, hasRepetitions) {
+        if (digitsCount < 0 || digitsCount > 10) throw new Error("digitsCount can be only from 0 to 10");
+        var result = "";
+        var digits = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+        for (var i = 0; i < digitsCount; i++){
+            result+=getDigitAtPosition(i, digits, digits.length, hasLeadingZeros, hasRepetitions);
+            console.log(digits);
+        }
+        console.log(result);
+        return result;
+    };
+
+
+    var getDigitAtPosition = function (i, digits, length, hasLeadingZeros, hasRepetitions) {
+        var result;
+        if (i === 0 && !hasLeadingZeros) {
+            var position = getRandomNumberInInterval(0, length-2);   //digits[length-1] is the 0 and we want to exclude it
+        } else if (!hasRepetitions) {
+            var position = getRandomNumberInInterval(0, length-1-i); //don't take from the last i elements, because our pool of numbers gets smaller after every selection
+        } else {
+            var position = getRandomNumberInInterval(0, length-1);
+        }
+
+        result = digits[position];
+
+        //we put the last number in the shrank pool in place of the current,
+        //so on next selection the selected will not participate again.
+        if(!hasRepetitions) digits[position] = digits[length-1-i];
+
+        return result;
+    }
+
+
+
 
     //string number with repetitions and with leading zeroes.
-    var getRandomNumber = function(digitsCount) {
+    var getRandomNumber = function (digitsCount) {
         var result = "";
-        for (var i = 0; i< digitsCount; i++) {
-            result += getRandomNumberInInterval(0,9);//add a digit to the string
+        for (var i = 0; i < digitsCount; i++) {
+            result += getRandomNumberInInterval(0, 9);//add a digit to the string
         }
         return result;
     }
 
-
-    //get a number without repetitions and with leading zero
-    var getRandomNumberWithoutRepetitions = function(digitsCount) {
-        if(digitsCount>10) return;
-        //get the first digitsCount digits from the shuffled array
-        var result = "";
-        var shuffledDigits = shuffledDigitsArray();
-        for (var i = 0; i< digitsCount; i++) {
-            result += shuffledDigits[i];
-        }
-        return result;
-    };
-
-
-    //with repetitions and no leading zeroes
-    var getNumberWithDigitsCount = function (digitsCount) { //TODO generate number differently if it cannot have repeating numbers or if it can have leading zeroes
-        if (!digitsCount || isNaN(digitsCount)) throw "Please pass in valid digits count parameter";
-        var smallMultiplier = Math.pow(10, digitsCount - 1);
-        var bigMultiplier = 9 * smallMultiplier;
-        return Math.floor(Math.random() * bigMultiplier) + smallMultiplier; // http://stackoverflow.com/questions/2175512/javascript-expression-to-generate-a-5-digit-number-in-every-case
-
-    };
-
-    //with repeti
-
-
-
-
-    var shuffledDigitsArray = function() {
-        var digits = [0,1,2,3,4,5,6,7,8,9];
-        return shuffle(digits);
-    }
-
-    // http://bost.ocks.org/mike/shuffle/
-    var shuffle = function (array) {
-        var m = array.length, t, i;
-
-        // While there remain elements to shuffle…
-        while (m) {
-
-            // Pick a remaining element…
-            i = Math.floor(Math.random() * m);
-
-            m--;
-
-            // And swap it with the current element.
-            t = array[m];
-            array[m] = array[i];
-            array[i] = t;
-        }
-
-        return array;
-    }
 
     //get random number in interval
-    var getRandomNumberInInterval = function(min, max) {
-        return min + Math.floor(Math.random() * (max - min + 1)) ;
+    var getRandomNumberInInterval = function (min, max) {
+        return min + Math.floor(Math.random() * (max - min + 1));
     }
 
 
-    return {getRandomDigit: getRandomDigit, getRandomNumberInInterval: getRandomNumberInInterval};
+    return {getRandomNumber: getRandomNumber};
 
 });

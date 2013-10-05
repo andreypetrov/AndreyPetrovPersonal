@@ -28,27 +28,21 @@ define([
          * @param digitsCount
          */
         newGame: function () {
-
-            var randomDigit = Utils.getRandomDigit();
-            console.log(randomDigit);
-
-            console.log(this);
-            {
-                this.set("correctNumber", this.getRandomNumber(this.get("digitsCount")));
-                //this.setRandomCorrectNumberWithDigitsCount(this.get("digitsCount"));
+                this.set("correctNumber", this.getRandomNumber());
                 this.set("attemptsCount", 0);
                 this.set("hasWon", false);
 
                 console.log(this.get("correctNumber"));
-            }
         },
 
 
         /**
-         * Create a random number with digitsCount number of digits in it. can not start with 0
+         * Create a random number with digitsCount number of digits in it. Apply the limitations from the settings
          * @param digitsCount
          */
-
+        getRandomNumber: function() {
+            return Utils.getRandomNumber(this.get("digitsCount"), this.get("hasLeadingZeros"), this.get("hasRepeatingZeros"));
+        },
 
 
 
