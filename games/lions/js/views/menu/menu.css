@@ -4,6 +4,7 @@
   text-align: center;
 }
 .menu-title1 {
+  margin-top: 50px;
   font-family: primaryFont, "Helvetica Neue", Arial, sans-serif;
   font-size: 170px;
   color: white;
@@ -11,7 +12,7 @@
 }
 .menu-ampersand {
   position: absolute;
-  margin-top: -95px;
+  margin-top: -20px;
   left: 50px;
   float: left;
   font-family: secondaryFont, "Helvetica Neue", Arial, sans-serif;
@@ -23,7 +24,7 @@
   letter-spacing: 0px;
 }
 .menu-title2 {
-  margin-top: -50px;
+  margin-top: 0px;
   margin-left: 120px;
   font-family: secondaryFont, "Helvetica Neue", Arial, sans-serif;
   font-size: 80px;
@@ -47,7 +48,7 @@
   background: -moz-linear-gradient(top, #94ffa8, #88ff7f);
   background: -ms-linear-gradient(top, #94ffa8, #88ff7f);
   background: -o-linear-gradient(top, #94ffa8, #88ff7f);
-  padding: 5px 20px;
+  padding: 15px 20px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
