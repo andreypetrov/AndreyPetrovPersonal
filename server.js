@@ -18,7 +18,51 @@ requirejs.config({
     nodeRequire: require
 });
 
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://sa:sancho@ds047198.mongolab.com:47198/lions');
+var db = mongoose.connection;
+
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function callback(){
+   //yay
+    var kittySchema = mongoose.Schema({name: String});
+    kittySchema.methods.speak = function() {
+        var greeting = this.name
+            ? "Meow name is " + this.name
+            : "I don't have a name";
+        console.log(greeting);
+    }
+
+
+    var Kitten = mongoose.model('Kitten', kittySchema);
+    //create a new kitten, named Silence
+    var silence = new Kitten({name: 'Silence'});
+    var fluffy = new Kitten({name: 'Fluffy'});
+    fluffy.speak();
+    console.log(silence.name);  //'Silence'
+
+    /*silence.save();
+    fluffy.save(function(err, fluffy) {
+        if(err) {} //TODO handle error
+        fluffy.speak();
+    });*/
+
+    Kitten.find({name: /^Sil/},function(err, kittens){
+       if(err); //TODO handle error
+
+       console.log(kittens);
+
+    });
+    console.log("success");
+});
+
+
+
+
+
+
 var app = express();
+
 
 // all environments
 app.set('port', process.env.PORT || 3000);

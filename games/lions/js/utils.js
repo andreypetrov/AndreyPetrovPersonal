@@ -35,7 +35,6 @@ define([
         return result;
     };
 
-
     var getDigitAtPosition = function (i, digits, length, hasLeadingZeros, hasRepetitions) {
         var result;
         if (i === 0 && !hasLeadingZeros) {
@@ -54,8 +53,6 @@ define([
 
         return result;
     }
-
-
 
 
     //string number with repetitions and with leading zeroes.
