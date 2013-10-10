@@ -13,7 +13,9 @@ define([
         return Math.floor(Math.random() * 10);
     }
 
-    //TODO test how random is actually the number, it may be not that random
+    //TODO make only one method with parameters. Essentially choose first digit from 1 to 9 and all other digits from 0 to 9.
+    //And the same without repetitions but shrinking the selection pool after every selection
+
     /**
      * Get a random number with a certain digits count. It can be set up to contain leading zeroes and repetitions
      * @param digitsCount
@@ -61,14 +63,22 @@ define([
         if(!hasRepetitions) digits[position] = digits[length-1-i];
 
         return result;
-    };
+    }
 
-    /**
-     * Private helper to get a random position in the array
-     * @param min
-     * @param max
-     * @returns {number}
-     */
+
+
+
+    //string number with repetitions and with leading zeroes.
+    var getRandomNumber = function (digitsCount) {
+        var result = "";
+        for (var i = 0; i < digitsCount; i++) {
+            result += getRandomNumberInInterval(0, 9);//add a digit to the string
+        }
+        return result;
+    }
+
+
+    //get random number in interval
     var getRandomNumberInInterval = function (min, max) {
         return min + Math.floor(Math.random() * (max - min + 1));
     };
