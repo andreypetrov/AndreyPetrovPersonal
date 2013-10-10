@@ -23,21 +23,18 @@ define([
 
 
         /**
-         * Initialize the correct number
+         * Initialize the game, genrating a new correct number.
          * This method needs to be called before the guess method
-         * @param digitsCount
          */
         newGame: function () {
-                this.set("correctNumber", this.getRandomNumber());
+                this.set("correctNumber", this.getRandomNumber());   //A string representing the number
                 this.set("attemptsCount", 0);
                 this.set("hasWon", false);
-
                 console.log(this.get("correctNumber"));
         },
 
-
         /**
-         * Create a random number with digitsCount number of digits in it. Apply the limitations from the settings
+         * Create a random number with digitsCount number of digits in it. Apply the limitations from the settings and return it as a string
          * @param digitsCount
          */
         getRandomNumber: function() {
@@ -45,32 +42,14 @@ define([
         },
 
 
-
-
-
-
-        //number with no leading zeroes and with repetitions
-        setRandomCorrectNumberWithDigitsCount: function (digitsCount) { //TODO generate number differently if it cannot have repeating numbers or if it can have leading zeroes
-            if (!digitsCount || isNaN(digitsCount)) throw "Please pass in valid digits count parameter";
-            var smallMultiplier = Math.pow(10, digitsCount - 1);
-            var bigMultiplier = 9 * smallMultiplier;
-            this.set("correctNumber", Math.floor(Math.random() * bigMultiplier) + smallMultiplier); // http://stackoverflow.com/questions/2175512/javascript-expression-to-generate-a-5-digit-number-in-every-case
-
-        },
-
-
-        setCorrectNumber: function (correctNumber) {
-            this.set("correctNumber", correctNumber);
-            this.set("correctDigitsCount", this.correctNumber.toString().length);
-        },
-
-
         /**
          * Return an object with the number of bulls and cows in it or with an error if the input is not valid
+         * Comparison happens between string representations of the correct and the guess numbers
          * @param guessNumber a string representing the entered number, e.g. "0156"
          */
         compareGuessWithOriginalNumber: function (guessNumber) {
-            if (!this.get("correctNumber")) throw 'correctNumber cannot be 0 or uninitialized. Please first call newGame or setCorrectNumber';
+            //TODO check what happens if correct number is 0 (1 digit which is "0")
+            if (!this.get("correctNumber")) throw 'correctNumber cannot be with zero digits or uninitialized. Please first call newGame';
 
             this.set("error", this.validateGuessNumber(guessNumber));
             if (this.get("error").code !== 0) return {error: this.get("error")};
@@ -145,16 +124,13 @@ define([
             if (isNaN(guessNumber)) return {code: 1, message: "Your number should include digits only"};
 
             if(!this.get("hasRepeatingDigits")) {
-
+                //TODO check for repeating values
             }
             if (!this.get("hasLeadingZeros") && guessNumber.charAt(0) === '0') return {code: 2, message: "Your number cannot start with zero"};
 
+
             var guessDigitsCount = guessNumber.length;
-            console.log(guessDigitsCount);
-            //convert to integer and then back to string and compare the number of digits. This assures there is no input such as "1.23"
-            var actualGuessNumber = parseInt(guessNumber, 10);
-            var actualDigitsCount = actualGuessNumber.toString().length;
-            if (guessDigitsCount !== actualDigitsCount) return {code: 3, message: "Your number must be an integer with digits only"};
+            if (guessDigitsCount !== this.get("digitsCount")) return {code: 3, message: "Your number must be an integer with digits only"};
             if (guessDigitsCount < this.get("digitsCount")) return {code: 4, message: "Not enough digits in your number. It should have " + this.get("digitsCount") + " digits"};
             if (guessDigitsCount > this.get("digitsCount")) return {code: 5, message: "Too many digits in your number. It should have " + this.get("digitsCount") + " digits only"};
 

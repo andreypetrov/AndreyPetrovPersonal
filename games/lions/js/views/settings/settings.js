@@ -18,7 +18,8 @@ define([
         events: {
             "click #settings-repeating-digits": "onRepeatingDigitsToggle",
             "click #settings-leading-zeros": "onLeadingZeroesToggle",
-            "keyup #settings-digits-count": "onDigitsCountChanged"
+            "keyup #settings-digits-count": "onDigitsCountChanged" ,
+            "click .back-button": "onBack"
         },
         //override
         initDomHandles: function() {
@@ -35,6 +36,12 @@ define([
 
         onDigitsCountChanged: function(e) {
             this.model.set("digitsCount", parseInt(this.digitsCountEl.val().trim()));
+        } ,
+
+        onBack: function() {
+            app.router.navigate("", true);
         }
+
+
     });
 });
