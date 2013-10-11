@@ -1,21 +1,31 @@
 @darkLink:#563d7c;
 
-body {
-  font-size:25px;
-}
-.app-container {
+//Define globally font-size in percentages in the body and then all other occurances of the font should be in em.
 
+body {
+  font-size:50%;
+}
+@media (min-width: 800px) {
+  body {
+    font-size: 70%;
+  }
+}
+
+//bigger screens have bigger font-size obviously
+@media (min-width: 1500px) {
+  body {
+    font-size: 100%;
+  }
+}
+
+
+
+.app-container {
   background-image: url('../img/bg.png');
   background-position: center;
   background-repeat: no-repeat;
-
-  width:800px;
-  height: 800px;
-  margin-left:auto;
-  margin-right:auto;
-
-  display: block;
 }
+
 a
 {
   color: @darkLink;
@@ -56,7 +66,6 @@ input[type=checkbox].lion-input-checkbox + label.css-label {
   line-height:15px;
   background-repeat:no-repeat;
   background-position: 0 0;
-  //font-size:15px;
   vertical-align:middle;
   cursor:pointer;
 }
@@ -99,7 +108,7 @@ input::-webkit-inner-spin-button {
 
 .view-container {
   text-align: center;
-  position:relative;
-  width:100%;
-  height: 800px;
+  //position:relative;
+  //width:100%;
+  //height: 800px;
 }
