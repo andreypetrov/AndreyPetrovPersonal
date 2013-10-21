@@ -12,8 +12,10 @@ define([
         //attemptsCount: 0,
         //defaultDigitsCount:4,
         //lassGuessNumber: 0,
+
+        //TODO: should i have the game settings in a separate model? Probably yes.
         initialize: function () {
-            //settings
+            //default settings
             this.set("hasWon", false);
             this.set("hasRepeatingDigits", true);
             this.set("hasLeadingZeros", true);
@@ -27,7 +29,7 @@ define([
          * This method needs to be called before the guess method
          */
         newGame: function () {
-                this.set("correctNumber", this.getRandomNumber());   //A string representing the number
+                this.set("correctNumber", this.generateRandomNumber());   //A string representing the number
                 this.set("attemptsCount", 0);
                 this.set("hasWon", false);
                 console.log(this.get("correctNumber"));
@@ -37,8 +39,8 @@ define([
          * Create a random number with digitsCount number of digits in it. Apply the limitations from the settings and return it as a string
          * @param digitsCount
          */
-        getRandomNumber: function() {
-            return Utils.getRandomNumber(this.get("digitsCount"), this.get("hasLeadingZeros"), this.get("hasRepeatingZeros"));
+        generateRandomNumber: function() {
+            return Utils.generateRandomNumber(this.get("digitsCount"), this.get("hasLeadingZeros"), this.get("hasRepeatingZeros"));
         },
 
 
@@ -48,7 +50,7 @@ define([
          * @param guessNumber a string representing the entered number, e.g. "0156"
          */
         compareGuessWithOriginalNumber: function (guessNumber) {
-            //TODO check what happens if correct number is 0 (1 digit which is "0")
+
             if (!this.get("correctNumber")) throw 'correctNumber cannot be with zero digits or uninitialized. Please first call newGame';
 
             this.set("error", this.validateGuessNumber(guessNumber));
