@@ -1,10 +1,1 @@
-.lion-settings {
-  padding-top: 45%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-.lion-settings-label {
-  color: white;
-  font-size: 3em;
-}
+env: node: No such file or directory
