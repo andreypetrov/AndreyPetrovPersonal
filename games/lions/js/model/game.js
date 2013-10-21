@@ -6,6 +6,7 @@ define([
 ], function (_, Backbone, Archmodel, Utils) {
     var Game = Archmodel.extend({
 
+        url: "../api/lions/game",
         //game state  in this.attributes
         //correctNumber: 0,
         //correctDigitsCount: 0,
@@ -16,11 +17,13 @@ define([
         //TODO: should i have the game settings in a separate model? Probably yes.
         initialize: function () {
             //default settings
-            this.set("hasWon", false);
+
+            /*this.set("hasWon", false);
             this.set("hasRepeatingDigits", true);
             this.set("hasLeadingZeros", true);
             this.set("digitsCount", 4);
             this.set("error", {});
+            */
         },
 
 

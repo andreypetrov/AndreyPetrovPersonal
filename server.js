@@ -11,6 +11,8 @@ var path = require('path');
 var fs = require('fs');
 var requirejs = require('requirejs');
 
+var lionsApi = require ('./routes/lions');
+
 requirejs.config({
     //Pass the top-level main.js/index.js require
     //function to requirejs so that node modules
@@ -22,6 +24,8 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://sa:sancho@ds047198.mongolab.com:47198/lions');
 var db = mongoose.connection;
 
+
+//TODO remove this db testing later
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function callback(){
    //yay
@@ -56,12 +60,29 @@ db.once('open', function callback(){
     console.log("success");
 });
 
-
-
-
-
-
 var app = express();
+
+
+
+
+
+
+
+
+
+
+
+
+app.get('/api/lions/game', lionsApi.game);
+
+
+
+
+
+
+
+
+
 
 
 // all environments

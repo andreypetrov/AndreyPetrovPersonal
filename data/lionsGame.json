@@ -1,6 +1,8 @@
-//TODO later implement server side models for save/load of games
-
 {
     "id": 1,
-    "correctNumber": "0"
+    "hasWon": false,
+    "hasRepeatingDigits": true,
+    "hasLeadingZeros": true,
+    "digitsCount": 6,
+    "error": {}
 }
