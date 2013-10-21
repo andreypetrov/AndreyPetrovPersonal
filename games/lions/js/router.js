@@ -66,7 +66,7 @@ define([
     var loadData = function() {
         //add spinner
         $('#app').html(this.loaderView.render().el);
-
+        //TODO finish the spinner logic
         this.model.fetch().done(function(){
             //load the initial page
             app.router.navigate("", {trigger: true});
