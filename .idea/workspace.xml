@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b63213e4-0149-4208-8701-14f8180e4ab1" name="Default" comment="adding mostly library files to git&#10;">
+    <list default="true" id="b63213e4-0149-4208-8701-14f8180e4ab1" name="Default" comment="renamed the generator method &#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/lions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/games/lions/js/views/loader/loader.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/games/lions/js/views/loader/loader.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/games/lions/js/views/loader/loader.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/games/lions/js/views/loader/loaderTemplate.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/games/lions/js/model/game.js" afterPath="$PROJECT_DIR$/games/lions/js/model/game.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/games/lions/index.html" afterPath="$PROJECT_DIR$/games/lions/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/lionsGame.json" afterPath="$PROJECT_DIR$/data/lionsGame.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/games/lions/js/router.js" afterPath="$PROJECT_DIR$/games/lions/js/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/games/lions/css/style.less" afterPath="$PROJECT_DIR$/games/lions/css/style.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AndreyPetrovPersonal.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1381450530442" ignored="false" />
-    <file path="/Dummy.txt" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1385313576455" ignored="false" />
-    <file path="/server.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1381180930640" ignored="false" />
+    <file path="/index.html" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1382372575807" ignored="false" />
+    <file path="/Dummy.txt" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1382370263656" ignored="false" />
+    <file path="/server.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1382370651836" ignored="false" />
     <file path="/Procfile" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1378939302457" ignored="false" />
     <file path="/package.json" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1381179709539" ignored="false" />
-    <file path="/a.dummy" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1381448644946" ignored="false" />
+    <file path="/a.dummy" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1382372800440" ignored="false" />
     <file path="/app.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1380911307981" ignored="false" />
     <file path="/home.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379102331897" ignored="false" />
     <file path="/archview.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379815590452" ignored="false" />
@@ -24,10 +35,10 @@
     <file path="/a.less" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1381449152577" ignored="false" />
     <file path="/games.less" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379356772025" ignored="false" />
     <file path="/sticky-footer.css" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379361320319" ignored="false" />
-    <file path="/style.less" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1381451515326" ignored="false" />
+    <file path="/style.less" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1382372597812" ignored="false" />
     <file path="/gamesTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379364205100" ignored="false" />
     <file path="/bullsTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379816553764" ignored="false" />
-    <file path="/router.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1380396888276" ignored="false" />
+    <file path="/router.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1382372166060" ignored="false" />
     <file path="/games.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379966671969" ignored="false" />
     <file path="/test.html" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379965535525" ignored="false" />
     <file path="/test.css" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379525197810" ignored="false" />
@@ -45,17 +56,20 @@
     <file path="/gameTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1380906001857" ignored="false" />
     <file path="/game.less" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379813034375" ignored="false" />
     <file path="/menu.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1380253379182" ignored="false" />
-    <file path="/game.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1380986794231" ignored="false" />
+    <file path="/game.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1382371117264" ignored="false" />
     <file path="/lionsTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379968176399" ignored="false" />
     <file path="/menu.less" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1381452687350" ignored="false" />
     <file path="/lions.less" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1379969518404" ignored="false" />
     <file path="/settingsTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1380992251056" ignored="false" />
     <file path="/aboutTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1380250308574" ignored="false" />
-    <file path="/lionsGame.json" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1380389817157" ignored="false" />
+    <file path="/lionsGame.json" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1382370976813" ignored="false" />
     <file path="/settings.less" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1381449526617" ignored="false" />
     <file path="/settings.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1380905367702" ignored="false" />
     <file path="/archmodel.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1380662930539" ignored="false" />
-    <file path="/utils.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1381176105099" ignored="false" />
+    <file path="/utils.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1382369303728" ignored="false" />
+    <file path="/lions.js" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1382373328880" ignored="false" />
+    <file path="/loader.less" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1382372087435" ignored="false" />
+    <file path="/loaderTemplate.hbs" changelist="b63213e4-0149-4208-8701-14f8180e4ab1" time="1382371899058" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,64 +130,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/games/lions/css/style.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="20" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="website.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/node_modules/mongoose/website.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="57" selection-start="660" selection-end="660" vertical-scroll-proportion="0.62857145">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="population-of-multiple-existing-docs.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/mongoose/examples/population-of-multiple-existing-docs.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="34" selection-start="1818" selection-end="1818" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/games/lions/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="35" selection-start="558" selection-end="567" vertical-scroll-proportion="0.0">
+            <state line="23" column="27" selection-start="612" selection-end="612" vertical-scroll-proportion="-14.375">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/games/lions/js/views/menu/menu.less">
+      <file leaf-file-name="style.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/games/lions/css/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="17" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
+            <state line="19" column="0" selection-start="339" selection-end="339" vertical-scroll-proportion="-10.961538">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/games/lions/js/views/settings/settings.less">
+      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/games/lions/js/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="17" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0">
+            <state line="71" column="53" selection-start="1871" selection-end="1871" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menuTemplate.hbs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/games/lions/js/views/menu/menuTemplate.hbs">
+      <file leaf-file-name="lions.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/lions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="31" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
+            <state line="1" column="7" selection-start="10" selection-end="11" vertical-scroll-proportion="0.015806112">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/games/lions/js/views/menu/menu.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="12" selection-start="639" selection-end="684" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/games/lions/js/views/about/about.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="412" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aboutTemplate.hbs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/games/lions/js/views/about/aboutTemplate.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="44" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loader.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/games/lions/js/views/loader/loader.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="4" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loader.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/games/lions/js/views/loader/loader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="17" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loaderTemplate.hbs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/games/lions/js/views/loader/loaderTemplate.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="18" selection-start="76" selection-end="76" vertical-scroll-proportion="-1.875">
               <folding />
             </state>
           </provider>
@@ -197,29 +238,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/games/lions/js/views/settings/settings.js" />
-        <option value="$PROJECT_DIR$/games/lions/js/views/game/gameTemplate.hbs" />
-        <option value="$PROJECT_DIR$/games/lions/js/app.js" />
-        <option value="$PROJECT_DIR$/games/lions/js/views/game/game.js" />
-        <option value="$PROJECT_DIR$/games/lions/js/model/game.js" />
-        <option value="$PROJECT_DIR$/games/lions/js/views/settings/settingsTemplate.hbs" />
-        <option value="$PROJECT_DIR$/games/lions/js/utils.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/games/lions/js/views/menu/menu.css" />
         <option value="$PROJECT_DIR$/games/lions/css/style.css" />
         <option value="$PROJECT_DIR$/games/lions/js/views/settings/settings.less" />
-        <option value="$PROJECT_DIR$/games/lions/index.html" />
         <option value="$PROJECT_DIR$/games/lions/js/views/menu/menuTemplate.hbs" />
         <option value="$PROJECT_DIR$/games/lions/js/views/menu/menu.less" />
+        <option value="$PROJECT_DIR$/games/lions/js/utils.js" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/games/lions/js/model/game.js" />
+        <option value="$PROJECT_DIR$/data/lionsGame.json" />
+        <option value="$PROJECT_DIR$/games/lions/js/views/loader/loader.js" />
+        <option value="$PROJECT_DIR$/games/lions/js/views/loader/loaderTemplate.hbs" />
+        <option value="$PROJECT_DIR$/games/lions/js/views/loader/loader.less" />
         <option value="$PROJECT_DIR$/games/lions/css/style.less" />
+        <option value="$PROJECT_DIR$/games/lions/index.html" />
+        <option value="$PROJECT_DIR$/games/lions/js/router.js" />
+        <option value="$PROJECT_DIR$/routes/lions.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1920" />
-    <option name="height" value="945" />
+    <option name="width" value="2560" />
+    <option name="height" value="1330" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -317,8 +358,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -347,7 +386,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
+              <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -361,16 +400,54 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
+              <option name="myItemId" value="games" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mongoose" />
+              <option name="myItemId" value="lions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="games" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndreyPetrovPersonal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -386,8 +463,8 @@
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -420,22 +497,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$">
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -464,6 +525,22 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$">
+      <method />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -477,13 +554,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -505,6 +575,13 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <list size="1">
@@ -626,38 +703,46 @@
       <created>1380921909865</created>
       <updated>1380921909865</updated>
     </task>
-    <task id="LOCAL-00027" summary="adding mostly library files to git&#10;">
-      <created>1385313549201</created>
-      <updated>1385313549201</updated>
+    <task id="LOCAL-00027" summary="creating random number genrators in Utils&#10;">
+      <created>1382368202420</created>
+      <updated>1382368202420</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="creating random number genrators in Utils&#10;">
+      <created>1382368266146</created>
+      <updated>1382368266146</updated>
+    </task>
+    <task id="LOCAL-00029" summary="renamed the generator method &#10;">
+      <created>1382369675327</created>
+      <updated>1382369675327</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="945" extended-state="0" />
+    <frame x="0" y="22" width="2560" height="1330" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33085808" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17929563" sideWeight="0.26060605" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17859983" sideWeight="0.32178217" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32969698" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17929563" sideWeight="0.40969697" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17291415" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17859983" sideWeight="0.5057756" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17244224" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3309091" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -704,7 +789,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding mostly library files to git&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed the generator method &#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -741,7 +826,7 @@
     <MESSAGE value="added reset.css and refactored menu.css to compensate for the reset&#10;" />
     <MESSAGE value="working on the settings&#10;" />
     <MESSAGE value="creating random number genrators in Utils&#10;" />
-    <MESSAGE value="adding mostly library files to git&#10;" />
+    <MESSAGE value="renamed the generator method &#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -749,100 +834,114 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/games/lions/js/views/settings/settingsTemplate.hbs">
+    <entry file="file://$PROJECT_DIR$/games/lions/js/app.build.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="108" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/games/lions/js/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="2065" selection-end="2065" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/games/lions/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/games/lions/js/views/settings/settings.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="145" selection-end="145" vertical-scroll-proportion="0.20642202" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="40" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
+        <state line="5" column="15" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/games/lions/js/views/archview.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/games/lions/js/views/menu/menu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/games/lions/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="31" selection-start="872" selection-end="872" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/games/lions/js/views/menu/menuTemplate.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="31" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/games/lions/js/views/menu/menu.less">
+    <entry file="file://$PROJECT_DIR$/games/lions/css/reset.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="17" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/games/lions/js/views/settings/settings.less">
+    <entry file="file://$PROJECT_DIR$/games/lions/css/main-built.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/games/lions/index.html">
+    <entry file="file://$PROJECT_DIR$/games/lions/css/libs.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="35" selection-start="558" selection-end="567" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/lions/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/lions/js/views/about/about.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="412" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/lions/js/views/about/aboutTemplate.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="44" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/games/lions/css/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="20" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
+        <state line="19" column="0" selection-start="339" selection-end="339" vertical-scroll-proportion="-10.961538">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/examples/population-of-multiple-existing-docs.js">
+    <entry file="file://$PROJECT_DIR$/games/lions/js/views/loader/loader.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="34" selection-start="1818" selection-end="1818" vertical-scroll-proportion="0.0">
+        <state line="2" column="4" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/website.js">
+    <entry file="file://$PROJECT_DIR$/games/lions/js/views/loader/loaderTemplate.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="57" selection-start="660" selection-end="660" vertical-scroll-proportion="0.62857145">
+        <state line="3" column="18" selection-start="76" selection-end="76" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/lions/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="27" selection-start="612" selection-end="612" vertical-scroll-proportion="-14.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/lions/js/views/menu/menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="12" selection-start="639" selection-end="684" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/lions/js/views/loader/loader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="17" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/lions/js/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="53" selection-start="1871" selection-end="1871" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/lions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="7" selection-start="10" selection-end="11" vertical-scroll-proportion="0.015806112">
           <folding />
         </state>
       </provider>

@@ -11,13 +11,14 @@ define([
     'jquery',
     'underscore',
     'backbone',
+    'views/loader/loader',
     'views/menu/menu',
     'views/game/game',
     'views/settings/settings',
     'views/about/about',
     'model/game'
 
-], function ($, _, Backbone, MenuView, GameView, SettingsView, AboutView, Game) {
+], function ($, _, Backbone, LoaderView, MenuView, GameView, SettingsView, AboutView, Game) {
 
     var AppRouter = Backbone.Router.extend({
         routes: {
@@ -28,7 +29,12 @@ define([
         },
 
         initialize: function () {
+            console.log("init");
+
+            this.loaderView = new LoaderView();
+
             this.model = new Game();
+            loadData.apply(this);
 
             this.menuView = new MenuView({model: this.model});
             this.gameView = new GameView({model: this.model});
@@ -37,7 +43,7 @@ define([
         },
 
         menu: function () {
-            $('#app').html(this.menuView.render().el);
+           $('#app').html(this.menuView.render().el);
         },
 
         settings: function () {
@@ -53,6 +59,22 @@ define([
         }
 
     });
+
+    /**
+     * On page refresh this loading is re-executed and user is navigated to the initial page. Maybe change that
+     */
+    var loadData = function() {
+        //add spinner
+        $('#app').html(this.loaderView.render().el);
+        //TODO finish the spinner logic
+        this.model.fetch().done(function(){
+            //load the initial page
+            app.router.navigate("", {trigger: true});
+        });
+
+
+    };
+
 
     //initialize the router and give a reference to it
     var initialize = function () {

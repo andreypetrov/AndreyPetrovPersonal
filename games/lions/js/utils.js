@@ -13,23 +13,20 @@ define([
         return Math.floor(Math.random() * 10);
     }
 
-    //TODO make only one method with parameters. Essentially choose first digit from 1 to 9 and all other digits from 0 to 9.
-    //And the same without repetitions but shrinking the selection pool after every selection
-
     /**
-     * Get a random number with a certain digits count. It can be set up to contain leading zeroes and repetitions
+     * Get a random number with a certain digits count. It can be set up to contain leading zeroes and/or repetitions
      * @param digitsCount
      * @param hasLeadingZeros
      * @param hasRepetitions
      * @returns {string} the number as a string
      */
-    var getRandomNumber = function (digitsCount, hasLeadingZeros, hasRepetitions) {
+    var generateRandomNumber = function (digitsCount, hasLeadingZeros, hasRepetitions) {
         if (digitsCount < 1 || digitsCount > 10) throw new Error("digitsCount can be only from 1 to 10");
         var result = "";
         var digits = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
         for (var i = 0; i < digitsCount; i++){
             console.log(digits);
-            result+=getDigitAtPosition(i, digits, digits.length, hasLeadingZeros, hasRepetitions);
+            result+=generateDigitAtPosition(i, digits, digits.length, hasLeadingZeros, hasRepetitions);
 
         }
         console.log(result);
@@ -38,15 +35,16 @@ define([
 
 
     /**
-     * Private helper to get the next random number from the digits array
+     * Private helper to get the next random number from the digits array.
+     *
      * @param i
-     * @param digits
+     * @param digits  input array of digits, may be modified as a side effect
      * @param length
      * @param hasLeadingZeros
      * @param hasRepetitions
      * @returns {*}
      */
-    var getDigitAtPosition = function (i, digits, length, hasLeadingZeros, hasRepetitions) {
+    var generateDigitAtPosition = function (i, digits, length, hasLeadingZeros, hasRepetitions) {
         var result;
         if (i === 0 && !hasLeadingZeros) {
             var position = getRandomNumberInInterval(0, length-2);   //digits[length-1] is the 0 and we want to exclude it
@@ -65,19 +63,6 @@ define([
         return result;
     }
 
-
-
-
-    //string number with repetitions and with leading zeroes.
-    var getRandomNumber = function (digitsCount) {
-        var result = "";
-        for (var i = 0; i < digitsCount; i++) {
-            result += getRandomNumberInInterval(0, 9);//add a digit to the string
-        }
-        return result;
-    }
-
-
     //get random number in interval
     var getRandomNumberInInterval = function (min, max) {
         return min + Math.floor(Math.random() * (max - min + 1));
@@ -86,6 +71,6 @@ define([
     /**
      * Expose the getRandomNumber method in the Utils object
      */
-    return {getRandomNumber: getRandomNumber};
+    return {generateRandomNumber: generateRandomNumber};
 
 });
