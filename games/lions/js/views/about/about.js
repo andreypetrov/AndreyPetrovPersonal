@@ -14,7 +14,7 @@ define([
         template: template,
 
         //override
-        initDomHandles: function() {
+        initDomHandles: function () {
 
         }
     });

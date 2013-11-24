@@ -25,7 +25,7 @@ define([
 
         model: {},
 
-        render: function() {
+        render: function () {
             ArchView.prototype.render.apply(this); //super call
 
             this.model.newGame(); //TODO figure out if we should really start a new game or continue an old game on the first render
@@ -33,14 +33,14 @@ define([
         },
 
         //override
-        initDomHandles: function() {
+        initDomHandles: function () {
             this.guessInputEl = this.$el.find('.guess-input');
             this.logEl = this.$el.find('.guess-log');
             this.inputErrorEl = this.$el.find('.guess-input-error');
         },
 
 
-        onGuess: function(e) {
+        onGuess: function (e) {
             e.preventDefault();
 
             var guessNumber = this.guessInputEl.val();
@@ -48,7 +48,7 @@ define([
 
             var result = this.model.compareGuessWithOriginalNumber(guessNumber);
             console.log(result);
-            if(result.error) this.renderErrorMessage(result.error.message);
+            if (result.error) this.renderErrorMessage(result.error.message);
             else {
                 this.renderErrorMessage(""); //remove previous error message if there was one
                 this.renderGuessResult(result);
@@ -58,30 +58,27 @@ define([
             this.guessInputEl.focus();
         },
 
-        onWin: function(result) {
+        onWin: function (result) {
             this.renderWin();
             this.model.newGame(this.digitsCount);
         },
 
 
-
-
-
         //RENDER METHODS
 
         renderErrorMessage: function (message) {
-           this.inputErrorEl.html(message);
+            this.inputErrorEl.html(message);
         },
 
 
         /**
          * Render the fact the player have won.
          */
-        renderWin: function() {
+        renderWin: function () {
             var prefix = "";
 
-            if(this.model.get("attemptsCount") === 1) var message = "Wow! You guessed it in just one attempt. Did you dream last night about " +this.model.get("correctNumber") + " or what?! A new number will be loaded. Wanna try again?";
-            else var message = "Nicey-nice! The number really is " + this.model.get("correctNumber") +" and you guessed it in " + this.model.get("attemptsCount") + " attempts! A new number will be loaded. Wanna try again?";
+            if (this.model.get("attemptsCount") === 1) var message = "Wow! You guessed it in just one attempt. Did you dream last night about " + this.model.get("correctNumber") + " or what?! A new number will be loaded. Wanna try again?";
+            else var message = "Nicey-nice! The number really is " + this.model.get("correctNumber") + " and you guessed it in " + this.model.get("attemptsCount") + " attempts! A new number will be loaded. Wanna try again?";
 
             this.renderMessage("success", prefix, message);
         },
@@ -92,7 +89,7 @@ define([
          * Render as a prefix the index of the attempt
          * @param result of the game guess in  {bulls:number, cows:number} format
          */
-        renderGuessResult: function(result) {
+        renderGuessResult: function (result) {
             var prefix = this.model.get("attemptsCount") + ": ";
             var message = "For " + result.guessNumber + " you got " + result.bulls + " bulls and " + result.cows + " cows";
             this.renderMessage("info", prefix, message);
@@ -105,7 +102,7 @@ define([
          * @param prefix a string coming before the message
          * @param message
          */
-        renderMessage: function(status, prefix, message) {
+        renderMessage: function (status, prefix, message) {
             var templateWithContent = messageTemplate({status: status, prefix: prefix, message: message});
             this.logEl.append(templateWithContent);
         }

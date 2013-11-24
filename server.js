@@ -45,9 +45,10 @@ db.once('open', function callback(){
     fluffy.speak();
     console.log(silence.name);  //'Silence'
 
-    /*silence.save();
+    /* Commented out the saving of the model. It was just for testing
+    silence.save();
     fluffy.save(function(err, fluffy) {
-        if(err) {} //TODO handle error
+        if(err) {}
         fluffy.speak();
     });*/
 

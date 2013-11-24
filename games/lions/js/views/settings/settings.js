@@ -18,27 +18,27 @@ define([
         events: {
             "click #settings-repeating-digits": "onRepeatingDigitsToggle",
             "click #settings-leading-zeros": "onLeadingZeroesToggle",
-            "keyup #settings-digits-count": "onDigitsCountChanged" ,
+            "keyup #settings-digits-count": "onDigitsCountChanged",
             "click .back-button": "onBack"
         },
         //override
-        initDomHandles: function() {
+        initDomHandles: function () {
             this.digitsCountEl = this.$el.find('#settings-digits-count');
         },
 
-        onRepeatingDigitsToggle: function() {
+        onRepeatingDigitsToggle: function () {
             this.model.toggle("hasRepeatingDigits");
         },
 
-        onLeadingZeroesToggle: function() {
+        onLeadingZeroesToggle: function () {
             this.model.toggle("hasLeadingZeros");
-        } ,
+        },
 
-        onDigitsCountChanged: function(e) {
+        onDigitsCountChanged: function (e) {
             this.model.set("digitsCount", parseInt(this.digitsCountEl.val().trim()));
-        } ,
+        },
 
-        onBack: function() {
+        onBack: function () {
             app.router.navigate("", true);
         }
 

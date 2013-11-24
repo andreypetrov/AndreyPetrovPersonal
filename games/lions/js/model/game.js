@@ -19,11 +19,11 @@ define([
             //default settings
 
             /*this.set("hasWon", false);
-            this.set("hasRepeatingDigits", true);
-            this.set("hasLeadingZeros", true);
-            this.set("digitsCount", 4);
-            this.set("error", {});
-            */
+             this.set("hasRepeatingDigits", true);
+             this.set("hasLeadingZeros", true);
+             this.set("digitsCount", 4);
+             this.set("error", {});
+             */
         },
 
 
@@ -32,17 +32,17 @@ define([
          * This method needs to be called before the guess method
          */
         newGame: function () {
-                this.set("correctNumber", this.generateRandomNumber());   //A string representing the number
-                this.set("attemptsCount", 0);
-                this.set("hasWon", false);
-                console.log(this.get("correctNumber"));
+            this.set("correctNumber", this.generateRandomNumber());   //A string representing the number
+            this.set("attemptsCount", 0);
+            this.set("hasWon", false);
+            console.log(this.get("correctNumber"));
         },
 
         /**
          * Create a random number with digitsCount number of digits in it. Apply the limitations from the settings and return it as a string
          * @param digitsCount
          */
-        generateRandomNumber: function() {
+        generateRandomNumber: function () {
             return Utils.generateRandomNumber(this.get("digitsCount"), this.get("hasLeadingZeros"), this.get("hasRepeatingZeros"));
         },
 
@@ -128,7 +128,7 @@ define([
             console.log(guessNumber);
             if (isNaN(guessNumber)) return {code: 1, message: "Your number should include digits only"};
 
-            if(!this.get("hasRepeatingDigits")) {
+            if (!this.get("hasRepeatingDigits")) {
                 //TODO check for repeating values
             }
             if (!this.get("hasLeadingZeros") && guessNumber.charAt(0) === '0') return {code: 2, message: "Your number cannot start with zero"};

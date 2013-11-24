@@ -8,35 +8,35 @@
 
 ({
     /*hbs: {
-        disableI18n: true,
-        disableHelpers: true,
-        templateExtension: "hbs"
-    },
+     disableI18n: true,
+     disableHelpers: true,
+     templateExtension: "hbs"
+     },
 
-    baseUrl: ".",
-    paths: {
-        jquery: '../lib/jquery-2.0.3',
-        underscore: '../lib/underscore',
-        backbone: '../lib/backbone',
-
-
-        handlebars : "../lib/hbs/handlebars",
-
-        hbs: '../lib/hbs/hbs',
-        i18nprecompile : "../lib/hbs/i18nprecompile",
-        json2 : "../lib/hbs/json2"
-    },
+     baseUrl: ".",
+     paths: {
+     jquery: '../lib/jquery-2.0.3',
+     underscore: '../lib/underscore',
+     backbone: '../lib/backbone',
 
 
-    shim: {
-        underscore: {
-            exports: '_'
-        },
-        backbone: {
-            deps: ["underscore", "jquery"],
-            exports: "Backbone"
-        }
-    },  */
+     handlebars : "../lib/hbs/handlebars",
+
+     hbs: '../lib/hbs/hbs',
+     i18nprecompile : "../lib/hbs/i18nprecompile",
+     json2 : "../lib/hbs/json2"
+     },
+
+
+     shim: {
+     underscore: {
+     exports: '_'
+     },
+     backbone: {
+     deps: ["underscore", "jquery"],
+     exports: "Backbone"
+     }
+     },  */
     baseUrl: ".",
     mainConfigFile: "main.js",
     name: "main",

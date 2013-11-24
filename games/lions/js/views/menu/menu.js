@@ -22,16 +22,16 @@ define([
             "click .bulls-menu-about": "onAbout"
         },
 
-        onStart: function() {
+        onStart: function () {
             app.router.navigate("game", {trigger: true});
             //this.eventAggregator.trigger("bulls:menu:start");
         },
 
-        onSettings: function() {
+        onSettings: function () {
             app.router.navigate("settings", {trigger: true});
         },
 
-        onAbout: function() {
+        onAbout: function () {
             app.router.navigate("about", {trigger: true});
         }
 

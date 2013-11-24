@@ -33,6 +33,7 @@ define([
 
             this.loaderView = new LoaderView();
 
+            //The model of the game, loaded from the server. Contains all settings. In the future may have a different model per user (personalized). Currently it comes from data/lionsGame.json
             this.model = new Game();
             loadData.apply(this);
 
@@ -43,7 +44,7 @@ define([
         },
 
         menu: function () {
-           $('#app').html(this.menuView.render().el);
+            $('#app').html(this.menuView.render().el);
         },
 
         settings: function () {
@@ -63,11 +64,11 @@ define([
     /**
      * On page refresh this loading is re-executed and user is navigated to the initial page. Maybe change that
      */
-    var loadData = function() {
+    var loadData = function () {
         //add spinner
         $('#app').html(this.loaderView.render().el);
         //TODO finish the spinner logic
-        this.model.fetch().done(function(){
+        this.model.fetch().done(function () {
             //load the initial page
             app.router.navigate("", {trigger: true});
         });

@@ -24,9 +24,9 @@ define([
         if (digitsCount < 1 || digitsCount > 10) throw new Error("digitsCount can be only from 1 to 10");
         var result = "";
         var digits = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
-        for (var i = 0; i < digitsCount; i++){
+        for (var i = 0; i < digitsCount; i++) {
             console.log(digits);
-            result+=generateDigitAtPosition(i, digits, digits.length, hasLeadingZeros, hasRepetitions);
+            result += generateDigitAtPosition(i, digits, digits.length, hasLeadingZeros, hasRepetitions);
 
         }
         console.log(result);
@@ -47,18 +47,18 @@ define([
     var generateDigitAtPosition = function (i, digits, length, hasLeadingZeros, hasRepetitions) {
         var result;
         if (i === 0 && !hasLeadingZeros) {
-            var position = getRandomNumberInInterval(0, length-2);   //digits[length-1] is the 0 and we want to exclude it
+            var position = getRandomNumberInInterval(0, length - 2);   //digits[length-1] is the 0 and we want to exclude it
         } else if (!hasRepetitions) {
-            var position = getRandomNumberInInterval(0, length-1-i); //don't take from the last i elements, because our pool of numbers gets smaller after every selection
+            var position = getRandomNumberInInterval(0, length - 1 - i); //don't take from the last i elements, because our pool of numbers gets smaller after every selection
         } else {
-            var position = getRandomNumberInInterval(0, length-1);
+            var position = getRandomNumberInInterval(0, length - 1);
         }
 
         result = digits[position];
 
         //we put the last number in the shrank pool in place of the current,
         //so on next selection the selected will not participate again.
-        if(!hasRepetitions) digits[position] = digits[length-1-i];
+        if (!hasRepetitions) digits[position] = digits[length - 1 - i];
 
         return result;
     }

@@ -22,11 +22,11 @@ require.config({
         backbone: '../lib/backbone',
 
 
-        handlebars : "../lib/hbs/handlebars",
+        handlebars: "../lib/hbs/handlebars",
 
         hbs: '../lib/hbs/hbs',
-        i18nprecompile : "../lib/hbs/i18nprecompile",
-        json2 : "../lib/hbs/json2"
+        i18nprecompile: "../lib/hbs/i18nprecompile",
+        json2: "../lib/hbs/json2"
     },
 
     shim: {
@@ -43,7 +43,7 @@ require.config({
 require([
     // Load our app module and pass it to our definition function
     'app'
-], function(App){
+], function (App) {
     // The "app" dependency is passed in as "App"
     //export global object with the router in it
 
