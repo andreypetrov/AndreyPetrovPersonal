@@ -16,6 +16,7 @@ define([
             return this.set(attr, !this.get(attr), options);
         }
 
+
     });
 
 

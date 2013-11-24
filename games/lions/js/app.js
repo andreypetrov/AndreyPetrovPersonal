@@ -14,6 +14,14 @@ define([
             return currentValue == '1' ? ' checked="checked"' : '';
         });
 
+
+        Handlebars.registerHelper('display-when-true', function (currentValue) {
+            return currentValue == '1' ? 'display:block;' : 'display:none;';
+        });
+
+        Handlebars.registerHelper('display-when-false', function (currentValue) {
+            return currentValue == '1' ? ' display:none;' : ' display:block;';
+        });
     }
     var initialize = function () {
         initHandlebars();

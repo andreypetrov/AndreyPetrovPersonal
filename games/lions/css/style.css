@@ -1,100 +1,84 @@
 body {
-    font-size: 50%;
+  font-size: 50%;
 }
-
 @media (min-width: 800px) {
-    body {
-        font-size: 70%;
-    }
+  body {
+    font-size: 70%;
+  }
 }
-
 @media (min-width: 1500px) {
-    body {
-        font-size: 100%;
-    }
+  body {
+    font-size: 100%;
+  }
 }
-
 .app-container {
-    positon:relative;
-    width: 90%;
-    height: 800px;
-    background-image: url('../img/bg.png');
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url('../img/bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 800px 800px;
+  width: 100%;
+  max-width: 800px;
+  max-height: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-
 a {
-    color: #563d7c;
-    text-decoration: none;
+  color: #563d7c;
+  text-decoration: none;
 }
-
 @font-face {
-    font-family: primaryFont;
-    src: url('../fonts/CooperBlackStd.otf');
+  font-family: primaryFont;
+  src: url('../fonts/CooperBlackStd.otf');
 }
-
 @font-face {
-    font-family: secondaryFont;
-    src: url(../fonts/CharlemagneStd-Bold.otf);
+  font-family: secondaryFont;
+  src: url(../fonts/CharlemagneStd-Bold.otf);
 }
-
 input[type=checkbox].lion-input-checkbox {
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
-
 input[type=checkbox].lion-input-checkbox + label.css-label {
-    padding-left: 20px;
-    height: 15px;
-    display: inline-block;
-    line-height: 15px;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    vertical-align: middle;
-    cursor: pointer;
+  padding-left: 20px;
+  height: 15px;
+  display: inline-block;
+  line-height: 15px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  vertical-align: middle;
+  cursor: pointer;
 }
-
 input[type=checkbox].lion-input-checkbox:checked + label.css-label {
-    background-position: 0 -15px;
+  background-position: 0 -15px;
 }
-
 .css-label {
-    background-image: url('../img/lite-red-check.png');
+  background-image: url('../img/lite-red-check.png');
 }
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    /* display: none; <- Crashes Chrome on hover */
+  /* display: none; <- Crashes Chrome on hover */
 
-    -webkit-appearance: none;
-    margin: 0;
-    /* <-- Apparently some margin are still there even though it's hidden */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
 
 }
-
-/*
-.margin-centered {
-  margin-left:auto;
-  margin-right:auto;
-}  */
-
 .back-button {
-    position: absolute;
-    bottom: 50px;
-    right: 50px;
-    cursor: pointer;
-    width: 64px;
-    height: 64px;
-    background-image: url("../img/back-button.png");
+  position: absolute;
+  left: 30%;
+  bottom: 4%;
+  cursor: pointer;
+  width: 243px;
+  height: 59px;
+  background-image: url("../img/btn_back.png");
+  background-repeat: no-repeat;
 }
-
 .view-container {
-    text-align: center;
+  text-align: center;
 }

@@ -12,9 +12,10 @@ var gameJson = require('../data/lionsGame.json');
 
 
 exports.game = function (req, res) {
-    setTimeout((function() {
-        res.send(gameJson);
-        console.log("added 5 seconds delay");
-
-    }), 2000);
+    res.send(gameJson);
+//    setTimeout((function() {
+//        res.send(gameJson);
+//        console.log("added 5 seconds delay");
+//
+//    }), 500);
 };

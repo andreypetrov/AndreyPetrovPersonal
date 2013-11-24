@@ -4,33 +4,41 @@
     <div class="lion-settings">
         <ul>
             <li>
-                <!--<input id="settings-repeating-digits" class="lion-input-checkbox" type="checkbox" {{checked attributes.hasRepeatingDigits}}/>-->
-                <!--<label for="settings-repeating-digits" name="repeating-numbers-label" class="css-label lion-settings-label">Repeating digits allowed</label>-->
-
+                <div class="lion-settings-label">Repeating digits</div>
 
                 <div class="settings-repeating-digits toggle-button">
-                    <div class="settings-repeating-digits-yes"></div>
-                    <div class="settings-repeating-digits-no"></div>
+                    <div class="toggle-button-yes" style="{{display-when-true attributes.hasRepeatingDigits}}"></div>
+                    <div class="toggle-button-no" style="{{display-when-false attributes.hasRepeatingDigits}}"></div>
                 </div>
 
             </li>
             <li>
-                <input id="settings-leading-zeros" class="lion-input-checkbox" type="checkbox" {{checked attributes.hasLeadingZeros}}/>
-                <label for="settings-leading-zeros" name="repeating-numbers-label" class="css-label lion-settings-label">Leading zeros allowed</label>
+                <div class="lion-settings-label">Leading zeroes</div>
+
+                <div class="settings-leading-zeros toggle-button">
+                    <div class="toggle-button-yes" style="{{display-when-true attributes.hasRepeatingDigits}}"></div>
+                    <div class="toggle-button-no" style="{{display-when-false attributes.hasRepeatingDigits}}"></div>
+                </div>
             </li>
 
             <li>
-                <input id="settings-digits-count" class="lion-input-number" type="number" placeholder="#" value="{{attributes.digitsCount}}"/>
-                <label for="settings-digits-count" name="repeating-numbers-label" class="lion-settings-label">Digits count</label>
+                <div class="lion-settings-label">Digits count</div>
+
+                <div class="number-picker">
+                    <div id="settings-digits-count" class="number-picker-number">{{attributes.digitsCount}}</div>
+                    <div class="number-picker-increment digits-count-increment"/>
+                    <div class="number-picker-decrement digits-count-decrement"/>
+
+                </div>
+                <!--<input id="settings-digits-count" class="lion-input-number" type="number" placeholder="#" value="{{attributes.digitsCount}}"/>-->
+                <!--<label for="settings-digits-count" name="repeating-numbers-label" class="lion-settings-label">Digits count</label>-->
             </li>
 
         </ul>
 
 
+        <div class="back-button"></div>
     </div>
-
-    <div class="back-button"></div>
-    <!-- Checkbox powered by CssCheckbox.com -->
 
 </div>
 

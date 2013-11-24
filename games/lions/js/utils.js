@@ -6,9 +6,10 @@
  * To change this template use File | Settings | File Templates.
  */
 define([
+    'jquery',
     'underscore',
     'backbone'
-], function () {
+], function ($, _, Backbone) {
     var getRandomDigit = function () {
         return Math.floor(Math.random() * 10);
     }
@@ -69,8 +70,25 @@ define([
     };
 
     /**
+     * A helper GUI method for toggling buttons, which use the following html structure:
+     *
+     *  <div class="toggle-button">
+     *      <div class="toggle-button-yes"></div>
+     *      <div class="toggle-button-no"></div>
+     *  </div>
+     * @param e
+     */
+    var toggleButton = function (e) {
+        $(e.currentTarget).find('.toggle-button-yes').toggle();
+        $(e.currentTarget).find('.toggle-button-no').toggle();
+    };
+    4
+    /**
      * Expose the getRandomNumber method in the Utils object
      */
-    return {generateRandomNumber: generateRandomNumber};
+    return {generateRandomNumber: generateRandomNumber, toggleButton: toggleButton};
+
+
+
 
 });

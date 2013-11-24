@@ -12,25 +12,127 @@
 
 .lion-settings {
   background-image: url('img/general_bg.png');
-  background-size:800px 800px;
+  background-size: 800px 800px;
   background-position: center;
   background-repeat: no-repeat;
 
-  width: 800px;
+  max-width: 830px; //including 15px paddings
+  width: 100%;
   height: 800px;
+  position: relative;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  padding-top: 20%;
+}
+
+.lion-settings ul {
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%;
+  height: 50%;
+
+  //background: red;
+
+}
+
+.lion-settings ul li {
+  height: 17%;
+  position: relative;
+  margin-bottom: 10px;
+  list-style: none;
+  display: block;
+  clear: both;
+  vertical-align: middle;
+  //background:#269abc;
+
 }
 
 .lion-settings-label {
   color: white;
   font-size: 3em;
+  float: left;
+  bottom: 5px;
+  left: 5px;
+  display: block;
+  position: absolute;
+  color: #ffff00;
 }
 
-
 .toggle-button {
+  margin-top: 2%;
+  display: block;
+  position: relative;
+  cursor: pointer;
   background-image: url("img/toggle_bg.png");
   width: 147px;
   height: 35px;
+  float: right;
+}
+
+.toggle-button-yes {
+  top: 3px;
+  left: 5px;
+  //display: block;
+  position: absolute;
+  background-image: url("img/toggle_yes.png");
+  width: 68px;
+  height: 30px;
+
+}
+
+.toggle-button-no {
+  top: 3px;
+  right: 5px;
+  float: right;
+  //display: block;
+  position: absolute;
+  background-image: url("img/toggle_no.png");
+  width: 68px;
+  height: 30px;
+}
+
+.number-picker {
+  background-image: url("img/number_picker_bg.png");
+  width: 84px;
+  height: 38px;
+
+  float: right;
+  margin-top: 2%;
+  display: block;
+  position: relative;
+
+}
+.number-picker-number
+{
+  position: absolute;
+  top:5px;
+  left:20px;
+  color: black;
+  font-size: 2em;
+}
+
+.number-picker-increment {
+  background-image: url("img/number_picker_arrows.png");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  height: 15px;
+  width: 14px;
+  cursor: pointer;
+}
+
+.number-picker-decrement {
+  background-image: url("img/number_picker_arrows.png");
+  //background-repeat: no-repeat;
+  background-position: 0px 15px;
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  height: 15px;
+  width: 14px;
+  cursor: pointer;
 }

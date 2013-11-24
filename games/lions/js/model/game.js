@@ -11,7 +11,9 @@ define([
         //correctNumber: 0,
         //correctDigitsCount: 0,
         //attemptsCount: 0,
-        //defaultDigitsCount:4,
+        //digitsCount:4,
+        //minDigitsCount:10,
+        //maxDigitsCount:10
         //lassGuessNumber: 0,
 
         //TODO: should i have the game settings in a separate model? Probably yes.
@@ -140,6 +142,24 @@ define([
             if (guessDigitsCount > this.get("digitsCount")) return {code: 5, message: "Too many digits in your number. It should have " + this.get("digitsCount") + " digits only"};
 
             return {code: 0, message: "no error"};
+        },
+
+
+        /**
+         * Standard backbone validate method, that does not allow us to record values outside of the restrictions.
+         * In this case it does not allow to change the digits count in the numbers above max and below min (as given by the server model).
+         * If the result is valid, does not return anything, else it returns an error message.
+         * @param attrs
+         * @param options
+         */
+        validate: function (attrs, options) {
+            if (attrs.digitsCount > attrs.maxDigitsCount) {
+                return "digits count cannot be more than" + attrs.maxDigitsCount;
+            }
+            if (attrs.digitsCount < attrs.minDigitsCount) {
+                return "digits count cannot be less than" + attrs.minDigitsCount;
+            }
+
         }
     });
 
