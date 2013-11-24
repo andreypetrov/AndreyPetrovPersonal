@@ -16,7 +16,7 @@ define([
         digitsCountEl: {},
 
         events: {
-            "click #settings-repeating-digits": "onRepeatingDigitsToggle",
+            "click .settings-repeating-digits": "onRepeatingDigitsToggle",
             "click #settings-leading-zeros": "onLeadingZeroesToggle",
             "keyup #settings-digits-count": "onDigitsCountChanged",
             "click .back-button": "onBack"
@@ -27,14 +27,17 @@ define([
         },
 
         onRepeatingDigitsToggle: function () {
+            console.log("toggle repeating digits");
             this.model.toggle("hasRepeatingDigits");
         },
 
         onLeadingZeroesToggle: function () {
+            console.log("toggle leading zeroes");
             this.model.toggle("hasLeadingZeros");
         },
 
         onDigitsCountChanged: function (e) {
+            console.log("change digits count");
             this.model.set("digitsCount", parseInt(this.digitsCountEl.val().trim()));
         },
 

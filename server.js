@@ -69,8 +69,8 @@ var app = express();
 
 
 
-
-
+//add artificial delay to all requests. Bad, because delays even images initially, etc.
+//app.use(function(req,res,next){setTimeout(next,3000)});
 
 
 

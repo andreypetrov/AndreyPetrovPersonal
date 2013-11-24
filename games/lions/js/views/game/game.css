@@ -1,12 +1,10 @@
 .bulls-input-error {
-    height: 25px;
+  height: 25px;
 }
-
 .bulls-chat-panel {
-    margin-top: 15px;
-    margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-
 .bulls-log-message {
-    display: block;
+  display: block;
 }

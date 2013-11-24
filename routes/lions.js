@@ -12,10 +12,9 @@ var gameJson = require('../data/lionsGame.json');
 
 
 exports.game = function (req, res) {
-    //TODO figure out why this delay does not work
     setTimeout((function() {
         res.send(gameJson);
-        console.log("delay");
+        console.log("added 5 seconds delay");
 
     }), 2000);
 };

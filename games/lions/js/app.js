@@ -23,6 +23,6 @@ define([
         this.router = Router.initialize();
     }
 
-
+    //expose the initialize method, so that main.js can call it
     return { initialize: initialize };
 });

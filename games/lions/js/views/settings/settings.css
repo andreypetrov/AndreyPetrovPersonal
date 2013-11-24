@@ -1,5 +1,10 @@
 .lion-settings {
-  padding-top: 45%;
+  background-image: url('img/general_bg.png');
+  background-size: 800px 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 800px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -7,4 +12,9 @@
 .lion-settings-label {
   color: white;
   font-size: 3em;
+}
+.toggle-button {
+  background-image: url("img/toggle_bg.png");
+  width: 147px;
+  height: 35px;
 }

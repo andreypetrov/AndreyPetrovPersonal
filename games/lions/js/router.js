@@ -43,7 +43,11 @@ define([
             this.aboutView = new AboutView({model: this.model});
         },
 
+
+
+
         menu: function () {
+            console.log("render menu");
             $('#app').html(this.menuView.render().el);
         },
 
@@ -62,15 +66,19 @@ define([
     });
 
     /**
-     * On page refresh this loading is re-executed and user is navigated to the initial page. Maybe change that
+     * Load the model from the server and upon completion, start backbone routing.
+     * On page refresh this loading is re-executed.
      */
     var loadData = function () {
-        //add spinner
+        //add spinner. Later it is removed when navigation starts
         $('#app').html(this.loaderView.render().el);
+
         //TODO finish the spinner logic
         this.model.fetch().done(function () {
-            //load the initial page
-            app.router.navigate("", {trigger: true});
+
+            Backbone.history.start();   // start using the router.
+            //TODO decide later if we want always to load the initial page
+            //app.router.navigate("", {trigger: true});
         });
 
 
@@ -80,10 +88,10 @@ define([
     //initialize the router and give a reference to it
     var initialize = function () {
         var appRouter = new AppRouter();
-        Backbone.history.start();
         return appRouter;
     };
 
+    //expose the initialize method, so that app.js can call it
     return { initialize: initialize};
 });
 

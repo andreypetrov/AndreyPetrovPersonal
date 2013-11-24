@@ -4,8 +4,15 @@
     <div class="lion-settings">
         <ul>
             <li>
-                <input id="settings-repeating-digits" class="lion-input-checkbox" type="checkbox" {{checked attributes.hasRepeatingDigits}}/>
-                <label for="settings-repeating-digits" name="repeating-numbers-label" class="css-label lion-settings-label">Repeating digits allowed</label>
+                <!--<input id="settings-repeating-digits" class="lion-input-checkbox" type="checkbox" {{checked attributes.hasRepeatingDigits}}/>-->
+                <!--<label for="settings-repeating-digits" name="repeating-numbers-label" class="css-label lion-settings-label">Repeating digits allowed</label>-->
+
+
+                <div class="settings-repeating-digits toggle-button">
+                    <div class="settings-repeating-digits-yes"></div>
+                    <div class="settings-repeating-digits-no"></div>
+                </div>
+
             </li>
             <li>
                 <input id="settings-leading-zeros" class="lion-input-checkbox" type="checkbox" {{checked attributes.hasLeadingZeros}}/>
