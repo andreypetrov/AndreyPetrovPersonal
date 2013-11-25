@@ -1,10 +1,11 @@
-@darkLink:#563d7c;
+@darkLink: #563d7c;
 
 //Define globally font-size in percentages in the body and then all other occurances of the font should be in em.
 
 body {
-  font-size:50%;
+  font-size: 50%;
 }
+
 @media (min-width: 800px) {
   body {
     font-size: 70%;
@@ -24,62 +25,58 @@ body {
   background-repeat: no-repeat;
   background-size: 800px 800px;
   width: 100%;
-  max-width:800px;
-  max-height:800px;
-  margin-left:auto;
-  margin-right:auto;
+  max-width: 800px;
+  max-height: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-a
-{
+a {
   color: @darkLink;
   text-decoration: none;
 }
 
-@font-face
-{
+@font-face {
 
   font-family: primaryFont;
   src: url('../fonts/CooperBlackStd.otf');
 }
 
-@font-face
-{
+@font-face {
   font-family: secondaryFont;
   src: url(../fonts/CharlemagneStd-Bold.otf);
 }
-
 
 //Checkbox styling for the whole app
 input[type=checkbox].lion-input-checkbox {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
-  height:1px;
-  width:1px;
-  margin:-1px;
-  padding:0;
-  border:0;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
-
 input[type=checkbox].lion-input-checkbox + label.css-label {
-  padding-left:20px;
-  height:15px;
-  display:inline-block;
-  line-height:15px;
-  background-repeat:no-repeat;
+  padding-left: 20px;
+  height: 15px;
+  display: inline-block;
+  line-height: 15px;
+  background-repeat: no-repeat;
   background-position: 0 0;
-  vertical-align:middle;
-  cursor:pointer;
+  vertical-align: middle;
+  cursor: pointer;
 }
 
 input[type=checkbox].lion-input-checkbox:checked + label.css-label {
   background-position: 0 -15px;
 }
 
-.css-label{ background-image:url('../img/lite-red-check.png'); }
+.css-label {
+  background-image: url('../img/lite-red-check.png');
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -88,22 +85,20 @@ input::-webkit-inner-spin-button {
   margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
-
 .lion-input-number {
   //background: red;
 }
-
 
 .back-button {
   position: absolute;
   left: 30%;
   bottom: 4%;
 
-  cursor:pointer;
-  width:243px;
-  height:59px;
+  cursor: pointer;
+  width: 243px;
+  height: 59px;
   background-image: url("../img/btn_back.png");
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
 }
 
 .view-container {

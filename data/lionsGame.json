@@ -5,6 +5,6 @@
     "hasLeadingZeros": true,
     "digitsCount": 6,
     "minDigitsCount": 1,
-    "maxDigitsCount": 10,
+    "maxDigitsCount": 9,
     "error": {}
 }

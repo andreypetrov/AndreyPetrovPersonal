@@ -11,6 +11,7 @@
   margin-right: auto;
   text-align: center;
   padding-top: 20%;
+  font-family: primaryFont, "Helvetica Neue", Arial, sans-serif;
 }
 .lion-settings ul {
   margin-right: auto;
@@ -21,7 +22,7 @@
 .lion-settings ul li {
   height: 17%;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   list-style: none;
   display: block;
   clear: both;
@@ -29,13 +30,13 @@
 }
 .lion-settings-label {
   color: white;
-  font-size: 3em;
+  font-size: 2.5em;
   float: left;
   bottom: 5px;
   left: 5px;
   display: block;
   position: absolute;
-  color: #ffff00;
+  color: #f4f198;
 }
 .toggle-button {
   margin-top: 2%;
@@ -75,10 +76,11 @@
 }
 .number-picker-number {
   position: absolute;
+  font-family: 'Comic Sans MS', cursive;
   top: 5px;
-  left: 20px;
+  left: 25px;
   color: black;
-  font-size: 2em;
+  font-size: 25px;
 }
 .number-picker-increment {
   background-image: url("img/number_picker_arrows.png");
