@@ -28,7 +28,7 @@ define([
         render: function () {
             ArchView.prototype.render.apply(this); //super call
 
-            this.model.newGame(); //TODO figure out if we should really start a new game or continue an old game on the first render
+            this.model.newGame(); //TODO instead of just starting a new game, figure out if we should really start a new game or continue an old game on the first render
             return this;
         },
 
@@ -72,15 +72,11 @@ define([
 
 
         /**
-         * Render the fact the player have won.
+         * Render the fact the player have won by navigating to the end screen. Potentially there can be other options such as to render the win in the current screen
          */
         renderWin: function () {
-            var prefix = "";
-
-            if (this.model.get("attemptsCount") === 1) var message = "Wow! You guessed it in just one attempt. Did you dream last night about " + this.model.get("correctNumber") + " or what?! A new number will be loaded. Wanna try again?";
-            else var message = "Nicey-nice! The number really is " + this.model.get("correctNumber") + " and you guessed it in " + this.model.get("attemptsCount") + " attempts! A new number will be loaded. Wanna try again?";
-
-            this.renderMessage("success", prefix, message);
+            //Navigate to the end screen
+            app.router.navigate("end", true);
         },
 
 

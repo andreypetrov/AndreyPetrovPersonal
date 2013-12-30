@@ -137,7 +137,6 @@ define([
 
 
             var guessDigitsCount = guessNumber.length;
-            if (guessDigitsCount !== this.get("digitsCount")) return {code: 3, message: "Your number must be an integer with digits only"};
             if (guessDigitsCount < this.get("digitsCount")) return {code: 4, message: "Not enough digits in your number. It should have " + this.get("digitsCount") + " digits"};
             if (guessDigitsCount > this.get("digitsCount")) return {code: 5, message: "Too many digits in your number. It should have " + this.get("digitsCount") + " digits only"};
 

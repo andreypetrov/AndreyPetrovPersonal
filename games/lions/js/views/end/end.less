@@ -4,11 +4,11 @@
 @borderColor: #e7e7e7;
 @primaryFontFamily: primaryFont, "Helvetica Neue", Arial, sans-serif;
 @secondaryFontFamily: secondaryFont, "Helvetica Neue", Arial, sans-serif;
+@tetriaryFontFamily:'Comic Sans MS', cursive;
 @segeoFontFamily: segeo, "Helvetica Neue", Arial, sans-serif;
-
-
-.lion-about {
-  background-image: url('img/rules_bg.png');
+@sketchFontFamily: sketch, "Helvetica Neue", Arial, sans-serif;
+.lion-end {
+  background-image: url('../../../img/general_bg.png');
   background-size: 800px 800px;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,38 +22,39 @@
   margin-right: auto;
   text-align: center;
   padding-top: 30%;
-  font-family: @primaryFontFamily;
+  font-family: @sketchFontFamily;
 }
 
-
-.lion-about ul {
+.lion-end-content {
   margin-right: auto;
   margin-left: auto;
   width: 75%;
   height: 50%;
+  text-align: center;
 }
 
+.lion-end-paw {
+  float:left;
+  width: 190px;
+  height: 187px;
+  margin-right: 10px;
+  background-image: url('img/end_paw.png');
+  background-repeat: no-repeat;
+}
 
-.lion-about ul li {
-  height: 17%;
-  position: relative;
-  margin-bottom: 50px;
-  list-style: none;
-  display: block;
+.lion-end-title {
+  padding-top:10%;
+  font-size: 3.5em;
+  letter-spacing: 5px;
+  font-weight: 100;
+  text-align: left;
+
+
+}
+
+.lion-end-message {
+  margin-top:25%;
   clear: both;
-  vertical-align: middle;
-}
-
-.lion-about-title {
-  font-size: 2.5em;
-}
-.lion-about-line {
-  font-family: @segeoFontFamily;
-  font-size:1.7em;
-  font-style: italic;
-  letter-spacing: 0.2em;
-}
-
-.lion-about-line-even {
-  .lion-about-line;
+  font-size: 2em;
+  font-family: @primaryFontFamily;
 }

@@ -40,11 +40,6 @@ define([
             Utils.toggleButton(e);
         },
 
-        /* onDigitsCountChanged: function (e) {
-         console.log("change digits count");
-         this.model.set("digitsCount", parseInt(this.digitsCountEl.val().trim()));
-         },*/
-
         onDigitsCountIncremented: function (e) {
             var digitsCount = this.model.get("digitsCount");
             digitsCount++;

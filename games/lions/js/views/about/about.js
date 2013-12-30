@@ -13,9 +13,21 @@ define([
     return ArchView.extend({
         template: template,
 
+        events: {
+            "click .back-button": "onBack"
+        },
+
         //override
         initDomHandles: function () {
 
+        },
+
+        onBack: function () {
+            app.router.navigate("", true);
+            this.render();
         }
     });
+
+
+
 });

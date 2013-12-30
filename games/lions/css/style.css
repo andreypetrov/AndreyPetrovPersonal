@@ -34,6 +34,14 @@ a {
   font-family: secondaryFont;
   src: url(../fonts/CharlemagneStd-Bold.otf);
 }
+@font-face {
+  font-family: segeo;
+  src: url(../fonts/segeo-marker-webfont.woff);
+}
+@font-face {
+  font-family: sketch;
+  src: url('../fonts/sketch-flow-print.ttf');
+}
 input[type=checkbox].lion-input-checkbox {
   position: absolute;
   overflow: hidden;
@@ -71,8 +79,8 @@ input::-webkit-inner-spin-button {
 }
 .back-button {
   position: absolute;
-  left: 30%;
-  bottom: 4%;
+  left: 10%;
+  bottom: 10%;
   cursor: pointer;
   width: 243px;
   height: 59px;

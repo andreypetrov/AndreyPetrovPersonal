@@ -16,16 +16,19 @@ define([
     'views/game/game',
     'views/settings/settings',
     'views/about/about',
+    'views/end/end',
     'model/game'
 
-], function ($, _, Backbone, LoaderView, MenuView, GameView, SettingsView, AboutView, Game) {
+
+], function ($, _, Backbone, LoaderView, MenuView, GameView, SettingsView, AboutView, EndView, Game) {
 
     var AppRouter = Backbone.Router.extend({
         routes: {
             "": "menu",
             "settings": "settings",
             "game": "game",
-            "about": "about"
+            "about": "about",
+            "end": "end"
         },
 
         initialize: function () {
@@ -34,6 +37,7 @@ define([
             this.loaderView = new LoaderView();
 
             //The model of the game, loaded from the server. Contains all settings. In the future may have a different model per user (personalized). Currently it comes from data/lionsGame.json
+            //Contains also the game state and the win-loss results
             this.model = new Game();
             loadData.apply(this);
 
@@ -41,9 +45,8 @@ define([
             this.gameView = new GameView({model: this.model});
             this.settingsView = new SettingsView({model: this.model});
             this.aboutView = new AboutView({model: this.model});
+            this.endView = new EndView({model: this.model});
         },
-
-
 
 
         menu: function () {
@@ -61,8 +64,11 @@ define([
 
         about: function () {
             $('#app').html(this.aboutView.render().el);
-        }
+        },
 
+        end: function () {
+            $('#app').html(this.endView.render().el);
+        }
     });
 
     /**

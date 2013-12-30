@@ -1,0 +1,46 @@
+.lion-about {
+  background-image: url('img/rules_bg.png');
+  background-size: 800px 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f4f198;
+  max-width: 830px;
+  width: 100%;
+  height: 800px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 30%;
+  font-family: primaryFont, "Helvetica Neue", Arial, sans-serif;
+}
+.lion-about ul {
+  margin-right: auto;
+  margin-left: auto;
+  width: 75%;
+  height: 50%;
+}
+.lion-about ul li {
+  height: 17%;
+  position: relative;
+  margin-bottom: 50px;
+  list-style: none;
+  display: block;
+  clear: both;
+  vertical-align: middle;
+}
+.lion-about-title {
+  font-size: 2.5em;
+}
+.lion-about-line {
+  font-family: segeo, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.7em;
+  font-style: italic;
+  letter-spacing: 0.2em;
+}
+.lion-about-line-even {
+  font-family: segeo, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.7em;
+  font-style: italic;
+  letter-spacing: 0.2em;
+}
