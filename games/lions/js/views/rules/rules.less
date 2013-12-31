@@ -1,0 +1,59 @@
+//this style is shared by all templates within the same directory
+@darkLink: #563d7c;
+@lightBar: #d4dfee;
+@borderColor: #e7e7e7;
+@primaryFontFamily: primaryFont, "Helvetica Neue", Arial, sans-serif;
+@secondaryFontFamily: secondaryFont, "Helvetica Neue", Arial, sans-serif;
+@segeoFontFamily: segeo, "Helvetica Neue", Arial, sans-serif;
+
+
+.lion-about {
+  background-image: url('img/rules_bg.png');
+  background-size: 800px 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f4f198;
+  max-width: 830px; //including 15px paddings
+  width: 100%;
+  height: 800px;
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 30%;
+  font-family: @primaryFontFamily;
+}
+
+
+.lion-about ul {
+  margin-right: auto;
+  margin-left: auto;
+  width: 75%;
+  height: 50%;
+}
+
+
+.lion-about ul li {
+  height: 17%;
+  position: relative;
+  margin-bottom: 50px;
+  list-style: none;
+  display: block;
+  clear: both;
+  vertical-align: middle;
+}
+
+.lion-about-title {
+  font-size: 2.5em;
+}
+.lion-about-line {
+  font-family: @segeoFontFamily;
+  font-size:1.7em;
+  font-style: italic;
+  letter-spacing: 0.2em;
+}
+
+.lion-about-line-even {
+  .lion-about-line;
+}

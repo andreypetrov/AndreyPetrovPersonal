@@ -17,9 +17,11 @@ define([
         template: template,
 
         events: {
-            "click .bulls-menu-start": "onStart",
-            "click .bulls-menu-settings": "onSettings",
-            "click .bulls-menu-about": "onAbout"
+            "click .menu-btn-start": "onStart",
+            "click .menu-btn-settings": "onSettings",
+            "click .menu-btn-about": "onAbout",
+            "click .menu-btn-rules": "onRules"
+
         },
 
         onStart: function () {
@@ -33,6 +35,10 @@ define([
 
         onAbout: function () {
             app.router.navigate("about", {trigger: true});
+        },
+
+        onRules: function() {
+            app.router.navigate("rules", {trigger: true});
         }
 
     });

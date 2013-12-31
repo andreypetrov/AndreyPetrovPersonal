@@ -1,70 +1,115 @@
-.menu-container {
-    padding-top: 132px;
-    color: white;
+.lion-menu {
+  background-image: url('img/home_bg.png');
+  background-size: 800px 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f4f198;
+  max-width: 830px;
+  width: 100%;
+  height: 800px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 10%;
+  font-family: primaryFont, "Helvetica Neue", Arial, sans-serif;
 }
-
-.menu-title1 {
-    font-family: primaryFont, "Helvetica Neue", Arial, sans-serif;
-    color: white;
-    font-size: 10em;
-    text-transform: uppercase;
+.menu-lion {
+  position: absolute;
+  left: 8%;
+  bottom: 12%;
+  width: 299px;
+  height: 215px;
+  background-image: url("img/home_lion.png");
+  background-repeat: no-repeat;
 }
-
-.menu-ampersand {
-    font-family: secondaryFont, "Helvetica Neue", Arial, sans-serif;
-    font-size: 18em;
-    text-transform: uppercase;
-    margin-top: -20px;
-    margin-left: -25px;
-    /*position:absolute;
-
-    left:50px;
-    float:left;
-
-    margin-left:35px;
-    font-weight: 100;
-    letter-spacing: 0px;  */
-
+.menu-leopard {
+  position: absolute;
+  right: 10%;
+  bottom: 4%;
+  width: 286px;
+  height: 252px;
+  background-image: url("img/home_leopard.png");
+  background-repeat: no-repeat;
 }
-
-.menu-title2 {
-    font-family: secondaryFont, "Helvetica Neue", Arial, sans-serif;
-    font-size: 5em;
-    text-transform: uppercase;
-    letter-spacing: -5px;
+.menu-btn-start {
+  position: absolute;
+  top: 52%;
+  left: 44%;
+  cursor: pointer;
+  width: 89px;
+  height: 97px;
+  background-image: url("img/btn_start.png");
+  background-repeat: no-repeat;
 }
+.menu-btn-settings {
+  float: left;
+  cursor: pointer;
+  width: 64px;
+  height: 64px;
+  background-image: url("img/btn_settings_64.png");
+  background-repeat: no-repeat;
+}
+.menu-btn-rules {
+  float: left;
+  cursor: pointer;
+  width: 64px;
+  height: 64px;
+  background-image: url("img/btn_help_64.png");
+  background-repeat: no-repeat;
+}
+.menu-btn-about {
+  float: left;
+  cursor: pointer;
+  width: 64px;
+  height: 64px;
+  background-image: url("img/btn_info_64.png");
+  background-repeat: no-repeat;
+}
+.menu-buttons {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+/*
 
 .menu-buttons {
-    margin-top: 40px;
-    margin-left: 375px;
-    list-style: none;
-    clear: both;
+  margin-top: 40px;
+  margin-left: 375px;
+  list-style: none;
+  clear: both;
+
 }
 
 .menu-buttons li {
-    margin: 15px;
+  margin: 15px;
+
 }
 
 .menu-button {
-    background: #88ff7f;
-    background: -webkit-gradient(linear, left top, left bottom, from(#94ffa8), to(#88ff7f));
-    background: -webkit-linear-gradient(top, #94ffa8, #88ff7f);
-    background: -moz-linear-gradient(top, #94ffa8, #88ff7f);
-    background: -ms-linear-gradient(top, #94ffa8, #88ff7f);
-    background: -o-linear-gradient(top, #94ffa8, #88ff7f);
-    padding: 15px 20px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-box-shadow: #000000 0 1px 0;
-    -moz-box-shadow: #000000 0 1px 0;
-    box-shadow: #000000 0 0px 20px;
-    color: #4d4d4d;
-    font-size: 2.5em;
-    font-family: primaryFont, "Helvetica Neue", Arial, sans-serif;
-    text-decoration: none;
-    vertical-align: middle;
-    cursor: pointer;
-    width: 220px;
-    height: 60px;
-}
+  background: #88ff7f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#94ffa8), to(#88ff7f));
+  background: -webkit-linear-gradient(top, #94ffa8, #88ff7f);
+  background: -moz-linear-gradient(top, #94ffa8, #88ff7f);
+  background: -ms-linear-gradient(top, #94ffa8, #88ff7f);
+  background: -o-linear-gradient(top, #94ffa8, #88ff7f);
+  padding: 15px 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+  box-shadow: rgba(0, 0, 0, 1) 0 0px 20px;
+
+  color: #4d4d4d;
+
+  font-size: 2.5em;
+  font-family: @primaryFontFamily;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+
+  width: 220px;
+  height: 60px;
+}    */

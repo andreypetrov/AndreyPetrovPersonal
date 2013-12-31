@@ -16,11 +16,13 @@ define([
     'views/game/game',
     'views/settings/settings',
     'views/about/about',
+    'views/rules/rules',
     'views/end/end',
+
     'model/game'
 
 
-], function ($, _, Backbone, LoaderView, MenuView, GameView, SettingsView, AboutView, EndView, Game) {
+], function ($, _, Backbone, LoaderView, MenuView, GameView, SettingsView, AboutView, RulesView, EndView, Game) {
 
     var AppRouter = Backbone.Router.extend({
         routes: {
@@ -28,6 +30,7 @@ define([
             "settings": "settings",
             "game": "game",
             "about": "about",
+            "rules": "rules",
             "end": "end"
         },
 
@@ -43,9 +46,11 @@ define([
 
             this.menuView = new MenuView({model: this.model});
             this.gameView = new GameView({model: this.model});
-            this.settingsView = new SettingsView({model: this.model});
-            this.aboutView = new AboutView({model: this.model});
             this.endView = new EndView({model: this.model});
+
+            this.settingsView = new SettingsView({model: this.model});
+            this.aboutView = new AboutView();
+            this.rulesView = new RulesView();
         },
 
 
@@ -66,9 +71,14 @@ define([
             $('#app').html(this.aboutView.render().el);
         },
 
+        rules: function () {
+            $('#app').html(this.rulesView.render().el);
+        },
         end: function () {
             $('#app').html(this.endView.render().el);
         }
+
+
     });
 
     /**

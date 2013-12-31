@@ -12,10 +12,6 @@ body {
   }
 }
 .app-container {
-  background-image: url('../img/bg.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 800px 800px;
   width: 100%;
   max-width: 800px;
   max-height: 800px;
