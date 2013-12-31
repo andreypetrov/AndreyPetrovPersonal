@@ -6,8 +6,7 @@
 @secondaryFontFamily: secondaryFont, "Helvetica Neue", Arial, sans-serif;
 @segeoFontFamily: segeo, "Helvetica Neue", Arial, sans-serif;
 
-
-.lion-about {
+.lion-rules {
   background-image: url('img/rules_bg.png');
   background-size: 800px 800px;
   background-position: center;
@@ -21,39 +20,89 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding-top: 30%;
+  padding-top: 10%;
+  font-family: @segeoFontFamily;
+
+}
+
+.lion-rules-underlined {
+  color: white;
+}
+
+.lion-rules-title {
   font-family: @primaryFontFamily;
-}
-
-
-.lion-about ul {
-  margin-right: auto;
-  margin-left: auto;
-  width: 75%;
-  height: 50%;
-}
-
-
-.lion-about ul li {
-  height: 17%;
-  position: relative;
-  margin-bottom: 50px;
-  list-style: none;
-  display: block;
-  clear: both;
-  vertical-align: middle;
-}
-
-.lion-about-title {
   font-size: 2.5em;
 }
-.lion-about-line {
-  font-family: @segeoFontFamily;
-  font-size:1.7em;
-  font-style: italic;
-  letter-spacing: 0.2em;
+
+.lion-rules-text {
+  //overflow: scroll;
+  // height: 90%;
 }
 
-.lion-about-line-even {
-  .lion-about-line;
+.lion-rules-line {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  font-size: 1.2em;
+  font-style: italic;
+
+}
+
+.lion-rules-examples {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 80%;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+
+}
+
+.lion-rules-examples .titles {
+  clear:both;
+  color:white;
+  margin-bottom:10px;
+  height: 20px;
+  display: block;
+}
+
+.lion-rules-examples .arow {
+  clear:both;
+  margin-left: 0px;
+}
+
+.lion-rules-correct {
+  float: left;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.lion-rules-guess {
+
+  float: left;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.lion-rules-answer {
+  float: left;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.lion-rules-more {
+  float: right;
+  width: 50%;
+  margin-top: 30px;
+  margin-right: 50px;
+  text-align: right;
+}
+
+.lion-rules-more a {
+  color: yellow;
+}
+
+.lion-rules-more a:hover {
+  text-decoration: none;
 }
