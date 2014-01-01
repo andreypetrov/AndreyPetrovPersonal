@@ -48,7 +48,7 @@
   width: 64px;
   height: 64px;
   margin-right: 5px;
-  background-image: url("img/btn_settings_64.png");
+  background-image: url("img/btn_settings.png");
   background-repeat: no-repeat;
 }
 .menu-btn-rules {
@@ -57,7 +57,7 @@
   width: 64px;
   height: 64px;
   margin-right: 5px;
-  background-image: url("img/btn_help_64.png");
+  background-image: url("img/btn_help.png");
   background-repeat: no-repeat;
 }
 .menu-btn-about {
@@ -65,7 +65,7 @@
   cursor: pointer;
   width: 64px;
   height: 64px;
-  background-image: url("img/btn_info_64.png");
+  background-image: url("img/btn_info.png");
   background-repeat: no-repeat;
 }
 .menu-buttons {

@@ -50,7 +50,7 @@ define([
 
 
         /**
-         * Return an object with the number of bulls and cows in it or with an error if the input is not valid
+         * Return an object with the number of bulls, cows and attemptsCount in it or with an error if the input is not valid
          * Comparison happens between string representations of the correct and the guess numbers
          * @param guessNumber a string representing the entered number, e.g. "0156"
          */
@@ -76,7 +76,7 @@ define([
                 cows = cowsAndBulls - bulls;
             }
 
-            return {bulls: bulls, cows: cows, guessNumber: guessNumber};
+            return {lions: bulls, leopards: cows, guessNumber: guessNumber, attemptsCount: this.get("attemptsCount")};
         },
 
 

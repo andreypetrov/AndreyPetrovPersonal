@@ -1,4 +1,11 @@
 {{! {"styles" : ["js/views/game/game"]} }}
+<div class="guess-column guess-column-1 guess-count">{{attemptsCount}}</div>
 
-<div class="bulls-log-message text-{{status}}">{{prefix}}{{message}}</div>
-<div class="clear"></div>
+<div class="guess-column guess-column-2 guess-number">{{guessNumber}}</div>
+
+<div class="guess-column guess-column-3">
+    <div class="guess-result-points">{{lions}}</div>
+    <div class="guess-lion-icon"/>
+    <div class="guess-result-points">{{leopards}}</div>
+    <div class="guess-leopard-icon"/>
+</div>

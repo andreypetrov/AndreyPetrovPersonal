@@ -22,6 +22,9 @@ define([
         guessInputEl: 0,
         logEl: 0,
         inputErrorEl: 0,
+        hiddenNumberEl: 0,
+
+        logScrollPosition: 0,
 
         model: {},
 
@@ -29,20 +32,29 @@ define([
             ArchView.prototype.render.apply(this); //super call
 
             this.model.newGame(); //TODO instead of just starting a new game, figure out if we should really start a new game or continue an old game on the first render
+
+            this.hiddenNumberEl.html(''); //reset if there were any dummy values
+            for(var i = 0; i<this.model.get('digitsCount');i++) {//show as many X as there are digits in the hidden number
+                this.hiddenNumberEl.append('X');
+            }
+
+            this.logScrollPosition = 0; //init log scroll position
+
             return this;
         },
 
         //override
         initDomHandles: function () {
             this.guessInputEl = this.$el.find('.guess-input');
-            this.logEl = this.$el.find('.guess-log');
+            this.logEl = this.$el.find('.lion-game-guess-log');
             this.inputErrorEl = this.$el.find('.guess-input-error');
+            this.hiddenNumberEl = this.$el.find('.lion-game-hidden-number');
+
         },
 
 
         onGuess: function (e) {
             e.preventDefault();
-
             var guessNumber = this.guessInputEl.val();
             this.guessInputEl.val('');   //reset input field
 
@@ -86,9 +98,16 @@ define([
          * @param result of the game guess in  {bulls:number, cows:number} format
          */
         renderGuessResult: function (result) {
-            var prefix = this.model.get("attemptsCount") + ": ";
-            var message = "For " + result.guessNumber + " you got " + result.bulls + " bulls and " + result.cows + " cows";
-            this.renderMessage("info", prefix, message);
+            var templateWithContent = messageTemplate(result);
+            this.logEl.append(templateWithContent);
+            this.logScrollPosition += 100;
+            $(this.logEl).scrollTop(this.logScrollPosition);
+            //console.log(this.logEl.scrollHeight);
+
+            //var logelement = document.getElementById(".lion-game-guess-log");
+            //console.log(this.logEl);
+            console.log(this.logEl.scrollTop());
+
         },
 
 
