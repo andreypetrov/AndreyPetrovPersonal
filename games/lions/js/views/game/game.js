@@ -15,7 +15,8 @@ define([
         template: template,
 
         events: {
-            "click .guess-button": "onGuess"
+            "click .guess-button": "onGuess",
+            "click .back-button": "onBack"
         },
 
         //Dom elements
@@ -120,7 +121,12 @@ define([
         renderMessage: function (status, prefix, message) {
             var templateWithContent = messageTemplate({status: status, prefix: prefix, message: message});
             this.logEl.append(templateWithContent);
-        }
+        },
+
+
+        onBack: function () {
+            app.router.navigate("", true);
+        },
 
     });
 });

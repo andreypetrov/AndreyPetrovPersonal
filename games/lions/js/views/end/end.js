@@ -16,7 +16,8 @@ define([
         endMessageEl: {},
 
         events: {
-            "click .back-button": "onBack"
+            "click .back-button": "onBack",
+            "click .new-game-button": "onNewGame"
         },
 
         render: function () {
@@ -38,7 +39,10 @@ define([
 
         onBack: function () {
             app.router.navigate("", true);
-            this.render();
+        },
+
+        onNewGame: function() {
+            app.router.navigate("game", {trigger: true});
         }
     });
 

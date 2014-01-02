@@ -78,8 +78,8 @@ input::-webkit-inner-spin-button {
   left: 10%;
   bottom: 10%;
   cursor: pointer;
-  width: 243px;
-  height: 59px;
+  width: 393px;
+  height: 95px;
   background-image: url("../img/btn_back.png");
   background-repeat: no-repeat;
 }

@@ -5,6 +5,7 @@
 @primaryFontFamily: primaryFont, "Helvetica Neue", Arial, sans-serif;
 @secondaryFontFamily: secondaryFont, "Helvetica Neue", Arial, sans-serif;
 @segeoFontFamily: segeo, "Helvetica Neue", Arial, sans-serif;
+@orangeBorder:#f7931e;
 
 .lion-game {
   background-image: url('../../../img/general_bg.png');
@@ -32,7 +33,7 @@
 .lion-game-hidden-number {
   margin-bottom: 5%;
   text-align: center;
-  color: red;
+  color: @borderColor;
   letter-spacing: 0.2em;
   font-size: 2.0em;
 }
@@ -64,9 +65,10 @@
   outline: none;
 }
 .guess-input-error {
+
   font-family: @secondaryFontFamily;
   margin-top: 10px;
-  color:red;
+  color:@orangeBorder;
   font-style: italic;
   margin-bottom:10px;
 }

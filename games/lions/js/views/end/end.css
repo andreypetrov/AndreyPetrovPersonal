@@ -11,7 +11,7 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding-top: 30%;
+  padding-top: 20%;
   font-family: sketch, "Helvetica Neue", Arial, sans-serif;
 }
 .lion-end-content {
@@ -41,4 +41,14 @@
   clear: both;
   font-size: 2em;
   font-family: primaryFont, "Helvetica Neue", Arial, sans-serif;
+}
+.new-game-button {
+  position: absolute;
+  right: 10%;
+  bottom: 20%;
+  cursor: pointer;
+  width: 393px;
+  height: 95px;
+  background-image: url("img/btn_newgame.png");
+  background-repeat: no-repeat;
 }

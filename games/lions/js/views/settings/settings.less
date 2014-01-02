@@ -5,6 +5,7 @@
 @primaryFontFamily: primaryFont, "Helvetica Neue", Arial, sans-serif;
 @secondaryFontFamily: secondaryFont, "Helvetica Neue", Arial, sans-serif;
 @tetriaryFontFamily:'Comic Sans MS', cursive;
+@orangeBorder:#f7931e;
 
 .lion-settings-container {
   // text-align: center;
@@ -32,7 +33,7 @@
 .lion-settings ul {
   margin-right: auto;
   margin-left: auto;
-  width: 70%;
+  width: 80%;
   height: 50%;
 
   //background: red;
@@ -42,7 +43,7 @@
 .lion-settings ul li {
   height: 17%;
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   list-style: none;
   display: block;
   clear: both;
@@ -52,7 +53,7 @@
 }
 
 .lion-settings-label {
-  font-size: 2.5em;
+  font-size: 2.4em;
   float: left;
   bottom: 5px;
   left: 5px;
@@ -78,8 +79,8 @@
   //display: block;
   position: absolute;
   background-image: url("img/toggle_yes.png");
-  width: 68px;
-  height: 30px;
+  width: 109px;
+  height: 48px;
 
 }
 
@@ -90,14 +91,14 @@
   //display: block;
   position: absolute;
   background-image: url("img/toggle_no.png");
-  width: 68px;
-  height: 30px;
+  width: 109px;
+  height: 48px;
 }
 
 .number-picker {
   background-image: url("img/number_picker_bg.png");
-  width: 84px;
-  height: 38px;
+  width: 136px;
+  height: 62px;
 
   float: right;
   margin-top: 2%;
@@ -109,10 +110,10 @@
 {
   position: absolute;
   font-family: @tetriaryFontFamily;
-  top:5px;
-  left:25px;
+  top:10px;
+  left:35px;
   color: black;
-  font-size: 25px;
+  font-size: 40px;
 }
 
 .number-picker-increment {
@@ -120,10 +121,10 @@
   background-position: 0px 0px;
   background-repeat: no-repeat;
   position: absolute;
-  top: 5px;
-  right: 15px;
+  top: 10px;
+  right: 30px;
   height: 15px;
-  width: 14px;
+  width: 23px;
   cursor: pointer;
 }
 
@@ -132,9 +133,9 @@
   //background-repeat: no-repeat;
   background-position: 0px 15px;
   position: absolute;
-  bottom: 5px;
-  right: 15px;
+  bottom: 10px;
+  right: 30px;
   height: 15px;
-  width: 14px;
+  width: 23px;
   cursor: pointer;
 }

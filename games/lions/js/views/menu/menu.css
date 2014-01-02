@@ -42,23 +42,36 @@
   background-image: url("img/btn_start.png");
   background-repeat: no-repeat;
 }
+.menu-btn-start:hover,
+.menu-btn-start:active,
+.menu-btn-start:focus {
+  background-image: url("img/btn_start_hover.png");
+}
 .menu-btn-settings {
   float: left;
   cursor: pointer;
   width: 64px;
   height: 64px;
-  margin-right: 5px;
   background-image: url("img/btn_settings.png");
   background-repeat: no-repeat;
+}
+.menu-btn-settings:hover,
+.menu-btn-settings:active,
+.menu-btn-settings:focus {
+  background-image: url("img/btn_settings_hover.png");
 }
 .menu-btn-rules {
   float: left;
   cursor: pointer;
   width: 64px;
   height: 64px;
-  margin-right: 5px;
   background-image: url("img/btn_help.png");
   background-repeat: no-repeat;
+}
+.menu-btn-rules:hover,
+.menu-btn-rules:active,
+.menu-btn-rules:focus {
+  background-image: url("img/btn_help_hover.png");
 }
 .menu-btn-about {
   float: left;
@@ -68,50 +81,13 @@
   background-image: url("img/btn_info.png");
   background-repeat: no-repeat;
 }
+.menu-btn-about:hover,
+.menu-btn-about:active,
+.menu-btn-about:focus {
+  background-image: url("img/btn_info_hover.png");
+}
 .menu-buttons {
   position: absolute;
   top: 5%;
   right: 5%;
 }
-/*
-
-.menu-buttons {
-  margin-top: 40px;
-  margin-left: 375px;
-  list-style: none;
-  clear: both;
-
-}
-
-.menu-buttons li {
-  margin: 15px;
-
-}
-
-.menu-button {
-  background: #88ff7f;
-  background: -webkit-gradient(linear, left top, left bottom, from(#94ffa8), to(#88ff7f));
-  background: -webkit-linear-gradient(top, #94ffa8, #88ff7f);
-  background: -moz-linear-gradient(top, #94ffa8, #88ff7f);
-  background: -ms-linear-gradient(top, #94ffa8, #88ff7f);
-  background: -o-linear-gradient(top, #94ffa8, #88ff7f);
-  padding: 15px 20px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-
-  border-radius: 5px;
-  -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-  -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-  box-shadow: rgba(0, 0, 0, 1) 0 0px 20px;
-
-  color: #4d4d4d;
-
-  font-size: 2.5em;
-  font-family: @primaryFontFamily;
-  text-decoration: none;
-  vertical-align: middle;
-  cursor: pointer;
-
-  width: 220px;
-  height: 60px;
-}    */
