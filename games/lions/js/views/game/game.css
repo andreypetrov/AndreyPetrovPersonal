@@ -44,7 +44,9 @@
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
-.lion-game-input-form:focus {
+.lion-game-input-form:focus,
+.lion-game-input-form:hover,
+.lion-game-input-form:active {
   border: 1px solid yellow;
   outline: none;
 }
@@ -54,6 +56,31 @@
   color: #f7931e;
   font-style: italic;
   margin-bottom: 10px;
+}
+.lion-game-buttons {
+  visibility: hidden;
+}
+.lion-game-cancel {
+  background-image: url("img/btn_cancel.png");
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+}
+.lion-game-cancel:focus,
+.lion-game-cancel:hover,
+.lion-game-cancel:active {
+  background-image: url("img/btn_cancel_hover.png");
+}
+.lion-game-ok {
+  background-image: url("img/btn_ok.png");
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+}
+.lion-game-ok:focus,
+.lion-game-ok:hover,
+.lion-game-ok:active {
+  background-image: url("img/btn_ok_hover.png");
 }
 .guess-result-points {
   line-height: 1.428571429;
@@ -101,6 +128,7 @@
   margin-left: auto;
   margin-right: auto;
   overflow-y: scroll;
+  clear: both;
 }
 .lion-game-guess-log::-webkit-scrollbar {
   width: 10px;

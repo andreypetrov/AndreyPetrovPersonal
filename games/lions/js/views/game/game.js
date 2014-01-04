@@ -15,12 +15,15 @@ define([
         template: template,
 
         events: {
-            "click .guess-button": "onGuess",
-            "click .back-button": "onBack"
+            "click .lion-game-ok": "onGuess",
+            "click .back-button": "onBack",
+            "keyup .guess-input": "onKeyUp",
+            "click .lion-game-cancel": "onCancel"
         },
 
         //Dom elements
         guessInputEl: 0,
+        buttonsEl: 0,
         logEl: 0,
         inputErrorEl: 0,
         hiddenNumberEl: 0,
@@ -35,7 +38,7 @@ define([
             this.model.newGame(); //TODO instead of just starting a new game, figure out if we should really start a new game or continue an old game on the first render
 
             this.hiddenNumberEl.html(''); //reset if there were any dummy values
-            for(var i = 0; i<this.model.get('digitsCount');i++) {//show as many X as there are digits in the hidden number
+            for (var i = 0; i < this.model.get('digitsCount'); i++) {//show as many X as there are digits in the hidden number
                 this.hiddenNumberEl.append('X');
             }
 
@@ -50,19 +53,46 @@ define([
             this.logEl = this.$el.find('.lion-game-guess-log');
             this.inputErrorEl = this.$el.find('.guess-input-error');
             this.hiddenNumberEl = this.$el.find('.lion-game-hidden-number');
+            this.buttonsEl = this.$el.find('.lion-game-buttons');
 
         },
 
 
+        onKeyUp: function (e) {
+            var entry = $(e.target).val();
+            //hide or show the buttons depending on the length of the input
+            console.log(entry.length);
+            console.log(this.model.get('digitsCount'));
+
+            if (entry.length === this.model.get('digitsCount') && this.buttonsEl.css('visibility') === 'hidden') {
+                //this.buttonsEl.css('visibility', 'visible');
+                //this.buttonsEl.css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1}, 200);
+            } else if (entry.length !== this.model.get('digitsCount') && this.buttonsEl.css('visibility') === 'visible') {
+                //this.buttonsEl.css({opacity: 1.0, visibility: "visible"}).animate({opacity: 0}, 400);
+            }
+
+        },
+
+        resetInputField: function() {
+            this.guessInputEl.val('');   //reset input field
+            //this.buttonsEl.css('visibility', 'hidden');
+            //this.buttonsEl.css({opacity: 1.0, visibility: "visible"}).animate({opacity: 0}, 400);
+        },
+
+        onCancel: function(e) {
+           this.resetInputField();
+        },
+
         onGuess: function (e) {
             e.preventDefault();
             var guessNumber = this.guessInputEl.val();
-            this.guessInputEl.val('');   //reset input field
 
             var result = this.model.compareGuessWithOriginalNumber(guessNumber);
             console.log(result);
             if (result.error) this.renderErrorMessage(result.error.message);
             else {
+                this.resetInputField();
+
                 this.renderErrorMessage(""); //remove previous error message if there was one
                 this.renderGuessResult(result);
                 if (this.model.get("hasWon")) this.onWin(result);
