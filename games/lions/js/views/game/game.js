@@ -59,28 +59,47 @@ define([
 
 
         onKeyUp: function (e) {
-            var entry = $(e.target).val();
-            //hide or show the buttons depending on the length of the input
-            console.log(entry.length);
-            console.log(this.model.get('digitsCount'));
+            var entry = this.guessInputEl.val();
 
-            if (entry.length === this.model.get('digitsCount') && this.buttonsEl.css('visibility') === 'hidden') {
-                //this.buttonsEl.css('visibility', 'visible');
-                //this.buttonsEl.css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1}, 200);
-            } else if (entry.length !== this.model.get('digitsCount') && this.buttonsEl.css('visibility') === 'visible') {
-                //this.buttonsEl.css({opacity: 1.0, visibility: "visible"}).animate({opacity: 0}, 400);
+            //if the number is complete and enter was pressed
+            if (entry.length === this.model.get('digitsCount') && e.which === 13) {
+                this.onGuess(e);
+            } else {
+                //show
+                if (entry.length === this.model.get('digitsCount') && this.buttonsEl.css('visibility') === 'hidden') {
+                    this.makeButtonsVisible();
+                }
+                //hide
+                else if (entry.length !== this.model.get('digitsCount') && this.buttonsEl.css('visibility') === 'visible') {
+                    this.makeButtonsInvisible();
+                }
             }
-
         },
 
-        resetInputField: function() {
+        makeButtonsVisible: function () {
+            this.buttonsEl.css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1}, 200);
+        },
+
+        makeButtonsInvisible: function () {
+            var that = this;
+            this.buttonsEl.css({opacity: 1.0, visibility: "visible"}).animate({opacity: 0}, 200, 'linear', function () {
+                that.buttonsEl.css('visibility', 'hidden');
+                //check if the input length has changed during the animation, and make buttons again visible if need be
+                if (that.guessInputEl.val().length === that.model.get('digitsCount')) {
+                    that.makeButtonsVisible();
+                }
+            });
+        },
+
+
+        resetInputField: function () {
+            var that = this;
             this.guessInputEl.val('');   //reset input field
-            //this.buttonsEl.css('visibility', 'hidden');
-            //this.buttonsEl.css({opacity: 1.0, visibility: "visible"}).animate({opacity: 0}, 400);
+            this.makeButtonsInvisible();
         },
 
-        onCancel: function(e) {
-           this.resetInputField();
+        onCancel: function (e) {
+            this.resetInputField();
         },
 
         onGuess: function (e) {
