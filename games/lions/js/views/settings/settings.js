@@ -44,22 +44,16 @@ define([
             var digitsCount = this.model.get("digitsCount");
             digitsCount++;
 
-            //if (digitsCount <= 10) {  //TODO make the model supply max allowable digit count. Or just transfer validation to model, it does not belong here!
-                this.model.set({"digitsCount": digitsCount}, {validate: true});
-                this.digitsCountEl.html(this.model.get("digitsCount"));
-           // }
-
-            console.log(this.model.get("digitsCount"));
+            this.model.set({"digitsCount": digitsCount}, {validate: true});
+            this.digitsCountEl.html(this.model.get("digitsCount"));
         },
 
         onDigitsCountDecremented: function (e) {
             var digitsCount = this.model.get("digitsCount");
             digitsCount--;
-            //if (digitsCount > 0) {  //TODO make the model supply min allowable digit count. Or just transfer validation to model, it does not belong here!
-                this.model.set({"digitsCount": digitsCount}, {validate: true});
-                this.digitsCountEl.html(this.model.get("digitsCount"));
-           // }
-            console.log(this.model.get("digitsCount"));
+
+            this.model.set({"digitsCount": digitsCount}, {validate: true});
+            this.digitsCountEl.html(this.model.get("digitsCount"));
         },
 
         onBack: function () {

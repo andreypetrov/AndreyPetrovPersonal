@@ -1,9 +1,9 @@
 {
     "id": 1,
     "hasWon": false,
-    "hasRepeatingDigits": true,
-    "hasLeadingZeros": true,
-    "digitsCount": 6,
+    "hasRepeatingDigits": false,
+    "hasLeadingZeros": false,
+    "digitsCount": 4,
     "minDigitsCount": 1,
     "maxDigitsCount": 9,
     "error": {}

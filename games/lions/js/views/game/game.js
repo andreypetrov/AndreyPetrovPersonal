@@ -107,7 +107,6 @@ define([
             var guessNumber = this.guessInputEl.val();
 
             var result = this.model.compareGuessWithOriginalNumber(guessNumber);
-            console.log(result);
             if (result.error) this.renderErrorMessage(result.error.message);
             else {
                 this.resetInputField();
@@ -122,7 +121,7 @@ define([
 
         onWin: function (result) {
             this.renderWin();
-            this.model.newGame(this.digitsCount);
+            //this.model.newGame(this.digitsCount);
         },
 
 
@@ -152,12 +151,6 @@ define([
             this.logEl.append(templateWithContent);
             this.logScrollPosition += 100;
             $(this.logEl).scrollTop(this.logScrollPosition);
-            //console.log(this.logEl.scrollHeight);
-
-            //var logelement = document.getElementById(".lion-game-guess-log");
-            //console.log(this.logEl);
-            console.log(this.logEl.scrollTop());
-
         },
 
 

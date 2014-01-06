@@ -4,7 +4,7 @@
 @borderColor: #e7e7e7;
 @primaryFontFamily: primaryFont, "Helvetica Neue", Arial, sans-serif;
 @secondaryFontFamily: secondaryFont, "Helvetica Neue", Arial, sans-serif;
-@segeoFontFamily: segeo, "Helvetica Neue", Arial, sans-serif;
+@segoeFontFamily: segoe, "Helvetica Neue", Arial, sans-serif;
 @orangeBorder: #f7931e;
 
 .lion-game {
@@ -21,19 +21,14 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding-top: 10%;
-  font-family: @primaryFontFamily;
-}
-
-.lion-game-title {
-  text-align: center;
-  font-size: 2.0em;
+  padding-top: 17%;
+  font-family: @segoeFontFamily;
 }
 
 .lion-game-hidden-number {
-  margin-bottom: 5%;
+  margin-bottom: 1%;
   text-align: center;
-  color: @borderColor;
+  color:  #f4f198;
   letter-spacing: 0.2em;
   font-size: 2.0em;
 }
@@ -69,8 +64,9 @@
 
   font-family: @secondaryFontFamily;
   margin-top: 10px;
-  color: @orangeBorder;
-  font-style: italic;
+  color: red;
+  line-height: 1.4;
+  font-size:0.5em;
   margin-bottom: 10px;
 }
 
@@ -149,9 +145,15 @@
   font-size: 30px;
 }
 
+.lion-game-guess-titles {
+  margin-top: 0%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
 .lion-game-guess-log {
   margin-top: 0%;
-  text-align: left;
   width: 80%;
   height: 45%;
   margin-left: auto;

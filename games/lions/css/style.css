@@ -31,8 +31,8 @@ a {
   src: url(../fonts/CharlemagneStd-Bold.otf);
 }
 @font-face {
-  font-family: segeo;
-  src: url(../fonts/segeo-marker-webfont.woff);
+  font-family: segoe;
+  src: url(../fonts/segoe-marker-webfont.woff);
 }
 @font-face {
   font-family: sketch;
@@ -73,6 +73,32 @@ input::-webkit-inner-spin-button {
   /* <-- Apparently some margin are still there even though it's hidden */
 
 }
+.view-container {
+  text-align: center;
+}
+.icn-lion-inline {
+  width: 62px;
+  height: 50px;
+  display: inline-block;
+  margin-bottom: -10px;
+  background: url("../img/sprite_emote_lion.png") 0 0;
+}
+.icn-leopard-inline {
+  width: 52px;
+  height: 39px;
+  display: inline-block;
+  margin-bottom: -5px;
+  background: url("../img/sprite_emote_leopard.png") 0 0;
+}
+.lion-title {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 10%;
+  font-family: primaryFont, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 2.5em;
+}
 .back-button {
   position: absolute;
   left: 10%;
@@ -83,6 +109,8 @@ input::-webkit-inner-spin-button {
   background-image: url("../img/btn_back.png");
   background-repeat: no-repeat;
 }
-.view-container {
-  text-align: center;
+.back-button:hover,
+.back-button:active,
+.back-button:focus {
+  background-image: url("../img/btn_back_hover.png");
 }

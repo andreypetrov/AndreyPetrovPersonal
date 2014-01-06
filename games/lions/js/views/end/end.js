@@ -31,8 +31,8 @@ define([
         },
 
         renderEndMessage: function () {
-            if (this.model.get("attemptsCount") === 1) var message = "Wow! You guessed it in just one attempt. Did you dream last night about " + this.model.get("correctNumber") + " or what?! A new number will be loaded. Wanna try again?";
-            else var message = "Nicey-nice! The number really is " + this.model.get("correctNumber") + " and you guessed it in " + this.model.get("attemptsCount") + " attempts! Wanna try again?";
+            if (this.model.get("attemptsCount") === 1) var message = "Wow! Did you dream last night about <div class=\"lion-end-correct\">" + this.model.get("correctNumber") + "</div> or what?! You guessed it in just <div class=\"lion-end-attempts\">1</div> attempt. A new number will be loaded. Wanna try again?";
+            else var message = "Nicey-nice! The number really is <div class=\"lion-end-correct\">" + this.model.get("correctNumber") + "</div> and you guessed it in <div class=\"lion-end-attempts\">" + this.model.get("attemptsCount") + "</div> attempts! Want to try again?";
             this.endMessageEl.html(message);
         },
         //override

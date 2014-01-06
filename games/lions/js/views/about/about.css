@@ -11,7 +11,7 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding-top: 30%;
+  padding-top: 35%;
   font-family: primaryFont, "Helvetica Neue", Arial, sans-serif;
 }
 .lion-about ul {
@@ -33,14 +33,10 @@
   font-size: 2.5em;
 }
 .lion-about-line {
-  font-family: segeo, "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.7em;
-  font-style: italic;
-  letter-spacing: 0.2em;
+  font-family: segoe, "Helvetica Neue", Arial, sans-serif;
+  font-size: 2.0em;
 }
 .lion-about-line-even {
-  font-family: segeo, "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.7em;
-  font-style: italic;
-  letter-spacing: 0.2em;
+  font-family: segoe, "Helvetica Neue", Arial, sans-serif;
+  font-size: 2.0em;
 }

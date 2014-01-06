@@ -4,9 +4,10 @@
     <div class="lion-game">
 
 
+        <div class="lion-title">Guess the number</div>
+
         <div class="lion-game-hidden-number">XXX</div>
-        <div class="lion-game-title">Guess the number:</div>
-        <input class="lion-game-input-form guess-input" placeholder="#" maxlength="{{attributes.digitsCount}}">
+        <input class="lion-game-input-form guess-input" autofocus="true" maxlength="{{attributes.digitsCount}}">
 
         <div class="guess-input-error"></div>
 
@@ -16,15 +17,19 @@
         </div>
 
 
-        <div id="lion-game-guess-log" class="lion-game-guess-log">
+        <div class="lion-game-guess-titles">
             <div class="guess-column guess-column-1">#</div>
 
             <div class="guess-column guess-column-2">Number</div>
             <div class="guess-column guess-column-3">
                 Result
             </div>
+        </div>
 
-            <!--<div class="guess-column guess-column-1">1</div>
+        <div id="lion-game-guess-log" class="lion-game-guess-log">
+
+
+            <!--EXAMPLES: <div class="guess-column guess-column-1">1</div>
 
             <div class="guess-column guess-column-2">1234562323</div>
 

@@ -37,8 +37,8 @@
   top: 55%;
   left: 48%;
   cursor: pointer;
-  width: 89px;
-  height: 97px;
+  width: 100px;
+  height: 100px;
   background-image: url("img/btn_start.png");
   background-repeat: no-repeat;
 }

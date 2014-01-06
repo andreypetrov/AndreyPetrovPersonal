@@ -5,7 +5,7 @@
 @primaryFontFamily: primaryFont, "Helvetica Neue", Arial, sans-serif;
 @secondaryFontFamily: secondaryFont, "Helvetica Neue", Arial, sans-serif;
 @tetriaryFontFamily:'Comic Sans MS', cursive;
-@segeoFontFamily: segeo, "Helvetica Neue", Arial, sans-serif;
+@segoeFontFamily: segoe, "Helvetica Neue", Arial, sans-serif;
 @sketchFontFamily: sketch, "Helvetica Neue", Arial, sans-serif;
 .lion-end {
   background-image: url('../../../img/general_bg.png');
@@ -54,10 +54,18 @@
 }
 
 .lion-end-message {
-  margin-top:25%;
+  margin-top:19%;
   clear: both;
   font-size: 2em;
   font-family: @primaryFontFamily;
+}
+
+.lion-end-correct {
+  color: red;
+}
+
+.lion-end-attempts {
+  color: greenyellow;
 }
 
 .new-game-button {
@@ -70,4 +78,10 @@
   height: 95px;
   background-image: url("img/btn_newgame.png");
   background-repeat: no-repeat;
+}
+
+.new-game-button:hover,
+.new-game-button:active,
+.new-game-button:focus {
+  background-image: url("img/btn_newgame_hover.png");
 }

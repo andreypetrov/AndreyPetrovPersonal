@@ -1,0 +1,93 @@
+{{! {"styles" : ["js/views/rules/rules"]} }}
+<!-- DEPRECATED. Use paginated rules instead -->
+
+<div class="view-container">
+
+    <div class="lion-rules">
+
+        <div class="lion-rules-title">Rules</div>
+
+        <!-- TODO make the rules on several screens -->
+        <div class="lion-rules-text">
+            <div class="lion-rules-line">
+
+                <span class="lion-rules-underlined"> Lions and Leopards </span> is a numerical game in which you need to guess a number.
+
+                <br/> Every time you make a guess you get some information of how
+                close is your number to the correct one.
+                <br/>The proximity of your number is measured in lions and leopards.
+
+                <br/>
+                <br/> You get <span class="lion-rules-underlined"> 1 </span> lion if a digit in your number is matching a digit in the correct number <span
+                    class="lion-rules-underlined">exactly at the same position</span>.
+                <br/>E.g. Correct number is 4<span class="lion-rules-underlined">0</span>28. You guess is 6<span class="lion-rules-underlined">0</span>57. You get <span
+                    class="lion-rules-underlined">1</span> lion,
+                because of the matching <span class="lion-rules-underlined">0</span> at the second position.
+                <br/>
+                <br/>You get <span class="lion-rules-underlined"> 1 </span> leopard if a digit in your number is matching a digit in the correct number but their <span
+                    class="lion-rules-underlined"> positions are not matching.</span>
+                <br/>
+                E.g. Correct number is 4<span class="lion-rules-underlined">0</span>28. You guess is 657<span class="lion-rules-underlined">0</span>. You get <span
+                    class="lion-rules-underlined">1</span> leopard,
+                because of the matching <span class="lion-rules-underlined">0</span> between the two numbers.
+                <br/>
+                <br/>
+                If there are repeating digits, then the lions or the leopards in the result are equal to the minimum
+                occurrences of that digit in between the correct number and your guess.
+                <br/>
+                E.g. Correct number is 4<span class="lion-rules-underlined">00</span>8. You guess <span class="lion-rules-underlined">0</span>462. You get <span
+                    class="lion-rules-underlined">1</span> leopard,
+                because of the matching <span class="lion-rules-underlined">0</span> between the two numbers.
+                <br/>
+                <br/> Here are a few more examples:
+            </div>
+
+            <div class="lion-rules-examples">
+                <div class="titles">
+                    <div class="lion-rules-correct">Correct number</div>
+                    <div class="lion-rules-guess">Your guess</div>
+                    <div class="lion-rules-answer">Result of your guess</div>
+                </div>
+
+                <div class="arow">
+                    <div class="lion-rules-correct">1234</div>
+                    <div class="lion-rules-guess">5678</div>
+                    <div class="lion-rules-answer">0 lions, 0 leopards</div>
+                    <div class="back-button"></div>
+                </div>
+
+                <div class="arow">
+                    <div class="lion-rules-correct">1234</div>
+                    <div class="lion-rules-guess">4443</div>
+                    <div class="lion-rules-answer">1 lion, 1 leopard</div>
+
+                </div>
+
+                <div class="arow">
+                    <div class="lion-rules-correct">1234</div>
+                    <div class="lion-rules-guess">1344</div>
+                    <div class="lion-rules-answer">1 lion, 2 leopards</div>
+                </div>
+                <div class="arow">
+
+
+                    <div class="lion-rules-correct">1234</div>
+                    <div class="lion-rules-guess">1234</div>
+                    <div class="lion-rules-answer">4 lions, 0 leopards</div>
+                </div>
+
+            </div>
+
+            <div class="back-button"/>
+            <div class="lion-rules-more"> We love kittens and lions, and leopards, but truth be told the game is better known by the name Bulls and Cows. Read more about it on <a
+                    href="http://en.wikipedia.org/wiki/Bulls_and_cows" target="_blank">Wikipedia</a>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+

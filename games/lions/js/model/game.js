@@ -37,7 +37,6 @@ define([
             this.set("correctNumber", this.generateRandomNumber());   //A string representing the number
             this.set("attemptsCount", 0);
             this.set("hasWon", false);
-            console.log(this.get("correctNumber"));
         },
 
         /**
@@ -127,7 +126,6 @@ define([
          * @returns {{error: {code: number, message: string}}}
          */
         validateGuessNumber: function (guessNumber) {
-            console.log(guessNumber);
             if (isNaN(guessNumber)) return {code: 1, message: "Your number should include digits only"};
 
             if (!this.get("hasRepeatingDigits")) {

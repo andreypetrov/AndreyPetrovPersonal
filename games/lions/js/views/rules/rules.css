@@ -12,14 +12,17 @@
   margin-right: auto;
   text-align: center;
   padding-top: 10%;
-  font-family: segeo, "Helvetica Neue", Arial, sans-serif;
+  font-family: segoe, "Helvetica Neue", Arial, sans-serif;
 }
 .lion-rules-underlined {
   color: white;
 }
-.lion-rules-title {
-  font-family: primaryFont, "Helvetica Neue", Arial, sans-serif;
-  font-size: 2.5em;
+.lion-rules-page-container {
+  width: 60%;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
 }
 .lion-rules-line {
   text-align: left;
@@ -30,12 +33,7 @@
   font-style: italic;
 }
 .lion-rules-examples {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  width: 80%;
-  font-size: 1.2em;
-  margin-bottom: 20px;
+  display: inline-block;
 }
 .lion-rules-examples .titles {
   clear: both;
@@ -44,30 +42,26 @@
   height: 20px;
   display: block;
 }
-.lion-rules-examples .arow {
-  clear: both;
-  margin-left: 0px;
-}
-.lion-rules-correct {
+.lion-rules-example-column {
+  display: inline-block;
   float: left;
-  width: 200px;
+  width: 100px;
   margin-right: 10px;
+  line-height: 2.428571429;
+  vertical-align: middle;
+  font-size: 30px;
 }
-.lion-rules-guess {
-  float: left;
-  width: 200px;
-  margin-right: 10px;
+.lion-rules-example-title {
+  line-height: 1;
 }
 .lion-rules-answer {
-  float: left;
   width: 200px;
-  margin-right: 10px;
 }
 .lion-rules-more {
-  float: right;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
   width: 50%;
-  margin-top: 30px;
-  margin-right: 50px;
   text-align: right;
 }
 .lion-rules-more a {
@@ -75,4 +69,41 @@
 }
 .lion-rules-more a:hover {
   text-decoration: none;
+}
+.lion-rules-btn-previous {
+  background-image: url("img/arrow_back.png");
+  cursor: pointer;
+  position: absolute;
+  left: 30%;
+  bottom: 25%;
+  width: 109px;
+  height: 29px;
+}
+.lion-rules-btn-previous:hover,
+.lion-rules-btn-previous:active .lion-rules-btn-previous:focus {
+  background-image: url("img/arrow_back_hover.png");
+  width: 110px;
+  height: 30px;
+}
+.lion-rules-btn-next {
+  background-image: url("img/arrow_fwd.png");
+  cursor: pointer;
+  position: absolute;
+  right: 30%;
+  bottom: 25%;
+  width: 109px;
+  height: 29px;
+}
+.lion-rules-btn-next:active,
+.lion-rules-btn-next:hover,
+.lion-rules-btn-next:focus {
+  background-image: url("img/arrow_fwd_hover.png");
+  width: 110px;
+  height: 30px;
+}
+.lion-rules-page {
+  position: absolute;
+  left: 48%;
+  bottom: 24%;
+  font-size: 2em;
 }

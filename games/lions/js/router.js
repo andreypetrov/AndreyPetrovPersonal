@@ -18,11 +18,11 @@ define([
     'views/about/about',
     'views/rules/rules',
     'views/end/end',
-
+    'model/rules',
     'model/game'
 
 
-], function ($, _, Backbone, LoaderView, MenuView, GameView, SettingsView, AboutView, RulesView, EndView, Game) {
+], function ($, _, Backbone, LoaderView, MenuView, GameView, SettingsView, AboutView, RulesView, EndView, RulesModel, GameModel) {
 
     var AppRouter = Backbone.Router.extend({
         routes: {
@@ -35,27 +35,28 @@ define([
         },
 
         initialize: function () {
-            console.log("init");
-
             this.loaderView = new LoaderView();
 
             //The model of the game, loaded from the server. Contains all settings. In the future may have a different model per user (personalized). Currently it comes from data/lionsGame.json
             //Contains also the game state and the win-loss results
-            this.model = new Game();
+            this.gameModel = new GameModel();
+
+
+            this.rulesModel =new RulesModel();
+
             loadData.apply(this);
 
-            this.menuView = new MenuView({model: this.model});
-            this.gameView = new GameView({model: this.model});
-            this.endView = new EndView({model: this.model});
+            this.menuView = new MenuView({model: this.gameModel});
+            this.gameView = new GameView({model: this.gameModel});
+            this.endView = new EndView({model: this.gameModel});
 
-            this.settingsView = new SettingsView({model: this.model});
+            this.settingsView = new SettingsView({model: this.gameModel});
             this.aboutView = new AboutView();
-            this.rulesView = new RulesView();
+            this.rulesView = new RulesView({model: this.rulesModel});
         },
 
 
         menu: function () {
-            console.log("render menu");
             $('#app').html(this.menuView.render().el);
         },
 
@@ -90,7 +91,7 @@ define([
         $('#app').html(this.loaderView.render().el);
 
         //TODO finish the spinner logic
-        this.model.fetch().done(function () {
+        this.gameModel.fetch().done(function () {
 
             Backbone.history.start();   // start using the router.
             //TODO decide later if we want always to load the initial page
